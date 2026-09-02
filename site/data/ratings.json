@@ -1,0 +1,6911 @@
+{
+  "meta": {
+    "model_version": "v17",
+    "config_hash": "d5e91c5131f8",
+    "corpus_snapshot": "8cf276648edd",
+    "corpus_first": "2022-03-06",
+    "corpus_last": "2026-08-30",
+    "eligible_matches": 87813,
+    "observed_players": 9699,
+    "ranked_players": 765,
+    "named_players": 765,
+    "exact_ranks": 500,
+    "source_table_sha256": "a91697f4ecc8982e0350a87f66cedf529387ccebc13691b419f58dcfa4efd991",
+    "fields": {
+      "rank": "Exact for 1–500; lower players share the 501–765 range.",
+      "handle": "Display handle after private identity resolution.",
+      "rating": "Exact for 1–500; the shared full lower-ladder range below rank 500.",
+      "uncertainty": "One standard deviation, in rating points.",
+      "games": "Eligible games represented in the fit.",
+      "win_rate": "Raw win percentage in eligible games.",
+      "activity": "Coarse days-since-last-game bucket; all ranked players are within 100 days."
+    }
+  },
+  "players": [
+    {
+      "rank": 1,
+      "handle": "_Barles_",
+      "rating": 3071,
+      "uncertainty": 76,
+      "games": 794,
+      "win_rate": 61.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 2,
+      "handle": "wR.ACCM",
+      "rating": 3015,
+      "uncertainty": 51,
+      "games": 1807,
+      "win_rate": 61.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 3,
+      "handle": "Valas",
+      "rating": 3004,
+      "uncertainty": 50,
+      "games": 3034,
+      "win_rate": 64.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 4,
+      "handle": "Oni.TaToH",
+      "rating": 2990,
+      "uncertainty": 82,
+      "games": 675,
+      "win_rate": 60.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 5,
+      "handle": "Ganji",
+      "rating": 2877,
+      "uncertainty": 54,
+      "games": 2256,
+      "win_rate": 58.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 6,
+      "handle": "abundzuehalt",
+      "rating": 2856,
+      "uncertainty": 41,
+      "games": 3415,
+      "win_rate": 61.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 7,
+      "handle": "Oni.TheViper",
+      "rating": 2846,
+      "uncertainty": 68,
+      "games": 936,
+      "win_rate": 57.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 8,
+      "handle": "OS+ | slam",
+      "rating": 2836,
+      "uncertainty": 54,
+      "games": 2051,
+      "win_rate": 56.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 9,
+      "handle": "Oni.FreakinAndy",
+      "rating": 2830,
+      "uncertainty": 101,
+      "games": 600,
+      "win_rate": 56.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 10,
+      "handle": "Oni.JorDan_AoE",
+      "rating": 2790,
+      "uncertainty": 59,
+      "games": 988,
+      "win_rate": 55.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 11,
+      "handle": "NOC | Nervkeks",
+      "rating": 2788,
+      "uncertainty": 84,
+      "games": 433,
+      "win_rate": 66.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 12,
+      "handle": "SleepySwede",
+      "rating": 2773,
+      "uncertainty": 50,
+      "games": 2328,
+      "win_rate": 67.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 13,
+      "handle": "Ondrej94",
+      "rating": 2769,
+      "uncertainty": 56,
+      "games": 1687,
+      "win_rate": 64.8,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 14,
+      "handle": "TAG_Sora Kuma",
+      "rating": 2732,
+      "uncertainty": 135,
+      "games": 257,
+      "win_rate": 49.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 15,
+      "handle": "OS+ | TeMo",
+      "rating": 2718,
+      "uncertainty": 41,
+      "games": 3684,
+      "win_rate": 58.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 16,
+      "handle": "Oni.DauT",
+      "rating": 2682,
+      "uncertainty": 49,
+      "games": 1709,
+      "win_rate": 53.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 17,
+      "handle": "TAG_Sitaux",
+      "rating": 2665,
+      "uncertainty": 134,
+      "games": 262,
+      "win_rate": 55.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 18,
+      "handle": "TAG_MbL_",
+      "rating": 2633,
+      "uncertainty": 201,
+      "games": 93,
+      "win_rate": 61.3,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 19,
+      "handle": "Oni.Vinchester",
+      "rating": 2620,
+      "uncertainty": 140,
+      "games": 239,
+      "win_rate": 53.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 20,
+      "handle": "Mununez",
+      "rating": 2594,
+      "uncertainty": 36,
+      "games": 5028,
+      "win_rate": 53.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 21,
+      "handle": "_LY_Yo",
+      "rating": 2591,
+      "uncertainty": 141,
+      "games": 221,
+      "win_rate": 43.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 22,
+      "handle": "RoR | Vodka_L_",
+      "rating": 2590,
+      "uncertainty": 124,
+      "games": 130,
+      "win_rate": 50.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 23,
+      "handle": "Zak",
+      "rating": 2576,
+      "uncertainty": 66,
+      "games": 1419,
+      "win_rate": 61.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 24,
+      "handle": "KASVA",
+      "rating": 2574,
+      "uncertainty": 181,
+      "games": 63,
+      "win_rate": 58.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 25,
+      "handle": "PUB | Fanjita",
+      "rating": 2572,
+      "uncertainty": 80,
+      "games": 594,
+      "win_rate": 55.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 26,
+      "handle": "TAG_Mihai06",
+      "rating": 2571,
+      "uncertainty": 160,
+      "games": 224,
+      "win_rate": 57.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 27,
+      "handle": "OS+ | NeoZz",
+      "rating": 2565,
+      "uncertainty": 75,
+      "games": 754,
+      "win_rate": 54.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 28,
+      "handle": "Oni.Kingstone",
+      "rating": 2564,
+      "uncertainty": 108,
+      "games": 406,
+      "win_rate": 49.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 29,
+      "handle": "m0re",
+      "rating": 2563,
+      "uncertainty": 71,
+      "games": 1074,
+      "win_rate": 52.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 30,
+      "handle": "wR.Fedex",
+      "rating": 2554,
+      "uncertainty": 87,
+      "games": 631,
+      "win_rate": 52.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 31,
+      "handle": "Somero",
+      "rating": 2550,
+      "uncertainty": 43,
+      "games": 3795,
+      "win_rate": 50.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 32,
+      "handle": "DS_StonePleaseAoE",
+      "rating": 2520,
+      "uncertainty": 57,
+      "games": 863,
+      "win_rate": 49.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 33,
+      "handle": "_LY_lyx",
+      "rating": 2509,
+      "uncertainty": 193,
+      "games": 112,
+      "win_rate": 40.2,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 34,
+      "handle": "CNZS_Daniel",
+      "rating": 2495,
+      "uncertainty": 86,
+      "games": 732,
+      "win_rate": 48.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 35,
+      "handle": "chaos_2_win",
+      "rating": 2487,
+      "uncertainty": 56,
+      "games": 1597,
+      "win_rate": 51.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 36,
+      "handle": "PUB | Steak",
+      "rating": 2482,
+      "uncertainty": 57,
+      "games": 1614,
+      "win_rate": 51.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 37,
+      "handle": "Matt107",
+      "rating": 2474,
+      "uncertainty": 105,
+      "games": 463,
+      "win_rate": 59.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 38,
+      "handle": "NoLo",
+      "rating": 2469,
+      "uncertainty": 51,
+      "games": 2090,
+      "win_rate": 51.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 39,
+      "handle": "CNZS_Bad Koala",
+      "rating": 2463,
+      "uncertainty": 204,
+      "games": 57,
+      "win_rate": 45.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 40,
+      "handle": "DS_Dragonstar",
+      "rating": 2454,
+      "uncertainty": 204,
+      "games": 67,
+      "win_rate": 55.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 41,
+      "handle": "大白000000",
+      "rating": 2450,
+      "uncertainty": 53,
+      "games": 1688,
+      "win_rate": 62.9,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 42,
+      "handle": "NOC | PhilippHJS",
+      "rating": 2447,
+      "uncertainty": 69,
+      "games": 1219,
+      "win_rate": 53.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 43,
+      "handle": "wR.Mochi",
+      "rating": 2444,
+      "uncertainty": 57,
+      "games": 1319,
+      "win_rate": 49.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 44,
+      "handle": "NOC | Target331",
+      "rating": 2437,
+      "uncertainty": 68,
+      "games": 1255,
+      "win_rate": 52.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 45,
+      "handle": "pren",
+      "rating": 2437,
+      "uncertainty": 97,
+      "games": 253,
+      "win_rate": 54.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 46,
+      "handle": "ronotovi",
+      "rating": 2430,
+      "uncertainty": 66,
+      "games": 1463,
+      "win_rate": 57.9,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 47,
+      "handle": "odemeister",
+      "rating": 2425,
+      "uncertainty": 46,
+      "games": 3190,
+      "win_rate": 56.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 48,
+      "handle": "Ghost of Chrisybooo",
+      "rating": 2425,
+      "uncertainty": 39,
+      "games": 4211,
+      "win_rate": 55.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 49,
+      "handle": "danger_noodle42",
+      "rating": 2417,
+      "uncertainty": 31,
+      "games": 5762,
+      "win_rate": 56.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 50,
+      "handle": "Sensar",
+      "rating": 2404,
+      "uncertainty": 55,
+      "games": 1957,
+      "win_rate": 55.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 51,
+      "handle": "NOC | Terz",
+      "rating": 2402,
+      "uncertainty": 133,
+      "games": 315,
+      "win_rate": 52.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 52,
+      "handle": "RoR | Kamigawa",
+      "rating": 2401,
+      "uncertainty": 218,
+      "games": 73,
+      "win_rate": 57.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 53,
+      "handle": "pääjehu",
+      "rating": 2391,
+      "uncertainty": 50,
+      "games": 2415,
+      "win_rate": 61.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 54,
+      "handle": "Dobbs351",
+      "rating": 2381,
+      "uncertainty": 201,
+      "games": 58,
+      "win_rate": 48.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 55,
+      "handle": "Oni.Lewis",
+      "rating": 2364,
+      "uncertainty": 110,
+      "games": 646,
+      "win_rate": 47.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 56,
+      "handle": "DS_Ciskhan",
+      "rating": 2363,
+      "uncertainty": 95,
+      "games": 349,
+      "win_rate": 42.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 57,
+      "handle": "OS+ | R4v3N_",
+      "rating": 2358,
+      "uncertainty": 69,
+      "games": 893,
+      "win_rate": 46.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 58,
+      "handle": "RoR | Benanji",
+      "rating": 2352,
+      "uncertainty": 116,
+      "games": 231,
+      "win_rate": 48.5,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 59,
+      "handle": "Tulendeena",
+      "rating": 2351,
+      "uncertainty": 72,
+      "games": 797,
+      "win_rate": 56.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 60,
+      "handle": "Grinchy",
+      "rating": 2341,
+      "uncertainty": 37,
+      "games": 2746,
+      "win_rate": 53.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 61,
+      "handle": "Mettiu",
+      "rating": 2337,
+      "uncertainty": 83,
+      "games": 668,
+      "win_rate": 49.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 62,
+      "handle": "江东小霸王",
+      "rating": 2337,
+      "uncertainty": 78,
+      "games": 669,
+      "win_rate": 53.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 63,
+      "handle": "Rgeadn",
+      "rating": 2333,
+      "uncertainty": 52,
+      "games": 1985,
+      "win_rate": 50.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 64,
+      "handle": "Dr.Kozmonot",
+      "rating": 2325,
+      "uncertainty": 103,
+      "games": 801,
+      "win_rate": 52.7,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 65,
+      "handle": "Rooster",
+      "rating": 2324,
+      "uncertainty": 39,
+      "games": 3582,
+      "win_rate": 53.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 66,
+      "handle": "GGOut",
+      "rating": 2320,
+      "uncertainty": 57,
+      "games": 1847,
+      "win_rate": 53.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 67,
+      "handle": "coolcat23",
+      "rating": 2307,
+      "uncertainty": 40,
+      "games": 4262,
+      "win_rate": 52.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 68,
+      "handle": "Oni.miguel",
+      "rating": 2292,
+      "uncertainty": 177,
+      "games": 89,
+      "win_rate": 41.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 69,
+      "handle": "RoR | Thofou05",
+      "rating": 2287,
+      "uncertainty": 94,
+      "games": 383,
+      "win_rate": 54.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 70,
+      "handle": "robo_boro",
+      "rating": 2280,
+      "uncertainty": 141,
+      "games": 276,
+      "win_rate": 56.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 71,
+      "handle": "hp_wong",
+      "rating": 2272,
+      "uncertainty": 62,
+      "games": 961,
+      "win_rate": 61.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 72,
+      "handle": "CorsoLa",
+      "rating": 2271,
+      "uncertainty": 35,
+      "games": 4106,
+      "win_rate": 60.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 73,
+      "handle": "RoR | FloDuFive",
+      "rating": 2271,
+      "uncertainty": 70,
+      "games": 687,
+      "win_rate": 61.4,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 74,
+      "handle": "STORM | Noszombie",
+      "rating": 2256,
+      "uncertainty": 89,
+      "games": 342,
+      "win_rate": 49.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 75,
+      "handle": "Rodney McKay",
+      "rating": 2252,
+      "uncertainty": 39,
+      "games": 2943,
+      "win_rate": 58.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 76,
+      "handle": "NOC | Acro17",
+      "rating": 2246,
+      "uncertainty": 121,
+      "games": 302,
+      "win_rate": 50.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 77,
+      "handle": "triiitCH2",
+      "rating": 2240,
+      "uncertainty": 41,
+      "games": 2817,
+      "win_rate": 54.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 78,
+      "handle": "OS+ | Tiggerr",
+      "rating": 2236,
+      "uncertainty": 48,
+      "games": 2047,
+      "win_rate": 48.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 79,
+      "handle": "Yakul",
+      "rating": 2232,
+      "uncertainty": 53,
+      "games": 1926,
+      "win_rate": 53.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 80,
+      "handle": "Draconian",
+      "rating": 2228,
+      "uncertainty": 139,
+      "games": 203,
+      "win_rate": 44.3,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 81,
+      "handle": "Mo_Tastic",
+      "rating": 2227,
+      "uncertainty": 41,
+      "games": 3366,
+      "win_rate": 52.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 82,
+      "handle": "Imperio_cc",
+      "rating": 2226,
+      "uncertainty": 149,
+      "games": 299,
+      "win_rate": 48.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 83,
+      "handle": "Czech Norris",
+      "rating": 2224,
+      "uncertainty": 68,
+      "games": 651,
+      "win_rate": 68.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 84,
+      "handle": "[Eot_]Salva.Dope",
+      "rating": 2223,
+      "uncertainty": 85,
+      "games": 529,
+      "win_rate": 59.4,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 85,
+      "handle": "Oni.dogao",
+      "rating": 2217,
+      "uncertainty": 196,
+      "games": 61,
+      "win_rate": 39.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 86,
+      "handle": "Dziamdziak",
+      "rating": 2213,
+      "uncertainty": 94,
+      "games": 503,
+      "win_rate": 49.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 87,
+      "handle": "Gerrit Beltman",
+      "rating": 2212,
+      "uncertainty": 43,
+      "games": 3340,
+      "win_rate": 53.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 88,
+      "handle": "NakedNipples",
+      "rating": 2210,
+      "uncertainty": 39,
+      "games": 3992,
+      "win_rate": 51.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 89,
+      "handle": "OS+ | aKaTepBackWards",
+      "rating": 2209,
+      "uncertainty": 176,
+      "games": 97,
+      "win_rate": 54.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 90,
+      "handle": "NOC | Madtomski",
+      "rating": 2203,
+      "uncertainty": 302,
+      "games": 58,
+      "win_rate": 44.8,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 91,
+      "handle": "Alessaceae",
+      "rating": 2203,
+      "uncertainty": 162,
+      "games": 73,
+      "win_rate": 72.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 92,
+      "handle": "Juyhou",
+      "rating": 2200,
+      "uncertainty": 65,
+      "games": 980,
+      "win_rate": 54.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 93,
+      "handle": "aoclearnRageForest",
+      "rating": 2196,
+      "uncertainty": 36,
+      "games": 2391,
+      "win_rate": 61.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 94,
+      "handle": "PUB | [????]King_Boo",
+      "rating": 2195,
+      "uncertainty": 103,
+      "games": 402,
+      "win_rate": 57.5,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 95,
+      "handle": "Zni.speedlimit",
+      "rating": 2189,
+      "uncertainty": 122,
+      "games": 517,
+      "win_rate": 52.2,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 96,
+      "handle": "c3mbrich!",
+      "rating": 2179,
+      "uncertainty": 63,
+      "games": 1432,
+      "win_rate": 49.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 97,
+      "handle": "saps_",
+      "rating": 2176,
+      "uncertainty": 72,
+      "games": 1344,
+      "win_rate": 47.8,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 98,
+      "handle": "Sir Implosive Plopper",
+      "rating": 2169,
+      "uncertainty": 66,
+      "games": 1245,
+      "win_rate": 60.3,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 99,
+      "handle": "calypso1119",
+      "rating": 2164,
+      "uncertainty": 94,
+      "games": 305,
+      "win_rate": 69.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 100,
+      "handle": "Scandalf",
+      "rating": 2163,
+      "uncertainty": 37,
+      "games": 4532,
+      "win_rate": 54.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 101,
+      "handle": "MrPlanner",
+      "rating": 2163,
+      "uncertainty": 119,
+      "games": 228,
+      "win_rate": 46.9,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 102,
+      "handle": "DanMT",
+      "rating": 2162,
+      "uncertainty": 69,
+      "games": 1236,
+      "win_rate": 48.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 103,
+      "handle": "Dovecar",
+      "rating": 2161,
+      "uncertainty": 108,
+      "games": 262,
+      "win_rate": 53.8,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 104,
+      "handle": "Savage [DE]",
+      "rating": 2153,
+      "uncertainty": 234,
+      "games": 68,
+      "win_rate": 54.4,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 105,
+      "handle": "OS+ | TheKroks",
+      "rating": 2145,
+      "uncertainty": 145,
+      "games": 174,
+      "win_rate": 45.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 106,
+      "handle": "Fresh To Death",
+      "rating": 2136,
+      "uncertainty": 172,
+      "games": 241,
+      "win_rate": 53.1,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 107,
+      "handle": "Glokken",
+      "rating": 2130,
+      "uncertainty": 119,
+      "games": 340,
+      "win_rate": 53.5,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 108,
+      "handle": "comastar",
+      "rating": 2126,
+      "uncertainty": 92,
+      "games": 547,
+      "win_rate": 49.2,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 109,
+      "handle": "Korkos",
+      "rating": 2124,
+      "uncertainty": 127,
+      "games": 341,
+      "win_rate": 64.5,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 110,
+      "handle": "Osama",
+      "rating": 2120,
+      "uncertainty": 46,
+      "games": 2302,
+      "win_rate": 48.7,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 111,
+      "handle": "WhiteForest",
+      "rating": 2119,
+      "uncertainty": 57,
+      "games": 1054,
+      "win_rate": 54.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 112,
+      "handle": "Kaeften",
+      "rating": 2116,
+      "uncertainty": 99,
+      "games": 406,
+      "win_rate": 50.7,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 113,
+      "handle": "Edgar Davids",
+      "rating": 2115,
+      "uncertainty": 57,
+      "games": 1094,
+      "win_rate": 47.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 114,
+      "handle": "Perseus_LC",
+      "rating": 2111,
+      "uncertainty": 61,
+      "games": 1096,
+      "win_rate": 51.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 115,
+      "handle": "大葱鸭",
+      "rating": 2111,
+      "uncertainty": 87,
+      "games": 432,
+      "win_rate": 67.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 116,
+      "handle": "jouds",
+      "rating": 2108,
+      "uncertainty": 72,
+      "games": 915,
+      "win_rate": 49.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 117,
+      "handle": "Yuki",
+      "rating": 2106,
+      "uncertainty": 197,
+      "games": 62,
+      "win_rate": 59.7,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 118,
+      "handle": "_[eC]_Gurke_",
+      "rating": 2105,
+      "uncertainty": 82,
+      "games": 1416,
+      "win_rate": 52.8,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 119,
+      "handle": "EMMM | TheVuki",
+      "rating": 2102,
+      "uncertainty": 48,
+      "games": 2190,
+      "win_rate": 53.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 120,
+      "handle": "Multimorbid",
+      "rating": 2102,
+      "uncertainty": 42,
+      "games": 5153,
+      "win_rate": 55.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 121,
+      "handle": "ComaLuksen",
+      "rating": 2100,
+      "uncertainty": 55,
+      "games": 1618,
+      "win_rate": 52.5,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 122,
+      "handle": "JoHan",
+      "rating": 2087,
+      "uncertainty": 45,
+      "games": 2588,
+      "win_rate": 53.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 123,
+      "handle": "Firebeer",
+      "rating": 2080,
+      "uncertainty": 40,
+      "games": 3230,
+      "win_rate": 52.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 124,
+      "handle": "ٴ",
+      "rating": 2076,
+      "uncertainty": 77,
+      "games": 445,
+      "win_rate": 66.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 125,
+      "handle": "Savage [TR]",
+      "rating": 2071,
+      "uncertainty": 201,
+      "games": 98,
+      "win_rate": 56.1,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 126,
+      "handle": "RudelyGreat",
+      "rating": 2063,
+      "uncertainty": 72,
+      "games": 1211,
+      "win_rate": 47.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 127,
+      "handle": "ARCHIE",
+      "rating": 2050,
+      "uncertainty": 81,
+      "games": 499,
+      "win_rate": 51.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 128,
+      "handle": "香香瓜子壳",
+      "rating": 2049,
+      "uncertainty": 78,
+      "games": 568,
+      "win_rate": 53.0,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 129,
+      "handle": "aleksanderG",
+      "rating": 2047,
+      "uncertainty": 76,
+      "games": 625,
+      "win_rate": 51.2,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 130,
+      "handle": "Molle",
+      "rating": 2047,
+      "uncertainty": 124,
+      "games": 143,
+      "win_rate": 48.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 131,
+      "handle": "连青人",
+      "rating": 2045,
+      "uncertainty": 72,
+      "games": 643,
+      "win_rate": 47.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 132,
+      "handle": "J_",
+      "rating": 2044,
+      "uncertainty": 49,
+      "games": 1409,
+      "win_rate": 53.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 133,
+      "handle": "Der Klabautermann",
+      "rating": 2042,
+      "uncertainty": 54,
+      "games": 1911,
+      "win_rate": 64.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 134,
+      "handle": "Shulk",
+      "rating": 2036,
+      "uncertainty": 237,
+      "games": 72,
+      "win_rate": 52.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 135,
+      "handle": "CNZS_打你如虐汪",
+      "rating": 2036,
+      "uncertainty": 190,
+      "games": 62,
+      "win_rate": 25.8,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 136,
+      "handle": "Legion64",
+      "rating": 2032,
+      "uncertainty": 69,
+      "games": 984,
+      "win_rate": 47.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 137,
+      "handle": "RoadTo19X",
+      "rating": 2032,
+      "uncertainty": 117,
+      "games": 238,
+      "win_rate": 45.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 138,
+      "handle": "Ovenka",
+      "rating": 2028,
+      "uncertainty": 215,
+      "games": 58,
+      "win_rate": 48.3,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 139,
+      "handle": "EagleWarrior420",
+      "rating": 2027,
+      "uncertainty": 144,
+      "games": 140,
+      "win_rate": 62.9,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 140,
+      "handle": "Jinada",
+      "rating": 2022,
+      "uncertainty": 47,
+      "games": 1358,
+      "win_rate": 53.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 141,
+      "handle": "Eugenius",
+      "rating": 2017,
+      "uncertainty": 221,
+      "games": 134,
+      "win_rate": 51.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 142,
+      "handle": "SbS | 1 Fuchs",
+      "rating": 2017,
+      "uncertainty": 82,
+      "games": 581,
+      "win_rate": 49.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 143,
+      "handle": "sidewire",
+      "rating": 2017,
+      "uncertainty": 36,
+      "games": 4288,
+      "win_rate": 53.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 144,
+      "handle": "ceepki",
+      "rating": 2013,
+      "uncertainty": 61,
+      "games": 852,
+      "win_rate": 53.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 145,
+      "handle": "NOC | shiXo.#",
+      "rating": 2010,
+      "uncertainty": 142,
+      "games": 208,
+      "win_rate": 35.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 146,
+      "handle": "RuFF Holland",
+      "rating": 2006,
+      "uncertainty": 92,
+      "games": 486,
+      "win_rate": 46.1,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 147,
+      "handle": "RageOfEmpires",
+      "rating": 2002,
+      "uncertainty": 77,
+      "games": 983,
+      "win_rate": 56.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 148,
+      "handle": "Waan",
+      "rating": 2000,
+      "uncertainty": 53,
+      "games": 1089,
+      "win_rate": 61.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 149,
+      "handle": "Hadeo",
+      "rating": 1992,
+      "uncertainty": 104,
+      "games": 187,
+      "win_rate": 52.9,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 150,
+      "handle": "DK | Kongen_42",
+      "rating": 1991,
+      "uncertainty": 77,
+      "games": 473,
+      "win_rate": 40.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 151,
+      "handle": "MatzeAoE",
+      "rating": 1990,
+      "uncertainty": 39,
+      "games": 2430,
+      "win_rate": 46.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 152,
+      "handle": "Rest in Pieces",
+      "rating": 1987,
+      "uncertainty": 66,
+      "games": 546,
+      "win_rate": 58.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 153,
+      "handle": "Black Bear",
+      "rating": 1982,
+      "uncertainty": 42,
+      "games": 3451,
+      "win_rate": 51.3,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 154,
+      "handle": "HaraKiri",
+      "rating": 1982,
+      "uncertainty": 78,
+      "games": 535,
+      "win_rate": 47.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 155,
+      "handle": "lllll",
+      "rating": 1976,
+      "uncertainty": 132,
+      "games": 121,
+      "win_rate": 52.1,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 156,
+      "handle": "KnightLifeAoC",
+      "rating": 1975,
+      "uncertainty": 41,
+      "games": 2798,
+      "win_rate": 47.7,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 157,
+      "handle": "[R1] Pume",
+      "rating": 1974,
+      "uncertainty": 109,
+      "games": 457,
+      "win_rate": 45.3,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 158,
+      "handle": "politician",
+      "rating": 1972,
+      "uncertainty": 197,
+      "games": 62,
+      "win_rate": 67.7,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 159,
+      "handle": "^.^dog9you~.~>.<",
+      "rating": 1970,
+      "uncertainty": 97,
+      "games": 326,
+      "win_rate": 37.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 160,
+      "handle": "Kr1lle",
+      "rating": 1968,
+      "uncertainty": 67,
+      "games": 1419,
+      "win_rate": 47.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 161,
+      "handle": "scorpion145",
+      "rating": 1968,
+      "uncertainty": 40,
+      "games": 3152,
+      "win_rate": 48.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 162,
+      "handle": "Hannibal",
+      "rating": 1966,
+      "uncertainty": 80,
+      "games": 792,
+      "win_rate": 42.8,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 163,
+      "handle": "SmilesBetray",
+      "rating": 1963,
+      "uncertainty": 54,
+      "games": 1187,
+      "win_rate": 57.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 164,
+      "handle": "OfficialNoob998",
+      "rating": 1960,
+      "uncertainty": 234,
+      "games": 62,
+      "win_rate": 62.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 165,
+      "handle": "Baby",
+      "rating": 1954,
+      "uncertainty": 43,
+      "games": 1966,
+      "win_rate": 56.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 166,
+      "handle": "Hanserino",
+      "rating": 1953,
+      "uncertainty": 104,
+      "games": 283,
+      "win_rate": 53.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 167,
+      "handle": "hK | SoyLaHostia",
+      "rating": 1953,
+      "uncertainty": 188,
+      "games": 53,
+      "win_rate": 41.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 168,
+      "handle": "Anette",
+      "rating": 1952,
+      "uncertainty": 45,
+      "games": 2152,
+      "win_rate": 59.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 169,
+      "handle": "_BOOM_SAMI_",
+      "rating": 1951,
+      "uncertainty": 139,
+      "games": 386,
+      "win_rate": 56.2,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 170,
+      "handle": "Vegetex",
+      "rating": 1948,
+      "uncertainty": 51,
+      "games": 989,
+      "win_rate": 52.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 171,
+      "handle": "Socartes",
+      "rating": 1946,
+      "uncertainty": 45,
+      "games": 3668,
+      "win_rate": 54.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 172,
+      "handle": "幾花丹色™",
+      "rating": 1946,
+      "uncertainty": 91,
+      "games": 306,
+      "win_rate": 56.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 173,
+      "handle": "KITCHIUYEAH",
+      "rating": 1945,
+      "uncertainty": 39,
+      "games": 2607,
+      "win_rate": 55.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 174,
+      "handle": "RoR | Ammiraglio",
+      "rating": 1943,
+      "uncertainty": 196,
+      "games": 92,
+      "win_rate": 44.6,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 175,
+      "handle": "White Knight",
+      "rating": 1942,
+      "uncertainty": 150,
+      "games": 163,
+      "win_rate": 55.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 176,
+      "handle": "MrGuler",
+      "rating": 1938,
+      "uncertainty": 39,
+      "games": 2433,
+      "win_rate": 55.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 177,
+      "handle": "lxnmnk Trade | B | S",
+      "rating": 1937,
+      "uncertainty": 265,
+      "games": 114,
+      "win_rate": 54.4,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 178,
+      "handle": "TheRealRuClEsHe",
+      "rating": 1934,
+      "uncertainty": 77,
+      "games": 658,
+      "win_rate": 53.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 179,
+      "handle": "TrustMeBro",
+      "rating": 1933,
+      "uncertainty": 189,
+      "games": 69,
+      "win_rate": 55.1,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 180,
+      "handle": "Bob Ross",
+      "rating": 1932,
+      "uncertainty": 54,
+      "games": 1369,
+      "win_rate": 57.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 181,
+      "handle": "Alfred",
+      "rating": 1930,
+      "uncertainty": 189,
+      "games": 162,
+      "win_rate": 49.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 182,
+      "handle": "lion_",
+      "rating": 1927,
+      "uncertainty": 31,
+      "games": 3308,
+      "win_rate": 52.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 183,
+      "handle": "36",
+      "rating": 1924,
+      "uncertainty": 35,
+      "games": 3728,
+      "win_rate": 51.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 184,
+      "handle": "Heassa",
+      "rating": 1923,
+      "uncertainty": 80,
+      "games": 730,
+      "win_rate": 53.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 185,
+      "handle": "obi11",
+      "rating": 1922,
+      "uncertainty": 121,
+      "games": 379,
+      "win_rate": 58.8,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 186,
+      "handle": "Puttsson",
+      "rating": 1919,
+      "uncertainty": 79,
+      "games": 1006,
+      "win_rate": 47.0,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 187,
+      "handle": "Saliniho",
+      "rating": 1918,
+      "uncertainty": 82,
+      "games": 652,
+      "win_rate": 50.5,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 188,
+      "handle": "Bourne2Believe",
+      "rating": 1918,
+      "uncertainty": 52,
+      "games": 1400,
+      "win_rate": 52.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 189,
+      "handle": "darkovichhh",
+      "rating": 1918,
+      "uncertainty": 48,
+      "games": 1527,
+      "win_rate": 60.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 190,
+      "handle": "RoR | Loris",
+      "rating": 1916,
+      "uncertainty": 122,
+      "games": 185,
+      "win_rate": 38.4,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 191,
+      "handle": "nono12",
+      "rating": 1913,
+      "uncertainty": 104,
+      "games": 361,
+      "win_rate": 42.9,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 192,
+      "handle": "hobbes",
+      "rating": 1911,
+      "uncertainty": 137,
+      "games": 382,
+      "win_rate": 50.8,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 193,
+      "handle": "Bread Pudding With Bum Sauce",
+      "rating": 1911,
+      "uncertainty": 157,
+      "games": 110,
+      "win_rate": 58.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 194,
+      "handle": "The Punisher",
+      "rating": 1910,
+      "uncertainty": 44,
+      "games": 1847,
+      "win_rate": 52.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 195,
+      "handle": "BøM_Haiya Boar野豬兄",
+      "rating": 1907,
+      "uncertainty": 103,
+      "games": 295,
+      "win_rate": 55.6,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 196,
+      "handle": "SG",
+      "rating": 1904,
+      "uncertainty": 54,
+      "games": 1037,
+      "win_rate": 52.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 197,
+      "handle": "Hellsum",
+      "rating": 1904,
+      "uncertainty": 111,
+      "games": 154,
+      "win_rate": 51.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 198,
+      "handle": "Ronin",
+      "rating": 1901,
+      "uncertainty": 51,
+      "games": 1824,
+      "win_rate": 49.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 199,
+      "handle": "RoR | zWraithhh",
+      "rating": 1901,
+      "uncertainty": 48,
+      "games": 1459,
+      "win_rate": 50.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 200,
+      "handle": "Bryan_Camane",
+      "rating": 1899,
+      "uncertainty": 95,
+      "games": 542,
+      "win_rate": 52.0,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 201,
+      "handle": "Cyborg",
+      "rating": 1898,
+      "uncertainty": 49,
+      "games": 1020,
+      "win_rate": 46.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 202,
+      "handle": "Pollux",
+      "rating": 1896,
+      "uncertainty": 95,
+      "games": 580,
+      "win_rate": 51.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 203,
+      "handle": "major_myth",
+      "rating": 1894,
+      "uncertainty": 43,
+      "games": 2385,
+      "win_rate": 57.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 204,
+      "handle": "Mycroft",
+      "rating": 1894,
+      "uncertainty": 48,
+      "games": 2090,
+      "win_rate": 49.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 205,
+      "handle": "Shambhala",
+      "rating": 1893,
+      "uncertainty": 85,
+      "games": 472,
+      "win_rate": 53.2,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 206,
+      "handle": "Happytheandy",
+      "rating": 1889,
+      "uncertainty": 90,
+      "games": 423,
+      "win_rate": 45.6,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 207,
+      "handle": "sekiro",
+      "rating": 1887,
+      "uncertainty": 68,
+      "games": 1088,
+      "win_rate": 56.5,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 208,
+      "handle": "[Nors] OG DADDY",
+      "rating": 1886,
+      "uncertainty": 49,
+      "games": 1586,
+      "win_rate": 47.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 209,
+      "handle": "最爱吃小面包",
+      "rating": 1886,
+      "uncertainty": 167,
+      "games": 270,
+      "win_rate": 48.1,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 210,
+      "handle": "CQ.MaSSa_V",
+      "rating": 1885,
+      "uncertainty": 208,
+      "games": 58,
+      "win_rate": 58.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 211,
+      "handle": "OS | 展毅",
+      "rating": 1881,
+      "uncertainty": 186,
+      "games": 55,
+      "win_rate": 43.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 212,
+      "handle": "noah!!!!!!!!!!",
+      "rating": 1873,
+      "uncertainty": 65,
+      "games": 768,
+      "win_rate": 45.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 213,
+      "handle": "Aldeano",
+      "rating": 1866,
+      "uncertainty": 106,
+      "games": 429,
+      "win_rate": 63.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 214,
+      "handle": "Gripen",
+      "rating": 1863,
+      "uncertainty": 45,
+      "games": 2842,
+      "win_rate": 49.2,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 215,
+      "handle": "MembTV",
+      "rating": 1862,
+      "uncertainty": 34,
+      "games": 4548,
+      "win_rate": 47.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 216,
+      "handle": "Nach Being Nice",
+      "rating": 1862,
+      "uncertainty": 32,
+      "games": 4318,
+      "win_rate": 54.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 217,
+      "handle": "Nick v2",
+      "rating": 1860,
+      "uncertainty": 79,
+      "games": 372,
+      "win_rate": 53.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 218,
+      "handle": "TheBoogeyman",
+      "rating": 1857,
+      "uncertainty": 60,
+      "games": 893,
+      "win_rate": 57.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 219,
+      "handle": "Bruh",
+      "rating": 1855,
+      "uncertainty": 63,
+      "games": 1036,
+      "win_rate": 52.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 220,
+      "handle": "[GER] Paeco",
+      "rating": 1855,
+      "uncertainty": 61,
+      "games": 1107,
+      "win_rate": 51.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 221,
+      "handle": "BuLLeT_",
+      "rating": 1855,
+      "uncertainty": 104,
+      "games": 269,
+      "win_rate": 37.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 222,
+      "handle": "Audi performance",
+      "rating": 1854,
+      "uncertainty": 88,
+      "games": 683,
+      "win_rate": 47.9,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 223,
+      "handle": "海淀天胡棋圣",
+      "rating": 1849,
+      "uncertainty": 50,
+      "games": 1403,
+      "win_rate": 51.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 224,
+      "handle": "IAmCharlieKirk67DiddyFan",
+      "rating": 1847,
+      "uncertainty": 126,
+      "games": 162,
+      "win_rate": 54.9,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 225,
+      "handle": "fdd",
+      "rating": 1846,
+      "uncertainty": 47,
+      "games": 1857,
+      "win_rate": 47.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 226,
+      "handle": "DJ Heartstring",
+      "rating": 1846,
+      "uncertainty": 75,
+      "games": 776,
+      "win_rate": 53.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 227,
+      "handle": "Tendo",
+      "rating": 1843,
+      "uncertainty": 83,
+      "games": 442,
+      "win_rate": 56.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 228,
+      "handle": "zaanosaurus",
+      "rating": 1842,
+      "uncertainty": 110,
+      "games": 316,
+      "win_rate": 50.6,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 229,
+      "handle": "Granny Pumpkinz",
+      "rating": 1841,
+      "uncertainty": 45,
+      "games": 2279,
+      "win_rate": 54.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 230,
+      "handle": "erich_hub",
+      "rating": 1832,
+      "uncertainty": 112,
+      "games": 326,
+      "win_rate": 54.6,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 231,
+      "handle": "Kalamalahala",
+      "rating": 1832,
+      "uncertainty": 109,
+      "games": 267,
+      "win_rate": 56.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 232,
+      "handle": "tftnadi",
+      "rating": 1832,
+      "uncertainty": 68,
+      "games": 470,
+      "win_rate": 54.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 233,
+      "handle": "[BÜN#1] Heidewolf",
+      "rating": 1826,
+      "uncertainty": 87,
+      "games": 338,
+      "win_rate": 45.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 234,
+      "handle": "TuTas",
+      "rating": 1824,
+      "uncertainty": 91,
+      "games": 490,
+      "win_rate": 45.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 235,
+      "handle": "Asur",
+      "rating": 1824,
+      "uncertainty": 253,
+      "games": 53,
+      "win_rate": 54.7,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 236,
+      "handle": "Vermilionz",
+      "rating": 1823,
+      "uncertainty": 48,
+      "games": 1114,
+      "win_rate": 52.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 237,
+      "handle": "Kazi",
+      "rating": 1822,
+      "uncertainty": 56,
+      "games": 1361,
+      "win_rate": 49.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 238,
+      "handle": "[BÜN] Schmirgel",
+      "rating": 1820,
+      "uncertainty": 131,
+      "games": 140,
+      "win_rate": 50.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 239,
+      "handle": "Holland",
+      "rating": 1818,
+      "uncertainty": 95,
+      "games": 542,
+      "win_rate": 42.6,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 240,
+      "handle": "ShahMoney",
+      "rating": 1817,
+      "uncertainty": 37,
+      "games": 3650,
+      "win_rate": 44.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 241,
+      "handle": "kibou",
+      "rating": 1817,
+      "uncertainty": 79,
+      "games": 914,
+      "win_rate": 51.5,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 242,
+      "handle": "Instinct",
+      "rating": 1814,
+      "uncertainty": 64,
+      "games": 1090,
+      "win_rate": 54.7,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 243,
+      "handle": "DeJected_R",
+      "rating": 1811,
+      "uncertainty": 79,
+      "games": 608,
+      "win_rate": 57.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 244,
+      "handle": "Satsuma",
+      "rating": 1804,
+      "uncertainty": 158,
+      "games": 151,
+      "win_rate": 51.0,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 245,
+      "handle": "Biner",
+      "rating": 1804,
+      "uncertainty": 160,
+      "games": 64,
+      "win_rate": 51.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 246,
+      "handle": "Zeriel",
+      "rating": 1803,
+      "uncertainty": 78,
+      "games": 437,
+      "win_rate": 58.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 247,
+      "handle": "Crankshaft",
+      "rating": 1801,
+      "uncertainty": 124,
+      "games": 220,
+      "win_rate": 46.8,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 248,
+      "handle": "The .Gocho",
+      "rating": 1799,
+      "uncertainty": 81,
+      "games": 669,
+      "win_rate": 51.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 249,
+      "handle": "西溪梨",
+      "rating": 1797,
+      "uncertainty": 120,
+      "games": 165,
+      "win_rate": 50.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 250,
+      "handle": "Youtube / Saqo Age of empires 2",
+      "rating": 1796,
+      "uncertainty": 109,
+      "games": 220,
+      "win_rate": 50.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 251,
+      "handle": "Aten",
+      "rating": 1794,
+      "uncertainty": 64,
+      "games": 857,
+      "win_rate": 42.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 252,
+      "handle": "Denosumab",
+      "rating": 1794,
+      "uncertainty": 75,
+      "games": 564,
+      "win_rate": 54.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 253,
+      "handle": "RoR | Carnage_",
+      "rating": 1793,
+      "uncertainty": 185,
+      "games": 65,
+      "win_rate": 33.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 254,
+      "handle": "F A L C O N 2 1 _ z Z",
+      "rating": 1789,
+      "uncertainty": 154,
+      "games": 299,
+      "win_rate": 47.8,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 255,
+      "handle": "rhinodog",
+      "rating": 1786,
+      "uncertainty": 153,
+      "games": 73,
+      "win_rate": 47.9,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 256,
+      "handle": "Darkculvert",
+      "rating": 1782,
+      "uncertainty": 62,
+      "games": 1076,
+      "win_rate": 50.6,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 257,
+      "handle": "Varjoti",
+      "rating": 1775,
+      "uncertainty": 108,
+      "games": 194,
+      "win_rate": 50.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 258,
+      "handle": "404",
+      "rating": 1774,
+      "uncertainty": 110,
+      "games": 149,
+      "win_rate": 55.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 259,
+      "handle": "Joey the Bonqueror",
+      "rating": 1772,
+      "uncertainty": 239,
+      "games": 98,
+      "win_rate": 54.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 260,
+      "handle": "LearningNewCivsPlsHelp",
+      "rating": 1772,
+      "uncertainty": 200,
+      "games": 69,
+      "win_rate": 59.4,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 261,
+      "handle": "PeePee",
+      "rating": 1772,
+      "uncertainty": 84,
+      "games": 510,
+      "win_rate": 52.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 262,
+      "handle": "URU ALBO",
+      "rating": 1769,
+      "uncertainty": 162,
+      "games": 81,
+      "win_rate": 37.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 263,
+      "handle": "meathman31",
+      "rating": 1769,
+      "uncertainty": 107,
+      "games": 177,
+      "win_rate": 52.5,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 264,
+      "handle": "Boost'Hate John",
+      "rating": 1768,
+      "uncertainty": 115,
+      "games": 227,
+      "win_rate": 45.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 265,
+      "handle": "veni",
+      "rating": 1766,
+      "uncertainty": 181,
+      "games": 193,
+      "win_rate": 60.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 266,
+      "handle": "langgefriend",
+      "rating": 1765,
+      "uncertainty": 85,
+      "games": 470,
+      "win_rate": 53.8,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 267,
+      "handle": "[SotC] Frank Castle",
+      "rating": 1764,
+      "uncertainty": 103,
+      "games": 272,
+      "win_rate": 49.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 268,
+      "handle": "_LT_feifei",
+      "rating": 1763,
+      "uncertainty": 113,
+      "games": 175,
+      "win_rate": 57.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 269,
+      "handle": "Alian713",
+      "rating": 1761,
+      "uncertainty": 268,
+      "games": 65,
+      "win_rate": 61.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 270,
+      "handle": "nalle k",
+      "rating": 1758,
+      "uncertainty": 213,
+      "games": 64,
+      "win_rate": 42.2,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 271,
+      "handle": "alumin",
+      "rating": 1754,
+      "uncertainty": 198,
+      "games": 71,
+      "win_rate": 59.2,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 272,
+      "handle": "Revy",
+      "rating": 1753,
+      "uncertainty": 149,
+      "games": 228,
+      "win_rate": 43.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 273,
+      "handle": "MARIJUANA_LUNG",
+      "rating": 1748,
+      "uncertainty": 76,
+      "games": 485,
+      "win_rate": 61.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 274,
+      "handle": "FlowerHorn",
+      "rating": 1747,
+      "uncertainty": 78,
+      "games": 408,
+      "win_rate": 57.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 275,
+      "handle": "ButterNToastThe3rd",
+      "rating": 1746,
+      "uncertainty": 235,
+      "games": 52,
+      "win_rate": 36.5,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 276,
+      "handle": "Kevin FoJ",
+      "rating": 1746,
+      "uncertainty": 36,
+      "games": 3286,
+      "win_rate": 49.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 277,
+      "handle": "DADDY_Sensation",
+      "rating": 1745,
+      "uncertainty": 48,
+      "games": 1669,
+      "win_rate": 53.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 278,
+      "handle": "TheZero",
+      "rating": 1740,
+      "uncertainty": 198,
+      "games": 52,
+      "win_rate": 42.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 279,
+      "handle": "MooN | MooN",
+      "rating": 1740,
+      "uncertainty": 98,
+      "games": 200,
+      "win_rate": 45.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 280,
+      "handle": "hamxaishfaq95",
+      "rating": 1739,
+      "uncertainty": 167,
+      "games": 123,
+      "win_rate": 57.7,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 281,
+      "handle": "AgentP_97",
+      "rating": 1736,
+      "uncertainty": 96,
+      "games": 372,
+      "win_rate": 48.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 282,
+      "handle": "Marbas",
+      "rating": 1735,
+      "uncertainty": 146,
+      "games": 132,
+      "win_rate": 56.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 283,
+      "handle": "Nerv",
+      "rating": 1734,
+      "uncertainty": 45,
+      "games": 1754,
+      "win_rate": 45.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 284,
+      "handle": "Timbrhoggvandi",
+      "rating": 1733,
+      "uncertainty": 279,
+      "games": 59,
+      "win_rate": 57.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 285,
+      "handle": "Prince <3",
+      "rating": 1732,
+      "uncertainty": 32,
+      "games": 3127,
+      "win_rate": 54.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 286,
+      "handle": "NOC | Mr.Dobbsn",
+      "rating": 1727,
+      "uncertainty": 249,
+      "games": 88,
+      "win_rate": 47.7,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 287,
+      "handle": "Tokugawa",
+      "rating": 1724,
+      "uncertainty": 83,
+      "games": 522,
+      "win_rate": 50.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 288,
+      "handle": "Deadbeat Dan",
+      "rating": 1716,
+      "uncertainty": 48,
+      "games": 1712,
+      "win_rate": 48.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 289,
+      "handle": "ChauNg",
+      "rating": 1716,
+      "uncertainty": 187,
+      "games": 132,
+      "win_rate": 54.5,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 290,
+      "handle": "MasterProber",
+      "rating": 1716,
+      "uncertainty": 45,
+      "games": 1238,
+      "win_rate": 51.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 291,
+      "handle": "Furret",
+      "rating": 1713,
+      "uncertainty": 46,
+      "games": 1517,
+      "win_rate": 52.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 292,
+      "handle": "LM | MaggieWuerze",
+      "rating": 1709,
+      "uncertainty": 206,
+      "games": 99,
+      "win_rate": 50.5,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 293,
+      "handle": "Kaydos",
+      "rating": 1708,
+      "uncertainty": 150,
+      "games": 264,
+      "win_rate": 43.2,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 294,
+      "handle": "3N1GMa_",
+      "rating": 1708,
+      "uncertainty": 95,
+      "games": 229,
+      "win_rate": 55.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 295,
+      "handle": "Don_Maximiliano",
+      "rating": 1706,
+      "uncertainty": 139,
+      "games": 140,
+      "win_rate": 51.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 296,
+      "handle": "Kondor",
+      "rating": 1704,
+      "uncertainty": 64,
+      "games": 1175,
+      "win_rate": 45.4,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 297,
+      "handle": "MrShelby_",
+      "rating": 1704,
+      "uncertainty": 55,
+      "games": 1110,
+      "win_rate": 43.5,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 298,
+      "handle": "Sony Toprano",
+      "rating": 1703,
+      "uncertainty": 115,
+      "games": 289,
+      "win_rate": 57.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 299,
+      "handle": "Inebriation",
+      "rating": 1700,
+      "uncertainty": 34,
+      "games": 3775,
+      "win_rate": 52.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 300,
+      "handle": "曰毛",
+      "rating": 1698,
+      "uncertainty": 93,
+      "games": 378,
+      "win_rate": 51.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 301,
+      "handle": "Pipistola",
+      "rating": 1694,
+      "uncertainty": 177,
+      "games": 71,
+      "win_rate": 53.5,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 302,
+      "handle": "rudymagallol",
+      "rating": 1692,
+      "uncertainty": 168,
+      "games": 118,
+      "win_rate": 50.8,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 303,
+      "handle": "knight_0701",
+      "rating": 1692,
+      "uncertainty": 66,
+      "games": 774,
+      "win_rate": 52.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 304,
+      "handle": "Immortal.S",
+      "rating": 1690,
+      "uncertainty": 63,
+      "games": 792,
+      "win_rate": 54.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 305,
+      "handle": "Tusky",
+      "rating": 1690,
+      "uncertainty": 179,
+      "games": 138,
+      "win_rate": 50.0,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 306,
+      "handle": "Phoetic",
+      "rating": 1690,
+      "uncertainty": 58,
+      "games": 698,
+      "win_rate": 42.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 307,
+      "handle": "Chaos",
+      "rating": 1688,
+      "uncertainty": 57,
+      "games": 1111,
+      "win_rate": 47.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 308,
+      "handle": "pukuyou",
+      "rating": 1688,
+      "uncertainty": 194,
+      "games": 63,
+      "win_rate": 54.0,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 309,
+      "handle": "Koti",
+      "rating": 1681,
+      "uncertainty": 205,
+      "games": 64,
+      "win_rate": 42.2,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 310,
+      "handle": "Wingardium Leviosa",
+      "rating": 1676,
+      "uncertainty": 77,
+      "games": 514,
+      "win_rate": 45.7,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 311,
+      "handle": "qso214",
+      "rating": 1675,
+      "uncertainty": 58,
+      "games": 829,
+      "win_rate": 46.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 312,
+      "handle": "Twitch_ActionMarc",
+      "rating": 1673,
+      "uncertainty": 144,
+      "games": 151,
+      "win_rate": 44.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 313,
+      "handle": "IBdaBoss",
+      "rating": 1673,
+      "uncertainty": 42,
+      "games": 2093,
+      "win_rate": 62.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 314,
+      "handle": "ForeverUnemployed",
+      "rating": 1673,
+      "uncertainty": 145,
+      "games": 103,
+      "win_rate": 53.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 315,
+      "handle": "SmithAoE",
+      "rating": 1673,
+      "uncertainty": 173,
+      "games": 60,
+      "win_rate": 61.7,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 316,
+      "handle": "MooN | Lunatico",
+      "rating": 1673,
+      "uncertainty": 92,
+      "games": 268,
+      "win_rate": 44.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 317,
+      "handle": "RoR | Smokealot",
+      "rating": 1672,
+      "uncertainty": 104,
+      "games": 254,
+      "win_rate": 40.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 318,
+      "handle": "Istar",
+      "rating": 1671,
+      "uncertainty": 90,
+      "games": 474,
+      "win_rate": 49.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 319,
+      "handle": "BigPoppaNoob",
+      "rating": 1670,
+      "uncertainty": 138,
+      "games": 245,
+      "win_rate": 51.0,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 320,
+      "handle": "ELEOS | Hitorek",
+      "rating": 1670,
+      "uncertainty": 210,
+      "games": 89,
+      "win_rate": 47.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 321,
+      "handle": "Mashirou",
+      "rating": 1670,
+      "uncertainty": 147,
+      "games": 119,
+      "win_rate": 46.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 322,
+      "handle": "WashedAt21",
+      "rating": 1670,
+      "uncertainty": 129,
+      "games": 135,
+      "win_rate": 51.1,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 323,
+      "handle": "Supersonic Rocketship",
+      "rating": 1669,
+      "uncertainty": 152,
+      "games": 101,
+      "win_rate": 49.5,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 324,
+      "handle": "watoncito",
+      "rating": 1668,
+      "uncertainty": 111,
+      "games": 182,
+      "win_rate": 46.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 325,
+      "handle": "LuRu99",
+      "rating": 1665,
+      "uncertainty": 137,
+      "games": 204,
+      "win_rate": 51.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 326,
+      "handle": "Choo Choo Chud",
+      "rating": 1665,
+      "uncertainty": 171,
+      "games": 59,
+      "win_rate": 50.8,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 327,
+      "handle": "synkaze",
+      "rating": 1663,
+      "uncertainty": 142,
+      "games": 118,
+      "win_rate": 58.5,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 328,
+      "handle": "Perfume",
+      "rating": 1660,
+      "uncertainty": 76,
+      "games": 514,
+      "win_rate": 51.0,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 329,
+      "handle": "Reilled",
+      "rating": 1659,
+      "uncertainty": 113,
+      "games": 252,
+      "win_rate": 46.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 330,
+      "handle": "hro_ros",
+      "rating": 1658,
+      "uncertainty": 133,
+      "games": 223,
+      "win_rate": 47.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 331,
+      "handle": "Bean goose",
+      "rating": 1658,
+      "uncertainty": 86,
+      "games": 439,
+      "win_rate": 50.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 332,
+      "handle": "奔向未来",
+      "rating": 1658,
+      "uncertainty": 110,
+      "games": 232,
+      "win_rate": 52.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 333,
+      "handle": "FayDingaway",
+      "rating": 1655,
+      "uncertainty": 101,
+      "games": 205,
+      "win_rate": 52.7,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 334,
+      "handle": "Artic_Nomad",
+      "rating": 1654,
+      "uncertainty": 100,
+      "games": 264,
+      "win_rate": 52.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 335,
+      "handle": "ValerioN__",
+      "rating": 1654,
+      "uncertainty": 42,
+      "games": 1976,
+      "win_rate": 47.9,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 336,
+      "handle": "Spooder",
+      "rating": 1646,
+      "uncertainty": 78,
+      "games": 449,
+      "win_rate": 41.2,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 337,
+      "handle": "Ogre",
+      "rating": 1643,
+      "uncertainty": 61,
+      "games": 995,
+      "win_rate": 44.4,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 338,
+      "handle": "<blank>",
+      "rating": 1639,
+      "uncertainty": 185,
+      "games": 147,
+      "win_rate": 49.7,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 339,
+      "handle": "Pala",
+      "rating": 1638,
+      "uncertainty": 73,
+      "games": 1042,
+      "win_rate": 50.8,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 340,
+      "handle": "ALBERT",
+      "rating": 1637,
+      "uncertainty": 81,
+      "games": 488,
+      "win_rate": 51.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 341,
+      "handle": "Voxer El Brazilian",
+      "rating": 1635,
+      "uncertainty": 143,
+      "games": 146,
+      "win_rate": 44.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 342,
+      "handle": "Diamonds",
+      "rating": 1633,
+      "uncertainty": 84,
+      "games": 728,
+      "win_rate": 40.2,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 343,
+      "handle": "Gekirin",
+      "rating": 1632,
+      "uncertainty": 174,
+      "games": 101,
+      "win_rate": 62.4,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 344,
+      "handle": "Trazbon",
+      "rating": 1631,
+      "uncertainty": 173,
+      "games": 65,
+      "win_rate": 61.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 345,
+      "handle": "Fts_",
+      "rating": 1631,
+      "uncertainty": 81,
+      "games": 314,
+      "win_rate": 48.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 346,
+      "handle": "Tam nsnd",
+      "rating": 1630,
+      "uncertainty": 121,
+      "games": 215,
+      "win_rate": 47.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 347,
+      "handle": "s56460688",
+      "rating": 1628,
+      "uncertainty": 146,
+      "games": 129,
+      "win_rate": 46.5,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 348,
+      "handle": "[LWS] Mandatum",
+      "rating": 1627,
+      "uncertainty": 73,
+      "games": 928,
+      "win_rate": 46.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 349,
+      "handle": "john",
+      "rating": 1626,
+      "uncertainty": 62,
+      "games": 741,
+      "win_rate": 50.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 350,
+      "handle": "Valar",
+      "rating": 1626,
+      "uncertainty": 119,
+      "games": 302,
+      "win_rate": 49.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 351,
+      "handle": "con_man1132",
+      "rating": 1626,
+      "uncertainty": 115,
+      "games": 263,
+      "win_rate": 51.0,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 352,
+      "handle": "Sublime",
+      "rating": 1625,
+      "uncertainty": 170,
+      "games": 131,
+      "win_rate": 43.5,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 353,
+      "handle": "Rogue Wave",
+      "rating": 1623,
+      "uncertainty": 48,
+      "games": 3429,
+      "win_rate": 46.4,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 354,
+      "handle": "blind_mist",
+      "rating": 1621,
+      "uncertainty": 127,
+      "games": 157,
+      "win_rate": 45.9,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 355,
+      "handle": "22",
+      "rating": 1621,
+      "uncertainty": 80,
+      "games": 386,
+      "win_rate": 54.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 356,
+      "handle": "JustAGecko",
+      "rating": 1620,
+      "uncertainty": 125,
+      "games": 293,
+      "win_rate": 45.4,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 357,
+      "handle": "Chtultuphant",
+      "rating": 1619,
+      "uncertainty": 93,
+      "games": 493,
+      "win_rate": 45.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 358,
+      "handle": "Rookie",
+      "rating": 1619,
+      "uncertainty": 175,
+      "games": 54,
+      "win_rate": 50.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 359,
+      "handle": "karpfen1337",
+      "rating": 1618,
+      "uncertainty": 39,
+      "games": 2572,
+      "win_rate": 47.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 360,
+      "handle": "nogamesforyou",
+      "rating": 1618,
+      "uncertainty": 135,
+      "games": 143,
+      "win_rate": 41.3,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 361,
+      "handle": "eldeniro",
+      "rating": 1616,
+      "uncertainty": 178,
+      "games": 126,
+      "win_rate": 51.6,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 362,
+      "handle": "PuflitoPisado",
+      "rating": 1614,
+      "uncertainty": 105,
+      "games": 262,
+      "win_rate": 55.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 363,
+      "handle": "sullied sphincter",
+      "rating": 1611,
+      "uncertainty": 121,
+      "games": 237,
+      "win_rate": 54.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 364,
+      "handle": "LM | Bumpi",
+      "rating": 1611,
+      "uncertainty": 116,
+      "games": 180,
+      "win_rate": 50.6,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 365,
+      "handle": "TIGER",
+      "rating": 1611,
+      "uncertainty": 151,
+      "games": 143,
+      "win_rate": 49.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 366,
+      "handle": "BSL | n0_chanc3",
+      "rating": 1610,
+      "uncertainty": 98,
+      "games": 386,
+      "win_rate": 39.9,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 367,
+      "handle": "FletcheR",
+      "rating": 1606,
+      "uncertainty": 118,
+      "games": 182,
+      "win_rate": 54.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 368,
+      "handle": "xLucky900",
+      "rating": 1605,
+      "uncertainty": 170,
+      "games": 75,
+      "win_rate": 54.7,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 369,
+      "handle": "Roboute Guilliman",
+      "rating": 1604,
+      "uncertainty": 213,
+      "games": 61,
+      "win_rate": 55.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 370,
+      "handle": "MACTSAI5125",
+      "rating": 1602,
+      "uncertainty": 67,
+      "games": 832,
+      "win_rate": 50.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 371,
+      "handle": "Ez4u2nv",
+      "rating": 1601,
+      "uncertainty": 44,
+      "games": 1604,
+      "win_rate": 53.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 372,
+      "handle": "Mirror",
+      "rating": 1598,
+      "uncertainty": 60,
+      "games": 740,
+      "win_rate": 53.0,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 373,
+      "handle": "[Nors]Zanato",
+      "rating": 1598,
+      "uncertainty": 141,
+      "games": 153,
+      "win_rate": 41.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 374,
+      "handle": "Enstrk",
+      "rating": 1598,
+      "uncertainty": 47,
+      "games": 1914,
+      "win_rate": 52.1,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 375,
+      "handle": "belphy",
+      "rating": 1597,
+      "uncertainty": 100,
+      "games": 298,
+      "win_rate": 46.6,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 376,
+      "handle": "Ace Of Emeralds",
+      "rating": 1597,
+      "uncertainty": 212,
+      "games": 61,
+      "win_rate": 34.4,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 377,
+      "handle": "Jozzif",
+      "rating": 1596,
+      "uncertainty": 109,
+      "games": 330,
+      "win_rate": 43.0,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 378,
+      "handle": "[KNOBI]Faultier321",
+      "rating": 1594,
+      "uncertainty": 112,
+      "games": 285,
+      "win_rate": 48.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 379,
+      "handle": "Luminance",
+      "rating": 1594,
+      "uncertainty": 124,
+      "games": 144,
+      "win_rate": 52.8,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 380,
+      "handle": "__67_7SmigoL._Arg",
+      "rating": 1594,
+      "uncertainty": 124,
+      "games": 120,
+      "win_rate": 35.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 381,
+      "handle": "Something Phoetic",
+      "rating": 1593,
+      "uncertainty": 61,
+      "games": 1068,
+      "win_rate": 41.3,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 382,
+      "handle": "parachutedreamer",
+      "rating": 1592,
+      "uncertainty": 106,
+      "games": 271,
+      "win_rate": 50.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 383,
+      "handle": "AT41",
+      "rating": 1590,
+      "uncertainty": 139,
+      "games": 227,
+      "win_rate": 47.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 384,
+      "handle": "Fenrir",
+      "rating": 1588,
+      "uncertainty": 124,
+      "games": 282,
+      "win_rate": 42.2,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 385,
+      "handle": "imugemorihasam",
+      "rating": 1587,
+      "uncertainty": 57,
+      "games": 880,
+      "win_rate": 55.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 386,
+      "handle": "Archers420",
+      "rating": 1586,
+      "uncertainty": 196,
+      "games": 81,
+      "win_rate": 61.7,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 387,
+      "handle": "PabloEscobar",
+      "rating": 1586,
+      "uncertainty": 55,
+      "games": 934,
+      "win_rate": 52.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 388,
+      "handle": "Serenity",
+      "rating": 1585,
+      "uncertainty": 124,
+      "games": 118,
+      "win_rate": 40.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 389,
+      "handle": "SorryIambusy",
+      "rating": 1581,
+      "uncertainty": 69,
+      "games": 564,
+      "win_rate": 47.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 390,
+      "handle": "TheJenonator",
+      "rating": 1581,
+      "uncertainty": 79,
+      "games": 543,
+      "win_rate": 52.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 391,
+      "handle": "SNWY4",
+      "rating": 1580,
+      "uncertainty": 189,
+      "games": 67,
+      "win_rate": 55.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 392,
+      "handle": "Bender",
+      "rating": 1578,
+      "uncertainty": 93,
+      "games": 269,
+      "win_rate": 43.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 393,
+      "handle": "Kalpit00",
+      "rating": 1575,
+      "uncertainty": 99,
+      "games": 352,
+      "win_rate": 36.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 394,
+      "handle": "Maurice_",
+      "rating": 1574,
+      "uncertainty": 55,
+      "games": 857,
+      "win_rate": 40.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 395,
+      "handle": "TopperHarley14",
+      "rating": 1573,
+      "uncertainty": 210,
+      "games": 56,
+      "win_rate": 42.9,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 396,
+      "handle": "LM | MaisterNippon",
+      "rating": 1571,
+      "uncertainty": 179,
+      "games": 59,
+      "win_rate": 52.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 397,
+      "handle": "HertOn",
+      "rating": 1569,
+      "uncertainty": 64,
+      "games": 767,
+      "win_rate": 50.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 398,
+      "handle": "武器大师",
+      "rating": 1567,
+      "uncertainty": 43,
+      "games": 2153,
+      "win_rate": 50.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 399,
+      "handle": "BderT",
+      "rating": 1566,
+      "uncertainty": 91,
+      "games": 412,
+      "win_rate": 54.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 400,
+      "handle": "ELEOS | wosm",
+      "rating": 1565,
+      "uncertainty": 172,
+      "games": 83,
+      "win_rate": 44.6,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 401,
+      "handle": "tannnt89",
+      "rating": 1560,
+      "uncertainty": 183,
+      "games": 71,
+      "win_rate": 45.1,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 402,
+      "handle": "stop_whining_start_winning",
+      "rating": 1560,
+      "uncertainty": 69,
+      "games": 578,
+      "win_rate": 49.8,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 403,
+      "handle": "[Glitchmob] Schnippi",
+      "rating": 1559,
+      "uncertainty": 178,
+      "games": 54,
+      "win_rate": 59.3,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 404,
+      "handle": "Force pickers are losers",
+      "rating": 1558,
+      "uncertainty": 219,
+      "games": 56,
+      "win_rate": 51.8,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 405,
+      "handle": "喷火龙biubiubiu",
+      "rating": 1558,
+      "uncertainty": 60,
+      "games": 974,
+      "win_rate": 46.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 406,
+      "handle": "Chevelle",
+      "rating": 1558,
+      "uncertainty": 41,
+      "games": 2009,
+      "win_rate": 51.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 407,
+      "handle": "KwiK",
+      "rating": 1551,
+      "uncertainty": 149,
+      "games": 170,
+      "win_rate": 48.2,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 408,
+      "handle": "Benedict Cucumberpatch",
+      "rating": 1547,
+      "uncertainty": 63,
+      "games": 765,
+      "win_rate": 49.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 409,
+      "handle": "Shemone",
+      "rating": 1547,
+      "uncertainty": 118,
+      "games": 272,
+      "win_rate": 46.3,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 410,
+      "handle": "bolimoli",
+      "rating": 1542,
+      "uncertainty": 63,
+      "games": 598,
+      "win_rate": 53.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 411,
+      "handle": "printp",
+      "rating": 1541,
+      "uncertainty": 56,
+      "games": 1031,
+      "win_rate": 51.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 412,
+      "handle": "shegin",
+      "rating": 1541,
+      "uncertainty": 78,
+      "games": 624,
+      "win_rate": 35.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 413,
+      "handle": "CD播放机",
+      "rating": 1540,
+      "uncertainty": 296,
+      "games": 58,
+      "win_rate": 34.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 414,
+      "handle": "TaNa",
+      "rating": 1540,
+      "uncertainty": 179,
+      "games": 58,
+      "win_rate": 50.0,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 415,
+      "handle": "saracast",
+      "rating": 1540,
+      "uncertainty": 111,
+      "games": 172,
+      "win_rate": 44.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 416,
+      "handle": "timmex",
+      "rating": 1538,
+      "uncertainty": 41,
+      "games": 3413,
+      "win_rate": 47.3,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 417,
+      "handle": "sco7ch",
+      "rating": 1537,
+      "uncertainty": 79,
+      "games": 860,
+      "win_rate": 49.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 418,
+      "handle": "Armitte",
+      "rating": 1536,
+      "uncertainty": 56,
+      "games": 722,
+      "win_rate": 48.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 419,
+      "handle": "BeardyMan37",
+      "rating": 1533,
+      "uncertainty": 168,
+      "games": 73,
+      "win_rate": 35.6,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 420,
+      "handle": "mob_ankit",
+      "rating": 1531,
+      "uncertainty": 52,
+      "games": 1021,
+      "win_rate": 49.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 421,
+      "handle": "Pandas United",
+      "rating": 1529,
+      "uncertainty": 90,
+      "games": 455,
+      "win_rate": 44.6,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 422,
+      "handle": "[Odst] Sheppard",
+      "rating": 1529,
+      "uncertainty": 203,
+      "games": 119,
+      "win_rate": 41.2,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 423,
+      "handle": "JustShutUpandCarryMe",
+      "rating": 1528,
+      "uncertainty": 146,
+      "games": 82,
+      "win_rate": 52.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 424,
+      "handle": "mrowdet",
+      "rating": 1527,
+      "uncertainty": 136,
+      "games": 117,
+      "win_rate": 53.8,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 425,
+      "handle": "Frankie Fast Hands",
+      "rating": 1527,
+      "uncertainty": 165,
+      "games": 53,
+      "win_rate": 47.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 426,
+      "handle": "TRex",
+      "rating": 1526,
+      "uncertainty": 80,
+      "games": 773,
+      "win_rate": 43.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 427,
+      "handle": "koebi",
+      "rating": 1526,
+      "uncertainty": 125,
+      "games": 127,
+      "win_rate": 52.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 428,
+      "handle": "Kn0wn",
+      "rating": 1525,
+      "uncertainty": 32,
+      "games": 3147,
+      "win_rate": 53.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 429,
+      "handle": "Monkey_D_Luffy",
+      "rating": 1524,
+      "uncertainty": 89,
+      "games": 512,
+      "win_rate": 44.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 430,
+      "handle": "Azulazar",
+      "rating": 1523,
+      "uncertainty": 55,
+      "games": 1434,
+      "win_rate": 47.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 431,
+      "handle": "mystic",
+      "rating": 1523,
+      "uncertainty": 168,
+      "games": 75,
+      "win_rate": 48.0,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 432,
+      "handle": "Swiemsta",
+      "rating": 1521,
+      "uncertainty": 150,
+      "games": 72,
+      "win_rate": 51.4,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 433,
+      "handle": "aaahfef",
+      "rating": 1517,
+      "uncertainty": 123,
+      "games": 112,
+      "win_rate": 50.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 434,
+      "handle": "Nheltarion",
+      "rating": 1516,
+      "uncertainty": 192,
+      "games": 51,
+      "win_rate": 49.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 435,
+      "handle": "Mushu Nooooo",
+      "rating": 1516,
+      "uncertainty": 132,
+      "games": 102,
+      "win_rate": 53.9,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 436,
+      "handle": "Mr.J",
+      "rating": 1515,
+      "uncertainty": 86,
+      "games": 310,
+      "win_rate": 51.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 437,
+      "handle": "爱吃软软",
+      "rating": 1510,
+      "uncertainty": 97,
+      "games": 441,
+      "win_rate": 48.1,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 438,
+      "handle": "Noname",
+      "rating": 1509,
+      "uncertainty": 94,
+      "games": 494,
+      "win_rate": 43.5,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 439,
+      "handle": "Pr3mier",
+      "rating": 1509,
+      "uncertainty": 85,
+      "games": 547,
+      "win_rate": 41.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 440,
+      "handle": "Go-Toba",
+      "rating": 1508,
+      "uncertainty": 133,
+      "games": 172,
+      "win_rate": 41.9,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 441,
+      "handle": "dinkydinks",
+      "rating": 1507,
+      "uncertainty": 79,
+      "games": 446,
+      "win_rate": 48.2,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 442,
+      "handle": "Brad Elliott",
+      "rating": 1507,
+      "uncertainty": 113,
+      "games": 172,
+      "win_rate": 45.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 443,
+      "handle": "A-V (JustOnePixeL)",
+      "rating": 1506,
+      "uncertainty": 155,
+      "games": 223,
+      "win_rate": 49.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 444,
+      "handle": "BabaYaga",
+      "rating": 1506,
+      "uncertainty": 62,
+      "games": 679,
+      "win_rate": 44.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 445,
+      "handle": "iamhely",
+      "rating": 1505,
+      "uncertainty": 79,
+      "games": 835,
+      "win_rate": 44.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 446,
+      "handle": "RoR | Váša",
+      "rating": 1505,
+      "uncertainty": 148,
+      "games": 133,
+      "win_rate": 43.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 447,
+      "handle": "Kaiko",
+      "rating": 1505,
+      "uncertainty": 184,
+      "games": 58,
+      "win_rate": 53.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 448,
+      "handle": "Richard Rahl",
+      "rating": 1504,
+      "uncertainty": 163,
+      "games": 66,
+      "win_rate": 34.8,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 449,
+      "handle": "mt",
+      "rating": 1503,
+      "uncertainty": 193,
+      "games": 140,
+      "win_rate": 37.9,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 450,
+      "handle": "EMMM | GothBert",
+      "rating": 1502,
+      "uncertainty": 89,
+      "games": 608,
+      "win_rate": 43.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 451,
+      "handle": "win27",
+      "rating": 1502,
+      "uncertainty": 45,
+      "games": 2038,
+      "win_rate": 52.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 452,
+      "handle": "SirBrenner",
+      "rating": 1501,
+      "uncertainty": 153,
+      "games": 154,
+      "win_rate": 37.7,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 453,
+      "handle": "Snake",
+      "rating": 1501,
+      "uncertainty": 152,
+      "games": 113,
+      "win_rate": 57.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 454,
+      "handle": "MysticCloudZ",
+      "rating": 1497,
+      "uncertainty": 32,
+      "games": 3965,
+      "win_rate": 44.2,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 455,
+      "handle": "Don'tHateThePlayer_HateTheLame",
+      "rating": 1496,
+      "uncertainty": 107,
+      "games": 246,
+      "win_rate": 50.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 456,
+      "handle": "Nduku",
+      "rating": 1493,
+      "uncertainty": 180,
+      "games": 73,
+      "win_rate": 47.9,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 457,
+      "handle": "ntlbee",
+      "rating": 1492,
+      "uncertainty": 63,
+      "games": 812,
+      "win_rate": 48.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 458,
+      "handle": "wackadoodle",
+      "rating": 1492,
+      "uncertainty": 152,
+      "games": 109,
+      "win_rate": 46.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 459,
+      "handle": "NavYellow",
+      "rating": 1492,
+      "uncertainty": 164,
+      "games": 123,
+      "win_rate": 46.3,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 460,
+      "handle": "fax.exe",
+      "rating": 1491,
+      "uncertainty": 139,
+      "games": 104,
+      "win_rate": 43.3,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 461,
+      "handle": "[Gaucho]Batata",
+      "rating": 1488,
+      "uncertainty": 214,
+      "games": 51,
+      "win_rate": 39.2,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 462,
+      "handle": "master",
+      "rating": 1488,
+      "uncertainty": 191,
+      "games": 74,
+      "win_rate": 48.6,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 463,
+      "handle": "anykind",
+      "rating": 1488,
+      "uncertainty": 82,
+      "games": 548,
+      "win_rate": 42.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 464,
+      "handle": "CEASAR",
+      "rating": 1487,
+      "uncertainty": 93,
+      "games": 226,
+      "win_rate": 57.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 465,
+      "handle": "wantin",
+      "rating": 1486,
+      "uncertainty": 153,
+      "games": 248,
+      "win_rate": 41.9,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 466,
+      "handle": "oldxavier",
+      "rating": 1485,
+      "uncertainty": 151,
+      "games": 109,
+      "win_rate": 47.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 467,
+      "handle": "Bulzer",
+      "rating": 1482,
+      "uncertainty": 190,
+      "games": 68,
+      "win_rate": 47.1,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 468,
+      "handle": "Tanu",
+      "rating": 1482,
+      "uncertainty": 152,
+      "games": 80,
+      "win_rate": 46.2,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 469,
+      "handle": "OSpL",
+      "rating": 1481,
+      "uncertainty": 66,
+      "games": 1182,
+      "win_rate": 49.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 470,
+      "handle": "LM | Perce1992",
+      "rating": 1481,
+      "uncertainty": 153,
+      "games": 83,
+      "win_rate": 49.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 471,
+      "handle": "scottakira",
+      "rating": 1480,
+      "uncertainty": 88,
+      "games": 425,
+      "win_rate": 43.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 472,
+      "handle": "BGUS_西施PLMM",
+      "rating": 1480,
+      "uncertainty": 236,
+      "games": 60,
+      "win_rate": 55.0,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 473,
+      "handle": "Veci",
+      "rating": 1480,
+      "uncertainty": 53,
+      "games": 1424,
+      "win_rate": 42.2,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 474,
+      "handle": "JayZaddy",
+      "rating": 1479,
+      "uncertainty": 108,
+      "games": 267,
+      "win_rate": 48.7,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 475,
+      "handle": "Maxen",
+      "rating": 1479,
+      "uncertainty": 64,
+      "games": 749,
+      "win_rate": 44.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 476,
+      "handle": "Kenan Yildiz",
+      "rating": 1478,
+      "uncertainty": 184,
+      "games": 63,
+      "win_rate": 39.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 477,
+      "handle": "ϟOLIϟ LautaLk",
+      "rating": 1473,
+      "uncertainty": 216,
+      "games": 61,
+      "win_rate": 32.8,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 478,
+      "handle": "Baykhal",
+      "rating": 1473,
+      "uncertainty": 124,
+      "games": 166,
+      "win_rate": 45.8,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 479,
+      "handle": "Fizban",
+      "rating": 1473,
+      "uncertainty": 95,
+      "games": 223,
+      "win_rate": 39.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 480,
+      "handle": "Zaffo",
+      "rating": 1471,
+      "uncertainty": 186,
+      "games": 60,
+      "win_rate": 38.3,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 481,
+      "handle": "Nima_IR",
+      "rating": 1471,
+      "uncertainty": 134,
+      "games": 147,
+      "win_rate": 40.1,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 482,
+      "handle": "Zni.Kark01",
+      "rating": 1470,
+      "uncertainty": 90,
+      "games": 248,
+      "win_rate": 46.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 483,
+      "handle": "TDI",
+      "rating": 1470,
+      "uncertainty": 221,
+      "games": 72,
+      "win_rate": 44.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 484,
+      "handle": "Old Man Cam",
+      "rating": 1469,
+      "uncertainty": 92,
+      "games": 358,
+      "win_rate": 49.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 485,
+      "handle": "babelfisch",
+      "rating": 1469,
+      "uncertainty": 42,
+      "games": 1937,
+      "win_rate": 42.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 486,
+      "handle": "MrWrong",
+      "rating": 1469,
+      "uncertainty": 80,
+      "games": 589,
+      "win_rate": 45.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 487,
+      "handle": "the_1king",
+      "rating": 1468,
+      "uncertainty": 83,
+      "games": 675,
+      "win_rate": 49.3,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 488,
+      "handle": "Yakan",
+      "rating": 1468,
+      "uncertainty": 96,
+      "games": 488,
+      "win_rate": 50.2,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 489,
+      "handle": "^wuff",
+      "rating": 1468,
+      "uncertainty": 142,
+      "games": 144,
+      "win_rate": 45.1,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 490,
+      "handle": "InGodWeTrust",
+      "rating": 1467,
+      "uncertainty": 27,
+      "games": 5464,
+      "win_rate": 43.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 491,
+      "handle": "Derrek",
+      "rating": 1466,
+      "uncertainty": 79,
+      "games": 547,
+      "win_rate": 50.8,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": 492,
+      "handle": "Haider_435",
+      "rating": 1466,
+      "uncertainty": 138,
+      "games": 127,
+      "win_rate": 55.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 493,
+      "handle": "sliu132",
+      "rating": 1465,
+      "uncertainty": 113,
+      "games": 248,
+      "win_rate": 43.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 494,
+      "handle": "Kergin",
+      "rating": 1464,
+      "uncertainty": 155,
+      "games": 113,
+      "win_rate": 44.2,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": 495,
+      "handle": "trói em vào cột điện",
+      "rating": 1461,
+      "uncertainty": 137,
+      "games": 120,
+      "win_rate": 38.3,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": 496,
+      "handle": "RedPanda",
+      "rating": 1461,
+      "uncertainty": 43,
+      "games": 1828,
+      "win_rate": 50.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 497,
+      "handle": "Migulu",
+      "rating": 1461,
+      "uncertainty": 45,
+      "games": 1339,
+      "win_rate": 50.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 498,
+      "handle": "jaktol",
+      "rating": 1457,
+      "uncertainty": 152,
+      "games": 179,
+      "win_rate": 43.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 499,
+      "handle": "Orinoco",
+      "rating": 1457,
+      "uncertainty": 161,
+      "games": 107,
+      "win_rate": 50.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": 500,
+      "handle": "Locke",
+      "rating": 1455,
+      "uncertainty": 91,
+      "games": 301,
+      "win_rate": 44.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "'lu",
+      "rating": "7xx–14xx",
+      "uncertainty": 141,
+      "games": 128,
+      "win_rate": 41.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "+++++",
+      "rating": "7xx–14xx",
+      "uncertainty": 63,
+      "games": 652,
+      "win_rate": 45.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "-TL- XERSVIRUS",
+      "rating": "7xx–14xx",
+      "uncertainty": 125,
+      "games": 176,
+      "win_rate": 40.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": ".assisT",
+      "rating": "7xx–14xx",
+      "uncertainty": 121,
+      "games": 151,
+      "win_rate": 43.7,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "95",
+      "rating": "7xx–14xx",
+      "uncertainty": 251,
+      "games": 60,
+      "win_rate": 40.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "????????",
+      "rating": "7xx–14xx",
+      "uncertainty": 202,
+      "games": 57,
+      "win_rate": 40.4,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "[3xT]Vantage_",
+      "rating": "7xx–14xx",
+      "uncertainty": 81,
+      "games": 443,
+      "win_rate": 45.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "[Anvil] Nikolettafraoula",
+      "rating": "7xx–14xx",
+      "uncertainty": 35,
+      "games": 3186,
+      "win_rate": 35.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "[AoHD] Milmano",
+      "rating": "7xx–14xx",
+      "uncertainty": 161,
+      "games": 68,
+      "win_rate": 35.3,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "[GDL] Aleex",
+      "rating": "7xx–14xx",
+      "uncertainty": 101,
+      "games": 325,
+      "win_rate": 52.3,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "[HR] Cpt. Haddock",
+      "rating": "7xx–14xx",
+      "uncertainty": 129,
+      "games": 150,
+      "win_rate": 40.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "[SP4RT] Petza IV.",
+      "rating": "7xx–14xx",
+      "uncertainty": 172,
+      "games": 52,
+      "win_rate": 40.4,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "_kill3rJ",
+      "rating": "7xx–14xx",
+      "uncertainty": 158,
+      "games": 106,
+      "win_rate": 48.1,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "AangMaster",
+      "rating": "7xx–14xx",
+      "uncertainty": 82,
+      "games": 544,
+      "win_rate": 47.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "afranciscosa",
+      "rating": "7xx–14xx",
+      "uncertainty": 139,
+      "games": 117,
+      "win_rate": 43.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Agro",
+      "rating": "7xx–14xx",
+      "uncertainty": 165,
+      "games": 68,
+      "win_rate": 45.6,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "ajja13849",
+      "rating": "7xx–14xx",
+      "uncertainty": 184,
+      "games": 97,
+      "win_rate": 38.1,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Alicat",
+      "rating": "7xx–14xx",
+      "uncertainty": 214,
+      "games": 51,
+      "win_rate": 25.5,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "ALTAR_KHAN",
+      "rating": "7xx–14xx",
+      "uncertainty": 179,
+      "games": 64,
+      "win_rate": 42.2,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "andreasnikolas",
+      "rating": "7xx–14xx",
+      "uncertainty": 41,
+      "games": 2301,
+      "win_rate": 42.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "angelggh95",
+      "rating": "7xx–14xx",
+      "uncertainty": 148,
+      "games": 113,
+      "win_rate": 41.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "anotheraoe2player",
+      "rating": "7xx–14xx",
+      "uncertainty": 126,
+      "games": 168,
+      "win_rate": 45.8,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "ANTIFA",
+      "rating": "7xx–14xx",
+      "uncertainty": 112,
+      "games": 230,
+      "win_rate": 35.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Ates",
+      "rating": "7xx–14xx",
+      "uncertainty": 155,
+      "games": 132,
+      "win_rate": 54.5,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Aura",
+      "rating": "7xx–14xx",
+      "uncertainty": 177,
+      "games": 91,
+      "win_rate": 35.2,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Bambs",
+      "rating": "7xx–14xx",
+      "uncertainty": 89,
+      "games": 376,
+      "win_rate": 41.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "banana panin",
+      "rating": "7xx–14xx",
+      "uncertainty": 45,
+      "games": 1536,
+      "win_rate": 46.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "BananaMan",
+      "rating": "7xx–14xx",
+      "uncertainty": 190,
+      "games": 64,
+      "win_rate": 56.2,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Basse",
+      "rating": "7xx–14xx",
+      "uncertainty": 183,
+      "games": 57,
+      "win_rate": 35.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Bathamael",
+      "rating": "7xx–14xx",
+      "uncertainty": 153,
+      "games": 169,
+      "win_rate": 43.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "benjeh",
+      "rating": "7xx–14xx",
+      "uncertainty": 61,
+      "games": 722,
+      "win_rate": 48.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "BenjLike",
+      "rating": "7xx–14xx",
+      "uncertainty": 208,
+      "games": 56,
+      "win_rate": 35.7,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "BGUS_Life is so hard",
+      "rating": "7xx–14xx",
+      "uncertainty": 120,
+      "games": 187,
+      "win_rate": 50.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "BN27",
+      "rating": "7xx–14xx",
+      "uncertainty": 193,
+      "games": 67,
+      "win_rate": 35.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Bonkershealer",
+      "rating": "7xx–14xx",
+      "uncertainty": 29,
+      "games": 4918,
+      "win_rate": 43.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "bosaap12",
+      "rating": "7xx–14xx",
+      "uncertainty": 197,
+      "games": 65,
+      "win_rate": 50.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "BOSS",
+      "rating": "7xx–14xx",
+      "uncertainty": 197,
+      "games": 51,
+      "win_rate": 37.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "bouke_7",
+      "rating": "7xx–14xx",
+      "uncertainty": 161,
+      "games": 62,
+      "win_rate": 51.6,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Bref",
+      "rating": "7xx–14xx",
+      "uncertainty": 49,
+      "games": 1572,
+      "win_rate": 44.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Brohio",
+      "rating": "7xx–14xx",
+      "uncertainty": 219,
+      "games": 55,
+      "win_rate": 38.2,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "builttospill",
+      "rating": "7xx–14xx",
+      "uncertainty": 180,
+      "games": 84,
+      "win_rate": 34.5,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Burmese Python",
+      "rating": "7xx–14xx",
+      "uncertainty": 50,
+      "games": 1164,
+      "win_rate": 44.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Buttspock Official",
+      "rating": "7xx–14xx",
+      "uncertainty": 72,
+      "games": 773,
+      "win_rate": 37.0,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Cadora",
+      "rating": "7xx–14xx",
+      "uncertainty": 59,
+      "games": 969,
+      "win_rate": 50.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "caizhi",
+      "rating": "7xx–14xx",
+      "uncertainty": 136,
+      "games": 155,
+      "win_rate": 41.9,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "CALI",
+      "rating": "7xx–14xx",
+      "uncertainty": 90,
+      "games": 652,
+      "win_rate": 42.2,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Caram",
+      "rating": "7xx–14xx",
+      "uncertainty": 122,
+      "games": 244,
+      "win_rate": 39.3,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Cartel",
+      "rating": "7xx–14xx",
+      "uncertainty": 200,
+      "games": 54,
+      "win_rate": 48.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "CAXCAN",
+      "rating": "7xx–14xx",
+      "uncertainty": 111,
+      "games": 262,
+      "win_rate": 38.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Cearrbhach",
+      "rating": "7xx–14xx",
+      "uncertainty": 111,
+      "games": 249,
+      "win_rate": 41.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Ceki",
+      "rating": "7xx–14xx",
+      "uncertainty": 116,
+      "games": 162,
+      "win_rate": 41.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "CFn-Ez",
+      "rating": "7xx–14xx",
+      "uncertainty": 43,
+      "games": 2575,
+      "win_rate": 46.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Charlesmartel",
+      "rating": "7xx–14xx",
+      "uncertainty": 133,
+      "games": 121,
+      "win_rate": 42.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Cherry",
+      "rating": "7xx–14xx",
+      "uncertainty": 192,
+      "games": 53,
+      "win_rate": 22.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Chimalpopoca",
+      "rating": "7xx–14xx",
+      "uncertainty": 197,
+      "games": 60,
+      "win_rate": 50.0,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "chiu_sharon",
+      "rating": "7xx–14xx",
+      "uncertainty": 46,
+      "games": 1339,
+      "win_rate": 51.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Chomsky",
+      "rating": "7xx–14xx",
+      "uncertainty": 81,
+      "games": 464,
+      "win_rate": 50.6,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "ChrishpyShnack",
+      "rating": "7xx–14xx",
+      "uncertainty": 145,
+      "games": 160,
+      "win_rate": 49.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Citykeeper",
+      "rating": "7xx–14xx",
+      "uncertainty": 178,
+      "games": 65,
+      "win_rate": 43.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "ContingencyArgument",
+      "rating": "7xx–14xx",
+      "uncertainty": 114,
+      "games": 207,
+      "win_rate": 43.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "CORT3S",
+      "rating": "7xx–14xx",
+      "uncertainty": 194,
+      "games": 58,
+      "win_rate": 39.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "cowboy",
+      "rating": "7xx–14xx",
+      "uncertainty": 67,
+      "games": 704,
+      "win_rate": 38.2,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "cowboy_dan",
+      "rating": "7xx–14xx",
+      "uncertainty": 200,
+      "games": 54,
+      "win_rate": 27.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "CR | El Dani",
+      "rating": "7xx–14xx",
+      "uncertainty": 160,
+      "games": 83,
+      "win_rate": 33.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Cyrus",
+      "rating": "7xx–14xx",
+      "uncertainty": 146,
+      "games": 91,
+      "win_rate": 39.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Dampflok",
+      "rating": "7xx–14xx",
+      "uncertainty": 109,
+      "games": 296,
+      "win_rate": 36.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Deathcounter",
+      "rating": "7xx–14xx",
+      "uncertainty": 113,
+      "games": 206,
+      "win_rate": 38.8,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "dennis2_02",
+      "rating": "7xx–14xx",
+      "uncertainty": 60,
+      "games": 1020,
+      "win_rate": 46.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "derri",
+      "rating": "7xx–14xx",
+      "uncertainty": 123,
+      "games": 190,
+      "win_rate": 48.9,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Didier Khaled  x  Lil Fabrice",
+      "rating": "7xx–14xx",
+      "uncertainty": 151,
+      "games": 127,
+      "win_rate": 37.8,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Dildo Swaggens",
+      "rating": "7xx–14xx",
+      "uncertainty": 125,
+      "games": 157,
+      "win_rate": 40.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "DK_Dani",
+      "rating": "7xx–14xx",
+      "uncertainty": 96,
+      "games": 257,
+      "win_rate": 40.5,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Dreamer2599",
+      "rating": "7xx–14xx",
+      "uncertainty": 92,
+      "games": 292,
+      "win_rate": 50.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Dutch_Dimi",
+      "rating": "7xx–14xx",
+      "uncertainty": 166,
+      "games": 70,
+      "win_rate": 48.6,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "El Bisonte",
+      "rating": "7xx–14xx",
+      "uncertainty": 168,
+      "games": 86,
+      "win_rate": 39.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Emi Bistotto",
+      "rating": "7xx–14xx",
+      "uncertainty": 167,
+      "games": 103,
+      "win_rate": 35.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "EVA_Rinocherino",
+      "rating": "7xx–14xx",
+      "uncertainty": 57,
+      "games": 941,
+      "win_rate": 41.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "falcon",
+      "rating": "7xx–14xx",
+      "uncertainty": 150,
+      "games": 92,
+      "win_rate": 37.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "FcukCensorship",
+      "rating": "7xx–14xx",
+      "uncertainty": 149,
+      "games": 151,
+      "win_rate": 43.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Festering Goblin_1",
+      "rating": "7xx–14xx",
+      "uncertainty": 80,
+      "games": 343,
+      "win_rate": 38.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Flex",
+      "rating": "7xx–14xx",
+      "uncertainty": 204,
+      "games": 70,
+      "win_rate": 40.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "FlorinChess",
+      "rating": "7xx–14xx",
+      "uncertainty": 194,
+      "games": 71,
+      "win_rate": 39.4,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "FogHorn",
+      "rating": "7xx–14xx",
+      "uncertainty": 178,
+      "games": 96,
+      "win_rate": 40.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Foski",
+      "rating": "7xx–14xx",
+      "uncertainty": 138,
+      "games": 114,
+      "win_rate": 37.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Fost",
+      "rating": "7xx–14xx",
+      "uncertainty": 135,
+      "games": 146,
+      "win_rate": 37.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Francho",
+      "rating": "7xx–14xx",
+      "uncertainty": 102,
+      "games": 253,
+      "win_rate": 38.3,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "FranksBe2God",
+      "rating": "7xx–14xx",
+      "uncertainty": 159,
+      "games": 124,
+      "win_rate": 38.7,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "FrozenFlame1973",
+      "rating": "7xx–14xx",
+      "uncertainty": 171,
+      "games": 65,
+      "win_rate": 32.3,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "FryCaptain",
+      "rating": "7xx–14xx",
+      "uncertainty": 169,
+      "games": 111,
+      "win_rate": 40.5,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Frédéric Chopin",
+      "rating": "7xx–14xx",
+      "uncertainty": 200,
+      "games": 111,
+      "win_rate": 38.7,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Full power No shower",
+      "rating": "7xx–14xx",
+      "uncertainty": 127,
+      "games": 188,
+      "win_rate": 43.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "FunKinGGusTI",
+      "rating": "7xx–14xx",
+      "uncertainty": 147,
+      "games": 100,
+      "win_rate": 37.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "GAX | toooasty",
+      "rating": "7xx–14xx",
+      "uncertainty": 188,
+      "games": 91,
+      "win_rate": 38.5,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "ghabil",
+      "rating": "7xx–14xx",
+      "uncertainty": 82,
+      "games": 515,
+      "win_rate": 39.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Glenlivet",
+      "rating": "7xx–14xx",
+      "uncertainty": 241,
+      "games": 76,
+      "win_rate": 30.3,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Gompachiro",
+      "rating": "7xx–14xx",
+      "uncertainty": 139,
+      "games": 124,
+      "win_rate": 41.9,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Grabik",
+      "rating": "7xx–14xx",
+      "uncertainty": 82,
+      "games": 403,
+      "win_rate": 49.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "guidolp",
+      "rating": "7xx–14xx",
+      "uncertainty": 137,
+      "games": 186,
+      "win_rate": 40.3,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "guilleol1005",
+      "rating": "7xx–14xx",
+      "uncertainty": 124,
+      "games": 165,
+      "win_rate": 44.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Gunnar",
+      "rating": "7xx–14xx",
+      "uncertainty": 144,
+      "games": 105,
+      "win_rate": 38.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Gustaven",
+      "rating": "7xx–14xx",
+      "uncertainty": 106,
+      "games": 195,
+      "win_rate": 50.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "H",
+      "rating": "7xx–14xx",
+      "uncertainty": 42,
+      "games": 2681,
+      "win_rate": 47.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Hajduk",
+      "rating": "7xx–14xx",
+      "uncertainty": 78,
+      "games": 389,
+      "win_rate": 37.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "HardyBoy",
+      "rating": "7xx–14xx",
+      "uncertainty": 146,
+      "games": 123,
+      "win_rate": 37.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Harzah",
+      "rating": "7xx–14xx",
+      "uncertainty": 74,
+      "games": 535,
+      "win_rate": 35.3,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Haveli",
+      "rating": "7xx–14xx",
+      "uncertainty": 159,
+      "games": 209,
+      "win_rate": 37.8,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "HazEy1",
+      "rating": "7xx–14xx",
+      "uncertainty": 77,
+      "games": 371,
+      "win_rate": 45.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "HER0~",
+      "rating": "7xx–14xx",
+      "uncertainty": 149,
+      "games": 164,
+      "win_rate": 49.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "hiimJKM",
+      "rating": "7xx–14xx",
+      "uncertainty": 208,
+      "games": 69,
+      "win_rate": 42.0,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Horagalles",
+      "rating": "7xx–14xx",
+      "uncertainty": 140,
+      "games": 123,
+      "win_rate": 29.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Houthakker",
+      "rating": "7xx–14xx",
+      "uncertainty": 175,
+      "games": 65,
+      "win_rate": 50.8,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "HR petro",
+      "rating": "7xx–14xx",
+      "uncertainty": 100,
+      "games": 291,
+      "win_rate": 43.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "I'm_Jimi",
+      "rating": "7xx–14xx",
+      "uncertainty": 48,
+      "games": 1301,
+      "win_rate": 41.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "impirion",
+      "rating": "7xx–14xx",
+      "uncertainty": 126,
+      "games": 126,
+      "win_rate": 46.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "ioi",
+      "rating": "7xx–14xx",
+      "uncertainty": 78,
+      "games": 709,
+      "win_rate": 47.5,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "iphonze",
+      "rating": "7xx–14xx",
+      "uncertainty": 226,
+      "games": 54,
+      "win_rate": 42.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Ire",
+      "rating": "7xx–14xx",
+      "uncertainty": 194,
+      "games": 55,
+      "win_rate": 32.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "JARDANI1299",
+      "rating": "7xx–14xx",
+      "uncertainty": 35,
+      "games": 2439,
+      "win_rate": 50.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "jaszkowska.aleksandra",
+      "rating": "7xx–14xx",
+      "uncertainty": 59,
+      "games": 651,
+      "win_rate": 52.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Jaxto",
+      "rating": "7xx–14xx",
+      "uncertainty": 144,
+      "games": 152,
+      "win_rate": 45.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "JCnpc23",
+      "rating": "7xx–14xx",
+      "uncertainty": 93,
+      "games": 378,
+      "win_rate": 44.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "JimmyButler_AoE",
+      "rating": "7xx–14xx",
+      "uncertainty": 68,
+      "games": 616,
+      "win_rate": 37.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Joker",
+      "rating": "7xx–14xx",
+      "uncertainty": 98,
+      "games": 232,
+      "win_rate": 42.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Just_say_gg_bruh",
+      "rating": "7xx–14xx",
+      "uncertainty": 175,
+      "games": 65,
+      "win_rate": 38.5,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "kango",
+      "rating": "7xx–14xx",
+      "uncertainty": 155,
+      "games": 64,
+      "win_rate": 39.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Kapiteinterreur",
+      "rating": "7xx–14xx",
+      "uncertainty": 195,
+      "games": 58,
+      "win_rate": 44.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "KAREL",
+      "rating": "7xx–14xx",
+      "uncertainty": 128,
+      "games": 219,
+      "win_rate": 34.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "kasap_hasan",
+      "rating": "7xx–14xx",
+      "uncertainty": 82,
+      "games": 433,
+      "win_rate": 54.0,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "kataparuto_pleb",
+      "rating": "7xx–14xx",
+      "uncertainty": 85,
+      "games": 375,
+      "win_rate": 42.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Katnip",
+      "rating": "7xx–14xx",
+      "uncertainty": 69,
+      "games": 805,
+      "win_rate": 45.2,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "KEBACEE",
+      "rating": "7xx–14xx",
+      "uncertainty": 187,
+      "games": 62,
+      "win_rate": 41.9,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "KeremS",
+      "rating": "7xx–14xx",
+      "uncertainty": 114,
+      "games": 294,
+      "win_rate": 53.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Ketan67",
+      "rating": "7xx–14xx",
+      "uncertainty": 126,
+      "games": 179,
+      "win_rate": 40.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Kilian",
+      "rating": "7xx–14xx",
+      "uncertainty": 164,
+      "games": 76,
+      "win_rate": 43.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Killing_Bambi",
+      "rating": "7xx–14xx",
+      "uncertainty": 107,
+      "games": 250,
+      "win_rate": 38.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "King Gabb",
+      "rating": "7xx–14xx",
+      "uncertainty": 159,
+      "games": 70,
+      "win_rate": 28.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Kitiastri",
+      "rating": "7xx–14xx",
+      "uncertainty": 161,
+      "games": 62,
+      "win_rate": 43.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Komifar",
+      "rating": "7xx–14xx",
+      "uncertainty": 188,
+      "games": 84,
+      "win_rate": 45.2,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "kyugaloric_I",
+      "rating": "7xx–14xx",
+      "uncertainty": 162,
+      "games": 89,
+      "win_rate": 46.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Landi",
+      "rating": "7xx–14xx",
+      "uncertainty": 141,
+      "games": 161,
+      "win_rate": 39.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Lastmantillidie",
+      "rating": "7xx–14xx",
+      "uncertainty": 200,
+      "games": 59,
+      "win_rate": 40.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "leaftopjo",
+      "rating": "7xx–14xx",
+      "uncertainty": 124,
+      "games": 219,
+      "win_rate": 41.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "LeoABNV",
+      "rating": "7xx–14xx",
+      "uncertainty": 167,
+      "games": 66,
+      "win_rate": 37.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Lhypopead",
+      "rating": "7xx–14xx",
+      "uncertainty": 73,
+      "games": 599,
+      "win_rate": 50.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Link",
+      "rating": "7xx–14xx",
+      "uncertainty": 86,
+      "games": 407,
+      "win_rate": 49.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "LM | RenLo",
+      "rating": "7xx–14xx",
+      "uncertainty": 154,
+      "games": 75,
+      "win_rate": 45.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "LM | TornardoBriese",
+      "rating": "7xx–14xx",
+      "uncertainty": 191,
+      "games": 74,
+      "win_rate": 32.4,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "LordCow",
+      "rating": "7xx–14xx",
+      "uncertainty": 109,
+      "games": 262,
+      "win_rate": 42.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Lucky",
+      "rating": "7xx–14xx",
+      "uncertainty": 114,
+      "games": 321,
+      "win_rate": 53.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Lucky Camel",
+      "rating": "7xx–14xx",
+      "uncertainty": 60,
+      "games": 984,
+      "win_rate": 47.9,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Luis Enrique",
+      "rating": "7xx–14xx",
+      "uncertainty": 161,
+      "games": 91,
+      "win_rate": 50.5,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Lynx",
+      "rating": "7xx–14xx",
+      "uncertainty": 141,
+      "games": 131,
+      "win_rate": 48.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "machpatel",
+      "rating": "7xx–14xx",
+      "uncertainty": 145,
+      "games": 125,
+      "win_rate": 45.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Magnificent",
+      "rating": "7xx–14xx",
+      "uncertainty": 126,
+      "games": 111,
+      "win_rate": 40.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "masterjft",
+      "rating": "7xx–14xx",
+      "uncertainty": 147,
+      "games": 117,
+      "win_rate": 42.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "mattGPT",
+      "rating": "7xx–14xx",
+      "uncertainty": 199,
+      "games": 55,
+      "win_rate": 50.9,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Mavericks",
+      "rating": "7xx–14xx",
+      "uncertainty": 103,
+      "games": 210,
+      "win_rate": 31.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "mdbm",
+      "rating": "7xx–14xx",
+      "uncertainty": 99,
+      "games": 325,
+      "win_rate": 52.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "MEM",
+      "rating": "7xx–14xx",
+      "uncertainty": 169,
+      "games": 73,
+      "win_rate": 45.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Men Call Me Gladiator",
+      "rating": "7xx–14xx",
+      "uncertainty": 176,
+      "games": 73,
+      "win_rate": 42.5,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Mercer",
+      "rating": "7xx–14xx",
+      "uncertainty": 163,
+      "games": 84,
+      "win_rate": 38.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Micchan",
+      "rating": "7xx–14xx",
+      "uncertainty": 70,
+      "games": 760,
+      "win_rate": 52.1,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "mikeymazko",
+      "rating": "7xx–14xx",
+      "uncertainty": 155,
+      "games": 75,
+      "win_rate": 34.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "MinorCloud9519",
+      "rating": "7xx–14xx",
+      "uncertainty": 75,
+      "games": 371,
+      "win_rate": 46.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Mouttie",
+      "rating": "7xx–14xx",
+      "uncertainty": 171,
+      "games": 55,
+      "win_rate": 34.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "MrJumper",
+      "rating": "7xx–14xx",
+      "uncertainty": 163,
+      "games": 66,
+      "win_rate": 43.9,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Mushu",
+      "rating": "7xx–14xx",
+      "uncertainty": 43,
+      "games": 1987,
+      "win_rate": 51.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "nicke",
+      "rating": "7xx–14xx",
+      "uncertainty": 90,
+      "games": 303,
+      "win_rate": 35.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Nobody",
+      "rating": "7xx–14xx",
+      "uncertainty": 120,
+      "games": 212,
+      "win_rate": 45.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "NOOB_UPRISING",
+      "rating": "7xx–14xx",
+      "uncertainty": 97,
+      "games": 382,
+      "win_rate": 49.0,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "noone2021",
+      "rating": "7xx–14xx",
+      "uncertainty": 95,
+      "games": 379,
+      "win_rate": 48.0,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Not the letter N",
+      "rating": "7xx–14xx",
+      "uncertainty": 72,
+      "games": 607,
+      "win_rate": 40.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "OIDA | onkyox",
+      "rating": "7xx–14xx",
+      "uncertainty": 294,
+      "games": 54,
+      "win_rate": 35.2,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "oLiVe007",
+      "rating": "7xx–14xx",
+      "uncertainty": 92,
+      "games": 265,
+      "win_rate": 43.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Onkel MegaFlo",
+      "rating": "7xx–14xx",
+      "uncertainty": 117,
+      "games": 199,
+      "win_rate": 43.2,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "orangefaser",
+      "rating": "7xx–14xx",
+      "uncertainty": 131,
+      "games": 114,
+      "win_rate": 49.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Otanès",
+      "rating": "7xx–14xx",
+      "uncertainty": 172,
+      "games": 60,
+      "win_rate": 40.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "p3stil3nc3",
+      "rating": "7xx–14xx",
+      "uncertainty": 139,
+      "games": 134,
+      "win_rate": 37.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "pab.lo",
+      "rating": "7xx–14xx",
+      "uncertainty": 152,
+      "games": 124,
+      "win_rate": 50.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Padreweak",
+      "rating": "7xx–14xx",
+      "uncertainty": 59,
+      "games": 939,
+      "win_rate": 45.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Pasta Mother of Life",
+      "rating": "7xx–14xx",
+      "uncertainty": 136,
+      "games": 143,
+      "win_rate": 42.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Patrick Timsit",
+      "rating": "7xx–14xx",
+      "uncertainty": 58,
+      "games": 1034,
+      "win_rate": 46.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Persis",
+      "rating": "7xx–14xx",
+      "uncertainty": 47,
+      "games": 1827,
+      "win_rate": 47.9,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "PetersCZ",
+      "rating": "7xx–14xx",
+      "uncertainty": 155,
+      "games": 108,
+      "win_rate": 34.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "PlanetaryWizard",
+      "rating": "7xx–14xx",
+      "uncertainty": 156,
+      "games": 88,
+      "win_rate": 39.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "player0",
+      "rating": "7xx–14xx",
+      "uncertainty": 45,
+      "games": 1850,
+      "win_rate": 58.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Plox",
+      "rating": "7xx–14xx",
+      "uncertainty": 136,
+      "games": 132,
+      "win_rate": 43.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Poncho",
+      "rating": "7xx–14xx",
+      "uncertainty": 197,
+      "games": 73,
+      "win_rate": 50.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Pope Leo I.",
+      "rating": "7xx–14xx",
+      "uncertainty": 199,
+      "games": 155,
+      "win_rate": 35.5,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Procedural",
+      "rating": "7xx–14xx",
+      "uncertainty": 175,
+      "games": 54,
+      "win_rate": 51.9,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "proxxi",
+      "rating": "7xx–14xx",
+      "uncertainty": 166,
+      "games": 58,
+      "win_rate": 37.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Puma",
+      "rating": "7xx–14xx",
+      "uncertainty": 179,
+      "games": 96,
+      "win_rate": 49.0,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "r@lex_de",
+      "rating": "7xx–14xx",
+      "uncertainty": 112,
+      "games": 251,
+      "win_rate": 49.8,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Ragnarok",
+      "rating": "7xx–14xx",
+      "uncertainty": 62,
+      "games": 887,
+      "win_rate": 47.0,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "raisinbran",
+      "rating": "7xx–14xx",
+      "uncertainty": 168,
+      "games": 111,
+      "win_rate": 51.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "ramrod",
+      "rating": "7xx–14xx",
+      "uncertainty": 77,
+      "games": 504,
+      "win_rate": 44.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Red_Iffun",
+      "rating": "7xx–14xx",
+      "uncertainty": 168,
+      "games": 51,
+      "win_rate": 47.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Rema Rema tu Bota",
+      "rating": "7xx–14xx",
+      "uncertainty": 161,
+      "games": 56,
+      "win_rate": 44.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Rennzai",
+      "rating": "7xx–14xx",
+      "uncertainty": 215,
+      "games": 55,
+      "win_rate": 49.1,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "RetiredTurtle",
+      "rating": "7xx–14xx",
+      "uncertainty": 34,
+      "games": 2750,
+      "win_rate": 48.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Richardovic",
+      "rating": "7xx–14xx",
+      "uncertainty": 191,
+      "games": 57,
+      "win_rate": 36.8,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Rsert",
+      "rating": "7xx–14xx",
+      "uncertainty": 127,
+      "games": 229,
+      "win_rate": 47.6,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Ruler",
+      "rating": "7xx–14xx",
+      "uncertainty": 163,
+      "games": 98,
+      "win_rate": 39.8,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Rüdiger",
+      "rating": "7xx–14xx",
+      "uncertainty": 59,
+      "games": 748,
+      "win_rate": 42.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Sage_of_Empires",
+      "rating": "7xx–14xx",
+      "uncertainty": 124,
+      "games": 331,
+      "win_rate": 42.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Salvator",
+      "rating": "7xx–14xx",
+      "uncertainty": 181,
+      "games": 125,
+      "win_rate": 45.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Sam",
+      "rating": "7xx–14xx",
+      "uncertainty": 182,
+      "games": 63,
+      "win_rate": 30.2,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "sbr",
+      "rating": "7xx–14xx",
+      "uncertainty": 112,
+      "games": 283,
+      "win_rate": 39.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "SeanOnAoe",
+      "rating": "7xx–14xx",
+      "uncertainty": 72,
+      "games": 543,
+      "win_rate": 38.1,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "sebastianschatzp",
+      "rating": "7xx–14xx",
+      "uncertainty": 158,
+      "games": 80,
+      "win_rate": 30.0,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "SebastiánPiñera",
+      "rating": "7xx–14xx",
+      "uncertainty": 179,
+      "games": 74,
+      "win_rate": 47.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Seigneur Du Village",
+      "rating": "7xx–14xx",
+      "uncertainty": 46,
+      "games": 1819,
+      "win_rate": 43.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Sercan",
+      "rating": "7xx–14xx",
+      "uncertainty": 163,
+      "games": 72,
+      "win_rate": 29.2,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "serkoprime",
+      "rating": "7xx–14xx",
+      "uncertainty": 71,
+      "games": 504,
+      "win_rate": 44.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Silence",
+      "rating": "7xx–14xx",
+      "uncertainty": 72,
+      "games": 575,
+      "win_rate": 42.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Simon",
+      "rating": "7xx–14xx",
+      "uncertainty": 87,
+      "games": 428,
+      "win_rate": 45.3,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "SirCross",
+      "rating": "7xx–14xx",
+      "uncertainty": 156,
+      "games": 96,
+      "win_rate": 42.7,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Slim Shady",
+      "rating": "7xx–14xx",
+      "uncertainty": 150,
+      "games": 186,
+      "win_rate": 43.0,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "SniperSquirtle",
+      "rating": "7xx–14xx",
+      "uncertainty": 199,
+      "games": 75,
+      "win_rate": 49.3,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "South",
+      "rating": "7xx–14xx",
+      "uncertainty": 162,
+      "games": 120,
+      "win_rate": 50.8,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Soxs",
+      "rating": "7xx–14xx",
+      "uncertainty": 170,
+      "games": 119,
+      "win_rate": 39.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Sp Bro",
+      "rating": "7xx–14xx",
+      "uncertainty": 274,
+      "games": 85,
+      "win_rate": 38.8,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Supernatural",
+      "rating": "7xx–14xx",
+      "uncertainty": 96,
+      "games": 431,
+      "win_rate": 39.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Swix",
+      "rating": "7xx–14xx",
+      "uncertainty": 115,
+      "games": 187,
+      "win_rate": 42.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Taco_man",
+      "rating": "7xx–14xx",
+      "uncertainty": 178,
+      "games": 196,
+      "win_rate": 36.2,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "TAGARL",
+      "rating": "7xx–14xx",
+      "uncertainty": 96,
+      "games": 362,
+      "win_rate": 43.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Tchitchi",
+      "rating": "7xx–14xx",
+      "uncertainty": 71,
+      "games": 710,
+      "win_rate": 48.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Th1Raven",
+      "rating": "7xx–14xx",
+      "uncertainty": 171,
+      "games": 107,
+      "win_rate": 41.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "The clown",
+      "rating": "7xx–14xx",
+      "uncertainty": 56,
+      "games": 1101,
+      "win_rate": 43.7,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "The Mercy of God",
+      "rating": "7xx–14xx",
+      "uncertainty": 63,
+      "games": 937,
+      "win_rate": 45.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "The Sinnerman",
+      "rating": "7xx–14xx",
+      "uncertainty": 136,
+      "games": 135,
+      "win_rate": 48.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "TheConkerBasher",
+      "rating": "7xx–14xx",
+      "uncertainty": 128,
+      "games": 172,
+      "win_rate": 41.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "TheEverestHeart",
+      "rating": "7xx–14xx",
+      "uncertainty": 149,
+      "games": 152,
+      "win_rate": 45.4,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Ther_",
+      "rating": "7xx–14xx",
+      "uncertainty": 105,
+      "games": 222,
+      "win_rate": 36.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "TheStupidBotOfc",
+      "rating": "7xx–14xx",
+      "uncertainty": 166,
+      "games": 72,
+      "win_rate": 44.4,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "tiesiogsaras",
+      "rating": "7xx–14xx",
+      "uncertainty": 141,
+      "games": 125,
+      "win_rate": 47.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Tim_Boww",
+      "rating": "7xx–14xx",
+      "uncertainty": 201,
+      "games": 59,
+      "win_rate": 37.3,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Tk_Dael 14",
+      "rating": "7xx–14xx",
+      "uncertainty": 127,
+      "games": 134,
+      "win_rate": 38.8,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "TM Caesar",
+      "rating": "7xx–14xx",
+      "uncertainty": 210,
+      "games": 132,
+      "win_rate": 34.8,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "TonitasRules",
+      "rating": "7xx–14xx",
+      "uncertainty": 202,
+      "games": 80,
+      "win_rate": 26.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "tripl3",
+      "rating": "7xx–14xx",
+      "uncertainty": 137,
+      "games": 162,
+      "win_rate": 48.8,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Tumdae",
+      "rating": "7xx–14xx",
+      "uncertainty": 97,
+      "games": 324,
+      "win_rate": 55.2,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Villiams!",
+      "rating": "7xx–14xx",
+      "uncertainty": 86,
+      "games": 1267,
+      "win_rate": 41.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "vinniegee",
+      "rating": "7xx–14xx",
+      "uncertainty": 174,
+      "games": 81,
+      "win_rate": 45.7,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Violet Ania",
+      "rating": "7xx–14xx",
+      "uncertainty": 42,
+      "games": 1964,
+      "win_rate": 40.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "witcherkiller",
+      "rating": "7xx–14xx",
+      "uncertainty": 200,
+      "games": 57,
+      "win_rate": 29.8,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Wolliwup",
+      "rating": "7xx–14xx",
+      "uncertainty": 120,
+      "games": 226,
+      "win_rate": 53.5,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "wylyu",
+      "rating": "7xx–14xx",
+      "uncertainty": 91,
+      "games": 345,
+      "win_rate": 52.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "xORy",
+      "rating": "7xx–14xx",
+      "uncertainty": 194,
+      "games": 72,
+      "win_rate": 48.6,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Yondaimeflash1",
+      "rating": "7xx–14xx",
+      "uncertainty": 204,
+      "games": 62,
+      "win_rate": 41.9,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "Young Monkey",
+      "rating": "7xx–14xx",
+      "uncertainty": 163,
+      "games": 89,
+      "win_rate": 41.6,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "ZaKkI",
+      "rating": "7xx–14xx",
+      "uncertainty": 96,
+      "games": 412,
+      "win_rate": 48.1,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "ZarckNogh",
+      "rating": "7xx–14xx",
+      "uncertainty": 141,
+      "games": 158,
+      "win_rate": 46.2,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "ZISI-LEE",
+      "rating": "7xx–14xx",
+      "uncertainty": 96,
+      "games": 335,
+      "win_rate": 37.9,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "ZizKa",
+      "rating": "7xx–14xx",
+      "uncertainty": 196,
+      "games": 57,
+      "win_rate": 52.6,
+      "activity": "15–30 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "༺Skipp༻",
+      "rating": "7xx–14xx",
+      "uncertainty": 131,
+      "games": 119,
+      "win_rate": 47.1,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "中东小霸王",
+      "rating": "7xx–14xx",
+      "uncertainty": 62,
+      "games": 932,
+      "win_rate": 49.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "八府巡案包龍星",
+      "rating": "7xx–14xx",
+      "uncertainty": 212,
+      "games": 51,
+      "win_rate": 33.3,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "大羊联邦总理伤羊",
+      "rating": "7xx–14xx",
+      "uncertainty": 107,
+      "games": 233,
+      "win_rate": 47.2,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "戮仙君",
+      "rating": "7xx–14xx",
+      "uncertainty": 181,
+      "games": 98,
+      "win_rate": 54.1,
+      "activity": "61–100 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "犹豫就会白给",
+      "rating": "7xx–14xx",
+      "uncertainty": 140,
+      "games": 128,
+      "win_rate": 48.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "玉面小飞龙",
+      "rating": "7xx–14xx",
+      "uncertainty": 58,
+      "games": 1366,
+      "win_rate": 51.5,
+      "activity": "31–60 days"
+    },
+    {
+      "rank": "501–765",
+      "handle": "苍真",
+      "rating": "7xx–14xx",
+      "uncertainty": 75,
+      "games": 548,
+      "win_rate": 46.4,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "菜菜5号",
+      "rating": "7xx–14xx",
+      "uncertainty": 65,
+      "games": 1003,
+      "win_rate": 40.5,
+      "activity": "last 2 weeks"
+    },
+    {
+      "rank": "501–765",
+      "handle": "野猪之星",
+      "rating": "7xx–14xx",
+      "uncertainty": 112,
+      "games": 217,
+      "win_rate": 50.7,
+      "activity": "last 2 weeks"
+    }
+  ]
+}

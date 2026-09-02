@@ -1,0 +1,18 @@
+.venv/
+dist/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+
+# These private-source names must never enter this repository.
+corpus/
+data/private/
+identities.toml
+players.toml
+*.db
+*.sqlite
+*.wav
+*.mp3
+video/

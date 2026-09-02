@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rage Forest Ratings — 87,813 games, one ladder</title>
+  <meta name="description" content="An outcome-only ranking of 765 Age of Empires II Rage Forest players, built from 87,813 community games.">
+  <meta property="og:title" content="Can math rank Rage Forest?">
+  <meta property="og:description" content="Eight players, one result, and 87,813 games. Explore the method and the 2026 leaderboard.">
+  <meta property="og:image" content="https://oldxavier.github.io/rageforest-ratings/assets/thumbnail.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://oldxavier.github.io/rageforest-ratings/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="hero">
+    <nav aria-label="Primary">
+      <a class="brand" href="#top"><span class="brand-mark">RF</span> Ratings</a>
+      <div class="nav-links">
+        <a href="#leaderboard">Leaderboard</a>
+        <a href="#method">Method</a>
+        <a href="#limits">Limits</a>
+        <a href="https://github.com/oldxavier/rageforest-ratings">Code</a>
+      </div>
+    </nav>
+    <div class="hero-grid" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">2026 COMMUNITY RATING PROJECT</p>
+        <h1>Eight players.<br>One result.<br><span>Who gets the credit?</span></h1>
+        <p class="lede">Rage Forest has no official ladder. So I fitted every eligible game
+          together—players, civilizations, communities, time, and uncertainty—to build one.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#leaderboard">Explore the rankings</a>
+          <a class="button ghost" href="#method">How it works</a>
+        </div>
+      </div>
+      <div class="lobby-viz" aria-label="An abstract four-versus-four Rage Forest lobby">
+        <div class="forest forest-left"></div>
+        <div class="forest forest-right"></div>
+        <div class="lane"></div>
+        <div class="team team-a">
+          <i></i><i></i><i></i><i></i>
+        </div>
+        <div class="team team-b">
+          <i></i><i></i><i></i><i></i>
+        </div>
+        <div class="result-bit">1 result</div>
+      </div>
+    </div>
+    <div class="stats" aria-label="Project statistics">
+      <div><strong>87,813</strong><span>eligible games</span></div>
+      <div><strong>765</strong><span>ranked players</span></div>
+      <div><strong>4½ years</strong><span>of play</span></div>
+      <div><strong>65.8%</strong><span>held-out accuracy</span></div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="intro section">
+      <div>
+        <p class="kicker">THE PROBLEM</p>
+        <h2>A 4v4 win is only one bit of information.</h2>
+      </div>
+      <div class="prose">
+        <p>In chess, one player beats one player. In Rage Forest, eight people arrive with eight
+          civilizations, uneven roles, familiar team-mates, and lobbies deliberately balanced
+          near 50–50. The result tells us who won—not which player caused it.</p>
+        <p>The only way through is to stop rating matches one at a time. Fit all games globally,
+          and ask which set of player strengths best explains every result at once.</p>
+      </div>
+    </section>
+
+    <section class="leaderboard section" id="leaderboard">
+      <div class="section-head">
+        <div>
+          <p class="kicker">THE 2026 LADDER</p>
+          <h2>Top 500, with the blur left visible.</h2>
+        </div>
+        <p>Rank is a point estimate. <strong>± uncertainty</strong> is one standard deviation:
+          smaller means the data pins that estimate down more tightly.</p>
+      </div>
+      <div class="leader-controls">
+        <label>
+          <span>Find any ranked player</span>
+          <input id="player-search" type="search" placeholder="Type a handle…" autocomplete="off">
+        </label>
+        <button id="show-all" class="button ghost" type="button">Show all 765</button>
+        <a class="download" href="data/ratings_765.csv" download>Download CSV ↗</a>
+      </div>
+      <div class="table-shell" role="region" aria-label="Player ratings" tabindex="0">
+        <table>
+          <thead>
+            <tr><th>Rank</th><th>Player</th><th>Rating</th><th>Uncertainty</th><th>Games</th><th>Win rate</th><th>Activity</th></tr>
+          </thead>
+          <tbody id="ratings-body">
+            <tr><td colspan="7" class="loading">Loading ratings…</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p id="result-count" class="result-count" aria-live="polite"></p>
+
+      <div class="tail">
+        <div>
+          <p class="kicker">THE REMAINING 265</p>
+          <h3>Named, but deliberately not ordered.</h3>
+          <p>Below rank 500, the list switches to alphabetical order. Everyone shares the position
+            range <strong>501–765</strong> and rating range <strong>7xx–14xx</strong>, while games,
+            win rate, uncertainty, and coarse activity remain visible.</p>
+        </div>
+        <div class="range-card" aria-label="Shared lower-ladder ranges">
+          <div><span>Position</span><strong>501–765</strong></div>
+          <div><span>Rating</span><strong>7xx–14xx</strong></div>
+          <p>No internal rating order is published for this group.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="method section" id="method">
+      <div class="section-head">
+        <div>
+          <p class="kicker">THE METHOD</p>
+          <h2>From lobby to leaderboard.</h2>
+        </div>
+        <p>The released fit is a regularized Bradley–Terry model: logistic regression expressed
+          in rating points, with safeguards added only after they survived held-out tests.</p>
+      </div>
+      <ol class="steps">
+        <li><span>01</span><div><h3>Resolve who is who</h3><p>Alternative accounts are merged before
+          fitting. One person must be one parameter; display-name decisions never become model evidence.</p></div></li>
+        <li><span>02</span><div><h3>Encode each lobby</h3><p>Four player coefficients and four civ
+          coefficients enter positively, the opposing eight negatively. Swapping teams flips the
+          prediction exactly.</p></div></li>
+        <li><span>03</span><div><h3>Fit every game together</h3><p>Ridge regularization keeps sparse
+          players from flying to absurd ratings. A one-year evidence half-life lets the ladder
+          describe current strength.</p></div></li>
+        <li><span>04</span><div><h3>Respect the social graph</h3><p>Community pooling stabilizes
+          groups that mostly play internally. A crowd without enough cross-crowd evidence is
+          listed but not ranked on the shared scale.</p></div></li>
+        <li><span>05</span><div><h3>Grade decisive results</h3><p>The win remains the central bit.
+          Match duration adds a lightly weighted margin signal; games under five minutes are
+          excluded and five-to-ten-minute games are discounted.</p></div></li>
+        <li><span>06</span><div><h3>Publish uncertainty</h3><p>Ratings are not exact measurements.
+          The table exposes one-SD uncertainty and requires 50 games, recent activity, and a
+          placeable crowd.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="accuracy section">
+      <div class="accuracy-copy">
+        <p class="kicker">HONEST EVALUATION</p>
+        <h2>Most of the available signal—not most games.</h2>
+        <p>A coin flip starts at 50%. On the same held-out footing, tuned Elo reaches 62.86%,
+          TrueSkill 64.28%, and this model 65.78%. The model's own confidence implies a practical
+          ceiling near 67.08% because good lobbies are designed to be uncertain.</p>
+        <p>Adding another 5,165 games moved accuracy by just 0.04 percentage points. More data
+          still improves certainty and coverage; it no longer changes many binary predictions.</p>
+      </div>
+      <div class="accuracy-bars" aria-label="Held-out prediction accuracy">
+        <div><label>Elo <b>62.9%</b></label><i style="--value:75.3%"></i></div>
+        <div><label>TrueSkill <b>64.3%</b></label><i style="--value:83.7%"></i></div>
+        <div class="model-bar"><label>This model <b>65.8%</b></label><i style="--value:92.4%"></i></div>
+        <div class="ceiling-line"><span>50% coin flip</span><span>67.1% ceiling</span></div>
+      </div>
+    </section>
+
+    <section class="limits section" id="limits">
+      <div class="section-head">
+        <div>
+          <p class="kicker">WHAT DIDN'T WORK</p>
+          <h2>The graveyard matters.</h2>
+        </div>
+        <p>A failed idea is evidence when it was tested on data the model had not seen.</p>
+      </div>
+      <div class="cards">
+        <article><h3>Recent form</h3><p>Rolling streak and form features looked tempting in-sample,
+          then failed to repeat consistently across future time windows.</p><span>NOT SHIPPED</span></article>
+        <article><h3>Player chemistry</h3><p>Pair-specific team-mate effects were too sparse and
+          unstable to beat regularized player strength out of sample.</p><span>NOT SHIPPED</span></article>
+        <article><h3>More network cleverness</h3><p>Several richer interaction and community
+          corrections either moved calibration without improving predictions or depended on the
+          test period.</p><span>NOT SHIPPED</span></article>
+      </div>
+      <div class="caveats">
+        <h3>Read this leaderboard as a model, not a verdict.</h3>
+        <ul>
+          <li>Only observed public match outcomes are measured. Communication, effort, role,
+            connection problems, substitutions, and who hosted are not.</li>
+          <li>Win rate is descriptive, not strength: stronger players can have ordinary win rates
+            because hosts balance teams around them.</li>
+          <li>The “89 bridge players” figure means 89 high-volume players account for half of
+            ranked cross-crowd player-games. It measures activity concentration, not a unique
+            social role.</li>
+          <li>Identity resolution can be wrong. Corrections are welcome and are recorded rather
+            than silently overwritten.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sources section">
+      <p class="kicker">SOURCES & CREDITS</p>
+      <h2>Built on community infrastructure.</h2>
+      <div class="source-grid">
+        <div><h3>Data discovery</h3><p>aoe2insights, aoe2companion, aoe2.gg, aoestats.io,
+          aoe2recs, and other community projects. The public repository contains no raw payloads.</p></div>
+        <div><h3>Rage Forest</h3><p><a href="https://discord.gg/rage-forest-212070741108195328">Join
+          the Rage Forest Discord ↗</a></p></div>
+        <div><h3>Music in the video</h3><p>“Keep It Real” from Bensound.com/free-music-for-videos,
+          artist Nick Petrov, license 6IRIEYVHWTBDVAQF.</p></div>
+        <div><h3>Project</h3><p><a href="https://github.com/oldxavier/rageforest-ratings">Code and
+          public data ↗</a><br><a href="https://discord.gg/QSHZk2kzuP">oldxavier's Discord ↗</a></p></div>
+      </div>
+      <p class="fine-print">Unofficial community project. Age of Empires II is a trademark of
+        Microsoft. Snapshot <code>8cf276648edd</code> · Model <code>d5e91c5131f8</code>.</p>
+    </section>
+  </main>
+  <footer><span>Rage Forest Ratings · 2026</span><a href="#top">Back to top ↑</a></footer>
+</body>
+</html>
