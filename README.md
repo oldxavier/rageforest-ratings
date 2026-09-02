@@ -10,7 +10,9 @@ community. The public site explains the method and publishes a searchable leader
 - A reusable ridge Bradley–Terry implementation for eight-player team games
 - A synthetic 4v4 test fixture and documented input schema
 - The named top 500 with exact rating, plus the remaining 265 alphabetically with only shared
-  position/rating ranges; uncertainty, games, win rate, and coarse activity remain visible
+  position/rating ranges
+- One-SD uncertainty, games, win rate, own-team average, opponent-team average, and full-lobby
+  average for all 765 players
 - The methodology, corrections, and negative experiments in an approachable static article
 
 ## What is intentionally not public

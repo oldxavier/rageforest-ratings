@@ -5,7 +5,17 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-ALLOWED = {"rank", "handle", "rating", "uncertainty", "games", "win_rate", "activity"}
+ALLOWED = {
+    "rank",
+    "handle",
+    "rating",
+    "uncertainty",
+    "games",
+    "win_rate",
+    "team_average_rating",
+    "opponent_team_average_rating",
+    "average_lobby_rating",
+}
 
 
 def test_public_export_is_exact_and_consistent() -> None:
@@ -15,6 +25,7 @@ def test_public_export_is_exact_and_consistent() -> None:
 
     assert len(players) == meta["named_players"] == 765
     assert meta["ranked_players"] == 765
+    assert meta["last_refreshed"] == "Sunday, 30 August 2026"
     assert [player["rank"] for player in players[:500]] == list(range(1, 501))
     assert {player["rank"] for player in players[500:]} == {"501–765"}
     assert [player["handle"].casefold() for player in players[500:]] == sorted(

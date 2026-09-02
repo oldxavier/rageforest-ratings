@@ -20,7 +20,17 @@ SENSITIVE_SCHEMA = re.compile(
     r'(?i)(?:profile|steam|discord|match|player)[_-]?id["\']?\s*[:,=]'
 )
 LOCAL_PATH = re.compile(r"/Users/[^/\s]+/")
-PUBLIC_PLAYER_KEYS = {"rank", "handle", "rating", "uncertainty", "games", "win_rate", "activity"}
+PUBLIC_PLAYER_KEYS = {
+    "rank",
+    "handle",
+    "rating",
+    "uncertainty",
+    "games",
+    "win_rate",
+    "team_average_rating",
+    "opponent_team_average_rating",
+    "average_lobby_rating",
+}
 
 
 def tracked_files() -> list[Path]:

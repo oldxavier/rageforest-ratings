@@ -5,9 +5,11 @@ record of where and with whom named people played.
 
 ## Included
 
-- Ranks 1–500: handle, exact rank and rating, one-SD uncertainty, games, win rate, and coarse activity
+- Ranks 1–500: handle, exact rank and rating, one-SD uncertainty, games, and win rate
 - The remaining 265 handles in alphabetical order: shared position `501–765`, shared rating range
-  `7xx–14xx`, plus uncertainty, games, win rate, and coarse activity
+  `7xx–14xx`, plus uncertainty, games, and win rate
+- For all 765: average own-team rating (including the player), average opponent-team rating, and
+  average full-lobby rating
 - Corpus date range, model/config hash, snapshot hash, row counts, and field definitions
 - Generic model code and entirely synthetic tests
 

@@ -25,9 +25,11 @@ function renderPlayers() {
         <td>±${player.uncertainty}</td>
         <td>${player.games.toLocaleString()}</td>
         <td>${player.win_rate.toFixed(1)}%</td>
-        <td>${player.activity}</td>
+        <td>${player.team_average_rating}</td>
+        <td>${player.opponent_team_average_rating}</td>
+        <td>${player.average_lobby_rating}</td>
       </tr>`).join("")
-    : '<tr><td colspan="7" class="loading">No matching player.</td></tr>';
+    : '<tr><td colspan="9" class="loading">No matching player.</td></tr>';
 
   count.textContent = query
     ? `${filtered.length} match${filtered.length === 1 ? "" : "es"} across all 765 players`
@@ -57,6 +59,6 @@ fetch("data/ratings.json")
     renderPlayers();
   })
   .catch(() => {
-    body.innerHTML = '<tr><td colspan="7" class="loading">Ratings could not be loaded.</td></tr>';
+    body.innerHTML = '<tr><td colspan="9" class="loading">Ratings could not be loaded.</td></tr>';
     count.textContent = "The downloadable CSV remains available above.";
   });

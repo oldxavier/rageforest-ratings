@@ -20,29 +20,45 @@ RANKED_PLAYERS = 765
 EXACT_RANKS = 500
 PUBLIC_NAMED = RANKED_PLAYERS
 TAIL_RATING_RANGE = "7xx–14xx"
-INPUT_COLUMNS = {"rank", "player", "rating", "sd", "games", "win_rate", "days_idle", "config_hash"}
-OUTPUT_COLUMNS = ["rank", "handle", "rating", "uncertainty", "games", "win_rate", "activity"]
+INPUT_COLUMNS = {
+    "rank",
+    "player",
+    "rating",
+    "sd",
+    "games",
+    "win_rate",
+    "avg_teammate_rating",
+    "avg_opponent_rating",
+    "config_hash",
+}
+OUTPUT_COLUMNS = [
+    "rank",
+    "handle",
+    "rating",
+    "uncertainty",
+    "games",
+    "win_rate",
+    "team_average_rating",
+    "opponent_team_average_rating",
+    "average_lobby_rating",
+]
 FORBIDDEN_OUTPUT_TOKENS = {
     "id",
     "alias",
     "circle",
     "crowd",
     "teammate",
-    "opponent",
     "match",
     "steam",
     "profile",
 }
 
 
-def activity_bucket(days_idle: int) -> str:
-    if days_idle <= 14:
-        return "last 2 weeks"
-    if days_idle <= 30:
-        return "15–30 days"
-    if days_idle <= 60:
-        return "31–60 days"
-    return "61–100 days"
+def context_ratings(frame: pd.DataFrame) -> tuple[pd.Series, pd.Series, pd.Series]:
+    team = (frame["rating"] + 3 * frame["avg_teammate_rating"]) / 4
+    opponents = frame["avg_opponent_rating"]
+    lobby = (team + opponents) / 2
+    return team.round().astype(int), opponents.round().astype(int), lobby.round().astype(int)
 
 
 def export(source: Path, json_output: Path, csv_output: Path) -> None:
@@ -61,6 +77,7 @@ def export(source: Path, json_output: Path, csv_output: Path) -> None:
         raise ValueError(f"expected exactly ranks 1–{RANKED_PLAYERS}")
 
     exact = ranked.iloc[:EXACT_RANKS].copy()
+    exact_team, exact_opponents, exact_lobby = context_ratings(exact)
     public_exact = pd.DataFrame(
         {
             "rank": exact["rank"].astype(int),
@@ -69,12 +86,15 @@ def export(source: Path, json_output: Path, csv_output: Path) -> None:
             "uncertainty": exact["sd"].round().astype(int),
             "games": exact["games"].astype(int),
             "win_rate": exact["win_rate"].round(1),
-            "activity": exact["days_idle"].astype(int).map(activity_bucket),
+            "team_average_rating": exact_team,
+            "opponent_team_average_rating": exact_opponents,
+            "average_lobby_rating": exact_lobby,
         }
     )
     tail = ranked.iloc[EXACT_RANKS:].sort_values("player", key=lambda s: s.str.casefold())
     if tail["rating"].min() < 700 or tail["rating"].max() >= 1_500:
         raise ValueError("the declared lower-ladder rating range no longer covers every player")
+    tail_team, tail_opponents, tail_lobby = context_ratings(tail)
     public_tail = pd.DataFrame(
         {
             "rank": "501–765",
@@ -83,7 +103,9 @@ def export(source: Path, json_output: Path, csv_output: Path) -> None:
             "uncertainty": tail["sd"].round().astype(int),
             "games": tail["games"].astype(int),
             "win_rate": tail["win_rate"].round(1),
-            "activity": tail["days_idle"].astype(int).map(activity_bucket),
+            "team_average_rating": tail_team,
+            "opponent_team_average_rating": tail_opponents,
+            "average_lobby_rating": tail_lobby,
         }
     )
     public = pd.concat([public_exact, public_tail], ignore_index=True)
@@ -103,6 +125,7 @@ def export(source: Path, json_output: Path, csv_output: Path) -> None:
             "corpus_snapshot": CORPUS_SNAPSHOT,
             "corpus_first": CORPUS_FIRST,
             "corpus_last": CORPUS_LAST,
+            "last_refreshed": "Sunday, 30 August 2026",
             "eligible_matches": ELIGIBLE_MATCHES,
             "observed_players": OBSERVED_PLAYERS,
             "ranked_players": RANKED_PLAYERS,
@@ -116,7 +139,9 @@ def export(source: Path, json_output: Path, csv_output: Path) -> None:
                 "uncertainty": "One standard deviation, in rating points.",
                 "games": "Eligible games represented in the fit.",
                 "win_rate": "Raw win percentage in eligible games.",
-                "activity": "Coarse days-since-last-game bucket; all ranked players are within 100 days.",
+                "team_average_rating": "Mean model rating of the player's team, including them.",
+                "opponent_team_average_rating": "Mean model rating of the opposing team.",
+                "average_lobby_rating": "Mean model rating across all eight players.",
             },
         },
         "players": public.to_dict(orient="records"),

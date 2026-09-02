@@ -85,6 +85,7 @@
         <p>Rank is a point estimate. <strong>± uncertainty</strong> is one standard deviation:
           smaller means the data pins that estimate down more tightly.</p>
       </div>
+      <p class="data-refresh">Data last refreshed <strong>Sunday, 30 August 2026</strong>.</p>
       <div class="leader-controls">
         <label>
           <span>Find any ranked player</span>
@@ -96,10 +97,10 @@
       <div class="table-shell" role="region" aria-label="Player ratings" tabindex="0">
         <table>
           <thead>
-            <tr><th>Rank</th><th>Player</th><th>Rating</th><th>Uncertainty</th><th>Games</th><th>Win rate</th><th>Activity</th></tr>
+            <tr><th>Rank</th><th>Player</th><th>Rating</th><th>Uncertainty</th><th>Games</th><th>Win rate</th><th>Team avg</th><th>Opponent avg</th><th>Lobby avg</th></tr>
           </thead>
           <tbody id="ratings-body">
-            <tr><td colspan="7" class="loading">Loading ratings…</td></tr>
+            <tr><td colspan="9" class="loading">Loading ratings…</td></tr>
           </tbody>
         </table>
       </div>
@@ -111,7 +112,7 @@
           <h3>Named, but deliberately not ordered.</h3>
           <p>Below rank 500, the list switches to alphabetical order. Everyone shares the position
             range <strong>501–765</strong> and rating range <strong>7xx–14xx</strong>, while games,
-            win rate, uncertainty, and coarse activity remain visible.</p>
+            win rate, uncertainty, and lobby context remain visible.</p>
         </div>
         <div class="range-card" aria-label="Shared lower-ladder ranges">
           <div><span>Position</span><strong>501–765</strong></div>
@@ -216,7 +217,8 @@
           public data ↗</a><br><a href="https://discord.gg/QSHZk2kzuP">oldxavier's Discord ↗</a></p></div>
       </div>
       <p class="fine-print">Unofficial community project. Age of Empires II is a trademark of
-        Microsoft. Snapshot <code>8cf276648edd</code> · Model <code>d5e91c5131f8</code>.</p>
+        Microsoft. Refreshed Sunday, 30 August 2026 · Snapshot
+        <code>8cf276648edd</code> · Model <code>d5e91c5131f8</code>.</p>
     </section>
   </main>
   <footer><span>Rage Forest Ratings · 2026</span><a href="#top">Back to top ↑</a></footer>
