@@ -4,100 +4,118 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rage Forest Ratings — 87,813 games, one ladder</title>
-  <meta name="description" content="An outcome-only ranking of 765 Age of Empires II Rage Forest players, built from 87,813 community games.">
-  <meta property="og:title" content="Can math rank Rage Forest?">
-  <meta property="og:description" content="Eight players, one result, and 87,813 games. Explore the method and the 2026 leaderboard.">
+  <meta name="description" content="How I built an unofficial Rage Forest ladder from 87,813 Age of Empires II games, with all 765 ranked players.">
+  <meta property="og:title" content="Can you rank Rage Forest?">
+  <meta property="og:description" content="Eight players, eight civilizations and one result. Here is the method and the 2026 leaderboard.">
   <meta property="og:image" content="https://oldxavier.github.io/rageforest-ratings/assets/thumbnail.jpg">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://oldxavier.github.io/rageforest-ratings/">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/site.css">
   <script src="assets/site.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="hero">
+  <header class="site-header" id="top">
     <nav aria-label="Primary">
-      <a class="brand" href="#top"><span class="brand-mark">RF</span> Ratings</a>
+      <a class="brand" href="#top"><span>RF</span> Rage Forest Ratings</a>
       <div class="nav-links">
-        <a href="#leaderboard">Leaderboard</a>
+        <a href="#leaderboard">Rankings</a>
         <a href="#method">Method</a>
-        <a href="#limits">Limits</a>
-        <a href="https://github.com/oldxavier/rageforest-ratings">Code</a>
+        <a href="#limitations">Limitations</a>
+        <a href="https://github.com/oldxavier/rageforest-ratings">GitHub</a>
       </div>
     </nav>
-    <div class="hero-grid" id="top">
+
+    <div class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">2026 COMMUNITY RATING PROJECT</p>
-        <h1>Eight players.<br>One result.<br><span>Who gets the credit?</span></h1>
-        <p class="lede">Rage Forest has no official ladder. So I fitted every eligible game
-          together—players, civilizations, communities, time, and uncertainty—to build one.</p>
+        <p class="eyebrow">UNOFFICIAL 2026 RAGE FOREST RATINGS</p>
+        <h1>Can you rank a 4v4 from wins and losses?</h1>
+        <p class="lede">I wanted to know who the strongest Rage Forest players were. That sounds
+          like a normal rating problem until you remember that every game has eight players,
+          eight random civilizations and only one result.</p>
+        <p>This is how I tried to solve it, what did not work, and the resulting list.</p>
         <div class="hero-actions">
-          <a class="button primary" href="#leaderboard">Explore the rankings</a>
-          <a class="button ghost" href="#method">How it works</a>
+          <a class="button primary" href="#leaderboard">See the rankings</a>
+          <a class="button secondary" href="#method">Start with the simple example</a>
         </div>
       </div>
-      <div class="lobby-viz" aria-label="An abstract four-versus-four Rage Forest lobby">
-        <div class="forest forest-left"></div>
-        <div class="forest forest-right"></div>
-        <div class="lane"></div>
-        <div class="team team-a">
-          <i></i><i></i><i></i><i></i>
+      <div class="lobby-example" aria-label="Four blue-side players against four red-side players, producing one win or loss">
+        <p>Eight players go in</p>
+        <div class="teams">
+          <div class="dots blue"><i></i><i></i><i></i><i></i></div>
+          <strong>vs</strong>
+          <div class="dots red"><i></i><i></i><i></i><i></i></div>
         </div>
-        <div class="team team-b">
-          <i></i><i></i><i></i><i></i>
-        </div>
-        <div class="result-bit">1 result</div>
+        <div class="one-result"><span>and the data gives us</span><b>one bit: win or lose</b></div>
       </div>
     </div>
-    <div class="stats" aria-label="Project statistics">
+
+    <div class="stats" aria-label="Dataset summary">
       <div><strong>87,813</strong><span>eligible games</span></div>
-      <div><strong>765</strong><span>ranked players</span></div>
-      <div><strong>4½ years</strong><span>of play</span></div>
-      <div><strong>65.8%</strong><span>held-out accuracy</span></div>
+      <div><strong>9,699</strong><span>players seen</span></div>
+      <div><strong>765</strong><span>players ranked</span></div>
+      <div><strong>30 Aug 2026</strong><span>last refresh</span></div>
     </div>
   </header>
 
   <main id="main">
-    <section class="intro section">
+    <section class="section two-column" id="about">
       <div>
-        <p class="kicker">THE PROBLEM</p>
-        <h2>A 4v4 win is only one bit of information.</h2>
+        <p class="section-label">FIRST: WHAT IS RAGE FOREST?</p>
+        <h2>Black Forest, turned into its own game.</h2>
       </div>
-      <div class="prose">
-        <p>In chess, one player beats one player. In Rage Forest, eight people arrive with eight
-          civilizations, uneven roles, familiar team-mates, and lobbies deliberately balanced
-          near 50–50. The result tells us who won—not which player caused it.</p>
-        <p>The only way through is to stop rating matches one at a time. Fit all games globally,
-          and ask which set of player strengths best explains every result at once.</p>
+      <div class="article-copy">
+        <p>Rage Forest grew out of Age of Empires II's Black Forest map and a Discord community
+          built around 4v4 games. There is a lot of walling, booming, trading, fish booming,
+          flaming and, occasionally, actually attacking the other team.</p>
+        <p>It is also different enough from the ranked ladder to reward a different set of skills.
+          Timings, team compositions, reacting to a strange map, working with three team-mates and
+          understanding eight civilizations at once all matter. A brilliant Arabia player is not
+          automatically a brilliant Rage Forest player, or the other way around.</p>
+        <p>These games are unranked, so there is no official Rage Forest ladder. That is the gap
+          this project is trying to fill.</p>
       </div>
     </section>
 
     <section class="leaderboard section" id="leaderboard">
-      <div class="section-head">
+      <div class="section-heading">
         <div>
-          <p class="kicker">THE 2026 LADDER</p>
-          <h2>Top 500, with the blur left visible.</h2>
+          <p class="section-label">THE RESULT</p>
+          <h2>The 2026 rankings</h2>
         </div>
-        <p>Rank is a point estimate. <strong>± uncertainty</strong> is one standard deviation:
-          smaller means the data pins that estimate down more tightly.</p>
+        <div class="heading-note">
+          <p>The rating is an estimate, not a precise measurement. The uncertainty column is one
+            standard deviation; <strong>±100 is normal</strong>, so adjacent ranks should not be
+            read as a definitive order.</p>
+          <p>Data last refreshed <strong>Sunday, 30 August 2026</strong>.</p>
+        </div>
       </div>
-      <p class="data-refresh">Data last refreshed <strong>Sunday, 30 August 2026</strong>.</p>
+
       <div class="leader-controls">
         <label>
-          <span>Find any ranked player</span>
+          <span>Find a player</span>
           <input id="player-search" type="search" placeholder="Type a handle…" autocomplete="off">
         </label>
-        <button id="show-all" class="button ghost" type="button">Show all 765</button>
-        <a class="download" href="data/ratings_765.csv" download>Download CSV ↗</a>
+        <button id="show-all" class="button secondary" type="button">Show all 765</button>
+        <a class="download" href="data/ratings_765.csv" download>Download CSV</a>
       </div>
-      <div class="table-shell" role="region" aria-label="Player ratings" tabindex="0">
+      <p class="sort-help">Select a column heading to sort. Select it again to reverse the order.</p>
+
+      <div class="table-shell" role="region" aria-label="Sortable player ratings" tabindex="0">
         <table>
           <thead>
-            <tr><th>Rank</th><th>Player</th><th>Rating</th><th>Uncertainty</th><th>Games</th><th>Win rate</th><th>Team avg</th><th>Opponent avg</th><th>Lobby avg</th></tr>
+            <tr>
+              <th aria-sort="none"><button data-sort="rank" data-type="rank">Rank</button></th>
+              <th aria-sort="none"><button data-sort="handle" data-type="text">Player</button></th>
+              <th aria-sort="none"><button data-sort="rating" data-type="rating">Rating</button></th>
+              <th aria-sort="none"><button data-sort="uncertainty" data-type="number">Uncertainty</button></th>
+              <th aria-sort="none"><button data-sort="games" data-type="number">Games</button></th>
+              <th aria-sort="none"><button data-sort="win_rate" data-type="number">Win rate</button></th>
+              <th aria-sort="none"><button data-sort="team_average_rating" data-type="number">Team avg</button></th>
+              <th aria-sort="none"><button data-sort="opponent_team_average_rating" data-type="number">Opponent avg</button></th>
+              <th aria-sort="none"><button data-sort="average_lobby_rating" data-type="number">Lobby avg</button></th>
+            </tr>
           </thead>
           <tbody id="ratings-body">
             <tr><td colspan="9" class="loading">Loading ratings…</td></tr>
@@ -106,121 +124,246 @@
       </div>
       <p id="result-count" class="result-count" aria-live="polite"></p>
 
-      <div class="tail">
+      <div class="lower-ranks">
         <div>
-          <p class="kicker">THE REMAINING 265</p>
-          <h3>Named, but deliberately not ordered.</h3>
-          <p>Below rank 500, the list switches to alphabetical order. Everyone shares the position
-            range <strong>501–765</strong> and rating range <strong>7xx–14xx</strong>, while games,
-            win rate, uncertainty, and lobby context remain visible.</p>
+          <h3>Why ranks stop at 500</h3>
+          <p>All 765 eligible players are listed. The first 500 keep their exact rank and rating.
+            The remaining 265 are alphabetical and all show the same broad position
+            (<strong>501–765</strong>) and rating range (<strong>7xx–14xx</strong>).</p>
         </div>
-        <div class="range-card" aria-label="Shared lower-ladder ranges">
-          <div><span>Position</span><strong>501–765</strong></div>
-          <div><span>Rating</span><strong>7xx–14xx</strong></div>
-          <p>No internal rating order is published for this group.</p>
-        </div>
+        <p>That is deliberate. The estimates become noisy enough down there that publishing an
+          exact order would make the table look more certain than it is. You can still see games,
+          win rate, uncertainty and the three lobby averages.</p>
       </div>
     </section>
 
     <section class="method section" id="method">
-      <div class="section-head">
+      <div class="section-heading">
         <div>
-          <p class="kicker">THE METHOD</p>
-          <h2>From lobby to leaderboard.</h2>
+          <p class="section-label">THE METHOD, FROM THE BEGINNING</p>
+          <h2>Start with two players</h2>
         </div>
-        <p>The released fit is a regularized Bradley–Terry model: logistic regression expressed
-          in rating points, with safeguards added only after they survived held-out tests.</p>
+        <p class="heading-note">The final model is complicated. The basic idea is not.</p>
       </div>
-      <ol class="steps">
-        <li><span>01</span><div><h3>Resolve who is who</h3><p>Alternative accounts are merged before
-          fitting. One person must be one parameter; display-name decisions never become model evidence.</p></div></li>
-        <li><span>02</span><div><h3>Encode each lobby</h3><p>Four player coefficients and four civ
-          coefficients enter positively, the opposing eight negatively. Swapping teams flips the
-          prediction exactly.</p></div></li>
-        <li><span>03</span><div><h3>Fit every game together</h3><p>Ridge regularization keeps sparse
-          players from flying to absurd ratings. A one-year evidence half-life lets the ladder
-          describe current strength.</p></div></li>
-        <li><span>04</span><div><h3>Respect the social graph</h3><p>Community pooling stabilizes
-          groups that mostly play internally. A crowd without enough cross-crowd evidence is
-          listed but not ranked on the shared scale.</p></div></li>
-        <li><span>05</span><div><h3>Grade decisive results</h3><p>The win remains the central bit.
-          Match duration adds a lightly weighted margin signal; games under five minutes are
-          excluded and five-to-ten-minute games are discounted.</p></div></li>
-        <li><span>06</span><div><h3>Publish uncertainty</h3><p>Ratings are not exact measurements.
-          The table exposes one-SD uncertainty and requires 50 games, recent activity, and a
-          placeable crowd.</p></div></li>
-      </ol>
+
+      <div class="example-block">
+        <div class="example-diagram" aria-label="A simple one versus one rating example">
+          <div><span>A</span><b>1600</b></div>
+          <em>beats</em>
+          <div><span>B</span><b>1500</b></div>
+        </div>
+        <div class="article-copy">
+          <h3>The easy case: chess and Elo</h3>
+          <p>Suppose a 1600 player beats a 1500 player. Elo already expected the stronger player
+            to win, so the ratings move a little. If the 1500 player wins, that is surprising and
+            the ratings move more.</p>
+          <p>This works beautifully for chess because one player beats one player. You know who
+            deserves the credit, and Elo can update the two ratings after every game.</p>
+        </div>
+      </div>
+
+      <div class="example-block reverse">
+        <div class="example-diagram eight-player" aria-label="A four versus four match where individual credit is unknown">
+          <div><span>A</span><span>B</span><span>C</span><span>D</span></div>
+          <em>beat</em>
+          <div><span>E</span><span>F</span><span>G</span><span>H</span></div>
+        </div>
+        <div class="article-copy">
+          <h3>Now make it a 4v4</h3>
+          <p>Four players win and four lose. Was player A carrying? Did B have the perfect
+            civilization? Were E and F much stronger than their team-mates? The result does not
+            say. Giving the same credit to all four winners is convenient, but it is not a good
+            description of what happened.</p>
+          <p>There is another problem. Rage Forest is not one pool of strangers. People return to
+            the same hosts and the same groups. A player going 50–50 inside one circle may be
+            excellent, average, or weak compared with everyone outside it.</p>
+        </div>
+      </div>
+
+      <div class="history-note">
+        <p class="section-label">WHERE BRADLEY–TERRY COMES IN</p>
+        <h3>A model for learning hidden strength from simple choices</h3>
+        <p>The Bradley–Terry model was published by Ralph Bradley and Milton Terry in 1952. It was
+          made for paired comparisons: if A and B are compared, how likely is A to be preferred
+          over B? Give every item a hidden strength and let the difference between those strengths
+          determine the probability.</p>
+        <p>A win is the same kind of information. In a 1v1, the model asks which two player
+          strengths make all the recorded wins and losses most plausible. Unlike Elo, it does not
+          have to close each case forever as it arrives; it can fit the whole history together.</p>
+      </div>
+
+      <div class="all-at-once">
+        <div>
+          <p class="section-label">THE USEFUL PART</p>
+          <h3>Reopen every old case</h3>
+        </div>
+        <div class="article-copy">
+          <p>Imagine you lost repeatedly to someone two years ago. Later, that player starts
+            beating the best people in the community. Elo does not go back and reconsider your
+            old losses. They are done.</p>
+          <p>A global fit does reconsider them. It sees your games, their later games and everyone
+            connected to both of you. It can conclude: yes, you lost, but you lost to someone much
+            stronger than we knew at the time, so those losses should not count against you as
+            heavily.</p>
+          <p>For a 4v4, each team is represented by the average of its four player strengths. The
+            model then finds the set of player ratings that makes all 87,813 results most likely.
+            That is the core of this ladder.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="details section">
+      <div class="section-heading">
+        <div>
+          <p class="section-label">WHAT HAD TO BE ADDED</p>
+          <h2>Rage Forest is not just four names against four names</h2>
+        </div>
+        <p class="heading-note">Each addition below solves a specific problem in the data.</p>
+      </div>
+      <div class="detail-list">
+        <article>
+          <span>01</span>
+          <div><h3>Alternative accounts</h3><p>One person can appear under several names, and two
+            people can share a name. I resolved confirmed accounts before fitting. This matters:
+            one missed merge can split a player's evidence and put the same person in the table
+            twice.</p></div>
+        </article>
+        <article>
+          <span>02</span>
+          <div><h3>Civilizations</h3><p>Rage Forest normally assigns eight different civilizations
+            at random. That makes their effects measurable. Spanish, for example, won 54.8% of
+            5,941 games. Replacing an average civilization with Spanish has about the same model
+            effect as replacing one of the four players with somebody rated 162 points higher.</p></div>
+        </article>
+        <article>
+          <span>03</span>
+          <div><h3>Crowds</h3><p>The co-play network contains 22 groups. I pool players partly
+            toward the average of the group they actually play in, rather than pretending every
+            player comes from one perfectly mixed ladder.</p></div>
+        </article>
+        <article>
+          <span>04</span>
+          <div><h3>Connections between crowds</h3><p>A crowd can only be placed on the shared scale
+            through games against outsiders. In this dataset, 89 high-volume players account for
+            half of ranked cross-crowd player-games. That number describes where the connecting
+            game volume comes from; it does not identify 89 uniquely special “bridge people.”</p></div>
+        </article>
+        <article>
+          <span>05</span>
+          <div><h3>Time</h3><p>People change. Games lose half their weight after one year, which
+            tested better than either a much shorter or longer memory. The final rating is also
+            adjusted for how old a player's evidence is.</p></div>
+        </article>
+        <article>
+          <span>06</span>
+          <div><h3>Short and decisive games</h3><p>Games at or below five minutes are excluded.
+            Five-to-ten-minute games count only a little. Longer games keep the win as the main
+            result, with a small duration-based signal for how decisive it was.</p></div>
+        </article>
+      </div>
     </section>
 
     <section class="accuracy section">
-      <div class="accuracy-copy">
-        <p class="kicker">HONEST EVALUATION</p>
-        <h2>Most of the available signal—not most games.</h2>
-        <p>A coin flip starts at 50%. On the same held-out footing, tuned Elo reaches 62.86%,
-          TrueSkill 64.28%, and this model 65.78%. The model's own confidence implies a practical
-          ceiling near 67.08% because good lobbies are designed to be uncertain.</p>
-        <p>Adding another 5,165 games moved accuracy by just 0.04 percentage points. More data
-          still improves certainty and coverage; it no longer changes many binary predictions.</p>
+      <div class="section-heading">
+        <div>
+          <p class="section-label">DOES IT PREDICT GAMES?</p>
+          <h2>About 66%—and 67% is close to the limit</h2>
+        </div>
+        <div class="heading-note">
+          <p>The test games come after the training games. The model does not get to learn from
+            the future and then “predict” the past.</p>
+        </div>
       </div>
-      <div class="accuracy-bars" aria-label="Held-out prediction accuracy">
-        <div><label>Elo <b>62.9%</b></label><i style="--value:75.3%"></i></div>
-        <div><label>TrueSkill <b>64.3%</b></label><i style="--value:83.7%"></i></div>
-        <div class="model-bar"><label>This model <b>65.8%</b></label><i style="--value:92.4%"></i></div>
-        <div class="ceiling-line"><span>50% coin flip</span><span>67.1% ceiling</span></div>
+      <div class="accuracy-grid">
+        <div class="article-copy">
+          <p>On the same held-out period, tuned Elo predicts 62.86% correctly, TrueSkill reaches
+            64.28%, and this model reaches 65.78%.</p>
+          <p>Why not 80% or 90%? Because a fair game cannot be predicted. If two teams are truly
+            even, calling it 50–50 is the correct answer, even though the eventual winner makes
+            the prediction look “wrong” half the time.</p>
+          <p>I estimated the ceiling from the sharpness of the games themselves. Even with the
+            ratings exactly right, the expected hit rate is about 67.08%. Hosts are deliberately
+            making balanced lobbies, so low predictability is partly evidence that they are doing
+            their job.</p>
+        </div>
+        <div class="accuracy-bars" aria-label="Held-out prediction accuracy, shown on the achievable 50 to 67.08 percent range">
+          <div><label>Elo <b>62.9%</b></label><i style="--value:75.3%"></i></div>
+          <div><label>TrueSkill <b>64.3%</b></label><i style="--value:83.7%"></i></div>
+          <div class="model-bar"><label>This model <b>65.8%</b></label><i style="--value:92.4%"></i></div>
+          <div class="scale"><span>50% coin flip</span><span>67.1% estimated ceiling</span></div>
+        </div>
       </div>
     </section>
 
-    <section class="limits section" id="limits">
-      <div class="section-head">
+    <section class="experiments section">
+      <div class="section-heading">
         <div>
-          <p class="kicker">WHAT DIDN'T WORK</p>
-          <h2>The graveyard matters.</h2>
+          <p class="section-label">THINGS I TRIED AND LEFT OUT</p>
+          <h2>More complicated was often just more complicated</h2>
         </div>
-        <p>A failed idea is evidence when it was tested on data the model had not seen.</p>
+        <p class="heading-note">An idea only stayed if it helped on later games the model had not
+          been fitted on.</p>
       </div>
-      <div class="cards">
-        <article><h3>Recent form</h3><p>Rolling streak and form features looked tempting in-sample,
-          then failed to repeat consistently across future time windows.</p><span>NOT SHIPPED</span></article>
-        <article><h3>Player chemistry</h3><p>Pair-specific team-mate effects were too sparse and
-          unstable to beat regularized player strength out of sample.</p><span>NOT SHIPPED</span></article>
-        <article><h3>More network cleverness</h3><p>Several richer interaction and community
-          corrections either moved calibration without improving predictions or depended on the
-          test period.</p><span>NOT SHIPPED</span></article>
+      <div class="experiment-grid">
+        <article><h3>Recent form and streaks</h3><p>Some versions looked useful in one time window
+          and disappeared or changed sign in another. They were not stable enough to publish.</p></article>
+        <article><h3>Specific player chemistry</h3><p>Pairs of team-mates simply do not play enough
+          distinct, comparable games for thousands of separate chemistry effects to hold up.</p></article>
+        <article><h3>Position and role guesses</h3><p>Flank and pocket clearly matter, but those
+          positions are not reliably present in the public match data. Guessing them would create
+          a confident-looking variable that is often wrong.</p></article>
+        <article><h3>More data as the answer</h3><p>Recovering another 5,165 games moved accuracy by
+          0.04 percentage points. It improved coverage and uncertainty, but the prediction score
+          was already saturated.</p></article>
       </div>
-      <div class="caveats">
-        <h3>Read this leaderboard as a model, not a verdict.</h3>
-        <ul>
-          <li>Only observed public match outcomes are measured. Communication, effort, role,
-            connection problems, substitutions, and who hosted are not.</li>
-          <li>Win rate is descriptive, not strength: stronger players can have ordinary win rates
-            because hosts balance teams around them.</li>
-          <li>The “89 bridge players” figure means 89 high-volume players account for half of
-            ranked cross-crowd player-games. It measures activity concentration, not a unique
-            social role.</li>
-          <li>Identity resolution can be wrong. Corrections are welcome and are recorded rather
-            than silently overwritten.</li>
-        </ul>
+    </section>
+
+    <section class="limitations section" id="limitations">
+      <div class="section-heading">
+        <div>
+          <p class="section-label">HOW TO READ THE LIST</p>
+          <h2>It is a model of the recorded games, not a verdict on a person</h2>
+        </div>
+      </div>
+      <div class="article-copy wide-copy">
+        <p>The model sees who played, which civilizations they had, when the game happened, how
+          long it lasted and who won. It does not see voice communication, map position,
+          connection problems, substitutions, who hosted, or whether somebody was experimenting
+          with a silly build.</p>
+        <p>It also assumes everyone is trying their hardest. In Rage Forest that is, occasionally,
+          a heroic assumption. There is no column for “couldn't be arsed to wall today.”</p>
+        <p>Win rate is not a second rating. Strong players can have ordinary win rates because
+          hosts give them weaker teams. The team, opponent and lobby averages in the table help
+          show the level of games behind each result.</p>
+        <p>To enter the ranked pool, a player needed at least 50 effective games, a game in the
+          previous 100 days, and enough games between their crowd and other crowds to place them
+          on the common scale. If any confirmed account merge is missing, please tell me; those
+          corrections matter.</p>
       </div>
     </section>
 
     <section class="sources section">
-      <p class="kicker">SOURCES & CREDITS</p>
-      <h2>Built on community infrastructure.</h2>
-      <div class="source-grid">
-        <div><h3>Data discovery</h3><p>aoe2insights, aoe2companion, aoe2.gg, aoestats.io,
-          aoe2recs, and other community projects. The public repository contains no raw payloads.</p></div>
-        <div><h3>Rage Forest</h3><p><a href="https://discord.gg/rage-forest-212070741108195328">Join
-          the Rage Forest Discord ↗</a></p></div>
-        <div><h3>Music in the video</h3><p>“Keep It Real” from Bensound.com/free-music-for-videos,
-          artist Nick Petrov, license 6IRIEYVHWTBDVAQF.</p></div>
-        <div><h3>Project</h3><p><a href="https://github.com/oldxavier/rageforest-ratings">Code and
-          public data ↗</a><br><a href="https://discord.gg/QSHZk2kzuP">oldxavier's Discord ↗</a></p></div>
+      <div>
+        <p class="section-label">DATA, CODE AND CREDITS</p>
+        <h2>Where everything came from</h2>
+      </div>
+      <div class="source-list">
+        <div><h3>Match data</h3><p>Discovered and cross-checked through aoe2insights,
+          aoe2companion, aoe2.gg, aoestats.io, aoe2recs and other AoE2 community projects. Raw
+          match histories and profile IDs remain private.</p></div>
+        <div><h3>Community</h3><p><a href="https://discord.gg/rage-forest-212070741108195328">Rage
+          Forest Discord</a> · <a href="https://discord.gg/QSHZk2kzuP">oldxavier's Discord</a></p></div>
+        <div><h3>Reproducible public parts</h3><p><a href="https://github.com/oldxavier/rageforest-ratings">Code,
+          synthetic tests and sanitized rating export on GitHub</a>.</p></div>
+        <div><h3>Video music</h3><p>“Keep It Real,” Nick Petrov,
+          Bensound.com/free-music-for-videos. License 6IRIEYVHWTBDVAQF.</p></div>
       </div>
       <p class="fine-print">Unofficial community project. Age of Empires II is a trademark of
         Microsoft. Refreshed Sunday, 30 August 2026 · Snapshot
         <code>8cf276648edd</code> · Model <code>d5e91c5131f8</code>.</p>
     </section>
   </main>
-  <footer><span>Rage Forest Ratings · 2026</span><a href="#top">Back to top ↑</a></footer>
+
+  <footer><span>Rage Forest Ratings · 2026</span><a href="#top">Back to top</a></footer>
 </body>
 </html>
