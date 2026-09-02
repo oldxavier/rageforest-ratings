@@ -11,7 +11,7 @@
     "ranked_players": 765,
     "named_players": 765,
     "exact_ranks": 500,
-    "source_table_sha256": "a91697f4ecc8982e0350a87f66cedf529387ccebc13691b419f58dcfa4efd991",
+    "source_table_sha256": "07075d76c22ff8fc5851dbd07e7429109dc4f0f7ecfcf95615aaa74863859bcf",
     "fields": {
       "rank": "Exact for 1–500; lower players share the 501–765 range.",
       "handle": "Display handle after private identity resolution.",
@@ -489,7 +489,7 @@
     },
     {
       "rank": 43,
-      "handle": "wR.Mochi",
+      "handle": "wR.Monoz",
       "rating": 2444,
       "uncertainty": 57,
       "games": 1319,
@@ -544,7 +544,7 @@
     },
     {
       "rank": 48,
-      "handle": "Ghost of Chrisybooo",
+      "handle": "Chrisybooo",
       "rating": 2425,
       "uncertainty": 39,
       "games": 4211,
