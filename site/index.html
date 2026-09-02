@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rage Forest Ratings — 87,813 games, one ladder</title>
-  <meta name="description" content="How I built an unofficial Rage Forest ladder from 87,813 Age of Empires II games, with all 765 ranked players.">
+  <title>Rage Forest Ratings — the 2026 list</title>
+  <meta name="description" content="Can 87,813 Age of Empires II games rank Rage Forest players accurately? The method, the experiments and my 2026 list.">
   <meta property="og:title" content="Can you rank Rage Forest?">
   <meta property="og:description" content="Eight players, eight civilizations and one result. Here is the method and the 2026 leaderboard.">
   <meta property="og:image" content="https://oldxavier.github.io/rageforest-ratings/assets/thumbnail.jpg">
@@ -66,15 +66,18 @@
         <h2>Black Forest, turned into its own game.</h2>
       </div>
       <div class="article-copy">
-        <p>Rage Forest grew out of Age of Empires II's Black Forest map and a Discord community
-          built around 4v4 games. There is a lot of walling, booming, trading, fish booming,
-          flaming and, occasionally, actually attacking the other team.</p>
+        <p>Rage Forest grew from a group of people who enjoyed playing 4v4 Black Forest together.
+          The Discord gave those regular games a community and, eventually, their own name. There
+          is a lot of walling, booming, trading, fish booming, flaming and, occasionally, actually
+          attacking the other team.</p>
         <p>It is also different enough from the ranked ladder to reward a different set of skills.
-          Timings, team compositions, reacting to a strange map, working with three team-mates and
-          understanding eight civilizations at once all matter. A brilliant Arabia player is not
-          automatically a brilliant Rage Forest player, or the other way around.</p>
-        <p>These games are unranked, so there is no official Rage Forest ladder. That is the gap
-          this project is trying to fill.</p>
+          Timings, team compositions, adapting to huge map variations, working with three
+          team-mates and understanding eight civilizations at once all matter. A brilliant Arabia
+          player is not automatically a brilliant Rage Forest player, or the other way around.</p>
+        <p>This is not an attempt to give the community an official or permanent ladder. I wanted
+          to find out whether the match history contains enough information to rank RF players
+          accurately, then use that method for my 2026 list. I will probably revisit the question
+          next year rather than keep a live ladder running.</p>
       </div>
     </section>
 
@@ -143,7 +146,8 @@
           <p class="section-label">THE METHOD, FROM THE BEGINNING</p>
           <h2>Start with two players</h2>
         </div>
-        <p class="heading-note">The final model is complicated. The basic idea is not.</p>
+        <p class="heading-note">I will start with the familiar 1v1 version, then add the problems
+          that appear when eight players share one result.</p>
       </div>
 
       <div class="example-block">
@@ -207,7 +211,87 @@
             heavily.</p>
           <p>For a 4v4, each team is represented by the average of its four player strengths. The
             model then finds the set of player ratings that makes all 87,813 results most likely.
-            That is the core of this ladder.</p>
+            That is the starting point for the 2026 list.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="crowd-method method section" id="crowds">
+      <div class="section-heading">
+        <div>
+          <p class="section-label">WHY THE GROUPS MATTER</p>
+          <h2>First rank people within a crowd. Then place the crowds.</h2>
+        </div>
+        <p class="heading-note">Rage Forest is not one well-mixed pool. Many players return to the
+          same hosts and team-mates, while some groups rarely meet at all.</p>
+      </div>
+
+      <div class="history-note">
+        <p class="section-label">HOW THE CROWDS ARE FOUND</p>
+        <h3>Start with who actually plays together</h3>
+        <p>I made a network with one point per player and stronger links between people who were
+          repeatedly in the same lobby. A clustering method then looks for parts of that network
+          with many links inside the group and fewer links going out. Nobody was assigned a crowd
+          by country, language or my opinion.</p>
+        <p>The first pass found the rough groups, but one of them became a 3,964-player leftovers
+          bucket because a few extremely active players connect to almost everybody. I refined
+          that result with a method that accounts for some players simply having far more
+          connections than others. The largest group fell to 1,017 players, and the revised groups
+          predicted later matches better.</p>
+      </div>
+
+      <div class="example-block">
+        <div class="crowd-diagram" aria-label="Two groups of players joined by a small number of cross-group games">
+          <div class="mini-crowd crowd-blue"><b>Group A</b><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="bridge-games"><span>cross-group games</span></div>
+          <div class="mini-crowd crowd-red"><b>Group B</b><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="article-copy">
+          <h3>Two separate questions</h3>
+          <p>Suppose Group A plays hundreds of games among themselves. Those results can tell us
+            who is strongest inside Group A. They cannot tell us whether an average Group A player
+            should be rated 1400, 1700 or 2000 compared with Group B.</p>
+          <p>The games between the groups answer that second question. If Group A regularly beats
+            Group B, the model moves Group A's shared level upward. A player's estimate is then
+            their own result within the group plus that group level.</p>
+          <p>This also gives players with limited evidence a more sensible starting point. Instead
+            of pulling everybody towards one global average, the model pulls them partly towards
+            the level of the people they actually play with. Players with many games depend less
+            on that help.</p>
+        </div>
+      </div>
+
+      <div class="all-at-once">
+        <div>
+          <p class="section-label">ONE FIT, THREE PARTS</p>
+          <h3>Players, civilizations and crowds are estimated together</h3>
+        </div>
+        <div class="article-copy">
+          <p>For each match, the model builds a score for both teams from three pieces:</p>
+          <ol class="term-list">
+            <li><strong>Players:</strong> the average of the four player terms on each side.</li>
+            <li><strong>Civilizations:</strong> an adjustment for the eight civilizations drawn
+              in that game. This affects what the result tells us; it does not permanently add a
+              good civilization to somebody's rating.</li>
+            <li><strong>Crowds:</strong> a shared level for each regular playing group. The player
+              rating shown in the table already combines the player's individual term with this
+              crowd level.</li>
+          </ol>
+          <p>All three are fitted at the same time. If a team wins with a strong civilization draw,
+            the model does not have to give all of that credit to the players. If somebody goes
+            50–50 in a very strong crowd, the model does not have to call them average.</p>
+          <div class="parameter-note">
+            <strong>9,492 rating terms</strong>
+            <span>9,407 players + 55 civilizations + 30 crowd levels</span>
+          </div>
+          <p class="technical-aside">Those are the meaningful terms behind the published ratings.
+            The duration-grading machinery also needs four technical cutpoints, which are not
+            player, civilization or crowd ratings.</p>
+          <p><strong>Why 30 crowds here, but 22 in the final graphic?</strong> The fit covers all
+            9,407 player names and needs 30 crowd levels. The published 2026 list is a much smaller
+            subset: only 22 of those crowds contain any of the 765 ranked players. A crowd only
+            qualifies for the list when it has enough games against other crowds to place it on
+            the common scale.</p>
         </div>
       </div>
     </section>
@@ -215,10 +299,11 @@
     <section class="details section">
       <div class="section-heading">
         <div>
-          <p class="section-label">WHAT HAD TO BE ADDED</p>
-          <h2>Rage Forest is not just four names against four names</h2>
+          <p class="section-label">WHAT ELSE WENT INTO THE FINAL VERSION</p>
+          <h2>The awkward parts of real match history</h2>
         </div>
-        <p class="heading-note">Each addition below solves a specific problem in the data.</p>
+        <p class="heading-note">Each rule below was either checked on later matches or added to
+          prevent the model from treating bad records as normal games.</p>
       </div>
       <div class="detail-list">
         <article>
@@ -230,44 +315,55 @@
         </article>
         <article>
           <span>02</span>
-          <div><h3>Civilizations</h3><p>Rage Forest normally assigns eight different civilizations
-            at random. That makes their effects measurable. Spanish, for example, won 54.8% of
-            5,941 games. Replacing an average civilization with Spanish has about the same model
-            effect as replacing one of the four players with somebody rated 162 points higher.</p></div>
+          <div><h3>Recent evidence matters more</h3><p>People improve, decline and return after long
+            breaks. Match weight halves after one year. Removing that decay cost 0.65 and 0.29
+            percentage points of prediction accuracy on two held-out periods; a very short 45-day
+            memory was clearly worse. I also adjust for the average age of each player's evidence,
+            rather than pretending two equally rated records are equally current.</p></div>
         </article>
         <article>
           <span>03</span>
-          <div><h3>Crowds</h3><p>The co-play network contains 22 groups. I pool players partly
-            toward the average of the group they actually play in, rather than pretending every
-            player comes from one perfectly mixed ladder.</p></div>
+          <div><h3>Games ending inside five minutes</h3><p>On Rage Forest, that is normally a drop,
+            restart or argument rather than a completed contest. I tested several rules by fitting
+            on older games and scoring later, normal games. Excluding the sub-five-minute games
+            improved log-loss by 0.0031 and 0.0051 on the two test periods. Their outcomes barely
+            followed player strength: the correlation was −0.12, compared with −0.64 in longer
+            games. Putting them back even with the duration adjustment was measurably worse.</p></div>
         </article>
         <article>
           <span>04</span>
-          <div><h3>Connections between crowds</h3><p>A crowd can only be placed on the shared scale
-            through games against outsiders. In this dataset, 89 high-volume players account for
-            half of ranked cross-crowd player-games. That number describes where the connecting
-            game volume comes from; it does not identify 89 uniquely special “bridge people.”</p></div>
+          <div><h3>The five-to-ten-minute grey area</h3><p>These games are not thrown away, but they
+            count one fifth as much. Giving them full weight was worse in both test periods, so
+            the compromise stayed.</p></div>
         </article>
         <article>
           <span>05</span>
-          <div><h3>Time</h3><p>People change. Games lose half their weight after one year, which
-            tested better than either a much shorter or longer memory. The final rating is also
-            adjusted for how old a player's evidence is.</p></div>
+          <div><h3>Longer games carry a little more information</h3><p>A win remains the main
+            result, but match length helps distinguish a close game from a one-sided one. Teams
+            the model saw as even averaged 48.7 minutes; the most uneven games averaged 41.7. I
+            graded the training result slightly by duration and tested it across five time
+            windows. It improved log-loss by 0.00102 overall and worked in four of five.</p></div>
         </article>
         <article>
           <span>06</span>
-          <div><h3>Short and decisive games</h3><p>Games at or below five minutes are excluded.
-            Five-to-ten-minute games count only a little. Longer games keep the win as the main
-            result, with a small duration-based signal for how decisive it was.</p></div>
+          <div><h3>Was duration really doing the work?</h3><p>I shuffled match lengths among games
+            with the same winner, preserving the machinery but destroying the relationship
+            between length and dominance. The gain disappeared and became slightly harmful.
+            Removing duration from the later test games did not remove the benefit either, so the
+            model was learning from past match length rather than peeking at a future answer.
+            There is one caveat: the duration setup also relaxes the model's shrinkage slightly.
+            Against a control with that same relaxation, duration's extra gain was small and
+            uncertain. The safe conclusion is that duration clearly orders how one-sided games
+            were; exactly how much prediction gain belongs to that signal is less certain.</p></div>
         </article>
       </div>
     </section>
 
-    <section class="accuracy section">
+    <section class="accuracy section" id="accuracy">
       <div class="section-heading">
         <div>
           <p class="section-label">DOES IT PREDICT GAMES?</p>
-          <h2>About 66%—and 67% is close to the limit</h2>
+          <h2>65.8% correct. What does 67.1% mean?</h2>
         </div>
         <div class="heading-note">
           <p>The test games come after the training games. The model does not get to learn from
@@ -278,43 +374,142 @@
         <div class="article-copy">
           <p>On the same held-out period, tuned Elo predicts 62.86% correctly, TrueSkill reaches
             64.28%, and this model reaches 65.78%.</p>
-          <p>Why not 80% or 90%? Because a fair game cannot be predicted. If two teams are truly
-            even, calling it 50–50 is the correct answer, even though the eventual winner makes
-            the prediction look “wrong” half the time.</p>
-          <p>I estimated the ceiling from the sharpness of the games themselves. Even with the
-            ratings exactly right, the expected hit rate is about 67.08%. Hosts are deliberately
-            making balanced lobbies, so low predictability is partly evidence that they are doing
-            their job.</p>
+          <p>A rating is trying to estimate each team's real chance, not claim that the favourite
+            must win. If a perfectly rated game is genuinely 50–50, either prediction will still
+            be wrong half the time. If another game is genuinely 70–30, always choosing the
+            favourite gets it right seven times out of ten, not ten times out of ten.</p>
+          <div class="ceiling-example" aria-label="Example expected accuracy across fair and uneven games">
+            <div><strong>50 fair games</strong><span>50% expected</span><b>25 right</b></div>
+            <div><strong>50 uneven games</strong><span>70% expected</span><b>35 right</b></div>
+            <p><span>100 games</span><strong>60 expected correct</strong></p>
+          </div>
+          <p>I repeated that calculation with every probability from the 9,256 held-out matches
+            used for the video: take the favourite's chance in each match, then average those
+            chances. The result was 67.08%. In other words, if the model's probabilities had been
+            perfectly calibrated on that test, their current spread would produce about 67 correct
+            calls per 100 games. The model actually made 65.78.</p>
+          <p>This is a ceiling <em>at the model's current sharpness</em>, not proof that no future
+            model could pass 67%. Reaching 70% while staying calibrated would require team gaps
+            about 1.2 times as spread out as they are now—roughly 207 rather than 173 Elo—and some
+            real extra signal to justify that confidence. Balanced lobbies naturally keep the
+            number low.</p>
         </div>
         <div class="accuracy-bars" aria-label="Held-out prediction accuracy, shown on the achievable 50 to 67.08 percent range">
           <div><label>Elo <b>62.9%</b></label><i style="--value:75.3%"></i></div>
           <div><label>TrueSkill <b>64.3%</b></label><i style="--value:83.7%"></i></div>
           <div class="model-bar"><label>This model <b>65.8%</b></label><i style="--value:92.4%"></i></div>
-          <div class="scale"><span>50% coin flip</span><span>67.1% estimated ceiling</span></div>
+          <div class="scale"><span>50% coin flip</span><span>67.1% implied by current confidence</span></div>
         </div>
       </div>
     </section>
 
-    <section class="experiments section">
+    <section class="experiments section" id="experiments">
       <div class="section-heading">
         <div>
           <p class="section-label">THINGS I TRIED AND LEFT OUT</p>
-          <h2>More complicated was often just more complicated</h2>
+          <h2>Interesting ideas that did not work</h2>
         </div>
-        <p class="heading-note">An idea only stayed if it helped on later games the model had not
-          been fitted on.</p>
+        <p class="heading-note">A pattern in the same games used to find it was not enough. Where
+          possible, I fitted each idea on older matches and asked whether it improved predictions
+          on later ones. The main score was log-loss: lower is better, and zero change means the
+          extra machinery bought nothing.</p>
       </div>
+      <p class="experiment-footing">These tests happened throughout the project, so they are not
+        all on the final 87,813-match snapshot. The latest systematic sweep used a corrected
+        82,607-match development set; a few older negative checks were not rerun after later data
+        repairs. I treat those as project history rather than perfectly comparable scores, and I
+        did not quietly re-select old ideas after seeing the final refresh.</p>
       <div class="experiment-grid">
-        <article><h3>Recent form and streaks</h3><p>Some versions looked useful in one time window
-          and disappeared or changed sign in another. They were not stable enough to publish.</p></article>
-        <article><h3>Specific player chemistry</h3><p>Pairs of team-mates simply do not play enough
-          distinct, comparable games for thousands of separate chemistry effects to hold up.</p></article>
-        <article><h3>Position and role guesses</h3><p>Flank and pocket clearly matter, but those
-          positions are not reliably present in the public match data. Guessing them would create
-          a confident-looking variable that is often wrong.</p></article>
-        <article><h3>More data as the answer</h3><p>Recovering another 5,165 games moved accuracy by
-          0.04 percentage points. It improved coverage and uncertainty, but the prediction score
-          was already saturated.</p></article>
+        <article>
+          <p class="experiment-result">LOOKED REAL IN-SAMPLE, DID NOT HOLD UP</p>
+          <h3>Recent form and streaks</h3>
+          <p>At first, players who had recently performed better than their rating expected seemed
+            likely to keep doing so. But that pattern came from the same matches used to discover
+            it. When I trained the form adjustment on earlier games and tested it on later ones,
+            it helped in only one test period and did not repeat. I then gave an intentionally
+            unfair version access to some results from the test period itself. Even with that
+            peek at the answers, accuracy improved by at most 0.40 percentage points. No separate
+            hot-hand rating shipped; the model keeps only time decay and the evidence-age
+            adjustment.</p>
+        </article>
+        <article>
+          <p class="experiment-result">NO SIGNAL ACROSS 2,094 PAIRS</p>
+          <h3>Specific team-mate chemistry</h3>
+          <p>The tempting idea is that some pairs are better or worse together than their ratings
+            imply. Ten-fold held-out testing across 2,094 repeated pairs found an average effect
+            essentially equal to zero. A stricter test that removed each pair's shared games before
+            estimating them also found nothing. There were too few comparable games per pair to
+            support thousands of chemistry terms.</p>
+        </article>
+        <article>
+          <p class="experiment-result">THE FOUR-PLAYER AVERAGE WON CLEARLY</p>
+          <h3>Weakest link or strongest carry</h3>
+          <p>Perhaps a team should be valued by its weakest player, or perhaps its strongest player
+            matters most. I tested a sliding scale from “soft minimum” through the ordinary average
+            to “soft maximum.” Predictions became steadily worse in either direction. The evidence
+            for simply averaging the four players was the strongest result in this part of the
+            project.</p>
+        </article>
+        <article>
+          <p class="experiment-result">EVERY EXTRA LOBBY FEATURE WAS WORSE</p>
+          <h3>Trying to describe the lobby around the ratings</h3>
+          <p>I tested differences in experience, recent activity, form, evidence age, four-player
+            cohesion, number of crowds represented and variety of team-mates. Some looked highly
+            significant on the training games. Tested one at a time, together, and through a tree
+            model, every version predicted later games worse: +0.0030 log-loss together and
+            +0.0039 for the tree model. The apparent pattern was the model chasing its own
+            estimation errors.</p>
+        </article>
+        <article>
+          <p class="experiment-result">REAL HINTS, WORSE PREDICTIONS</p>
+          <h3>Civilizations changing by patch or player level</h3>
+          <p>Spanish moved from +1.8 to +5.7 percentage points across seven patch eras, so the idea
+            was not silly. But adding separate civilization-by-era terms made later predictions
+            worse (+0.00032 log-loss). Letting civilization value change with lobby level was worse
+            too (+0.00056). There is some movement in the raw data, but not enough clean evidence
+            to estimate dozens of extra effects safely.</p>
+        </article>
+        <article>
+          <p class="experiment-result">EXTRA MATCHUP TERMS MADE THINGS WORSE</p>
+          <h3>Rock-paper-scissors player styles</h3>
+          <p>A single rating assumes that if A is stronger than B and B is stronger than C, A
+            should usually be stronger than C. Real play styles might break that order: perhaps A
+            consistently struggles against C. I tested flexible cross-team matchup terms designed
+            to find exactly that kind of counter. They made later predictions worse
+            (+0.00073 log-loss), while less constrained versions overfitted badly.</p>
+        </article>
+        <article>
+          <p class="experiment-result">SIX DIFFERENT RULES, NO IMPROVEMENT</p>
+          <h3>Shrinking experienced players differently</h3>
+          <p>Ratings with little evidence are pulled towards a safer average. I worried that one
+            fixed rule might also hold players with thousands of games too close to the middle. I
+            tried six ways to vary that pull by game count. None improved later predictions, and
+            pulling the most active players in even harder was clearly worse.</p>
+        </article>
+        <article>
+          <p class="experiment-result">THE ALTERNATIVES LOST OUT OF SAMPLE</p>
+          <h3>Different ways to find crowds</h3>
+          <p>The first Louvain grouping left one enormous 3,964-player catch-all group, so I kept
+            its number of groups but refined the membership with a degree-corrected block model.
+            That change survived seven new test windows. Other plausible choices did not: Leiden
+            added 0.00030 log-loss, spectral grouping 0.00107, and Infomap was 0.00556 worse.</p>
+        </article>
+        <article>
+          <p class="experiment-result">NO GAIN FROM REPACKAGING THE SAME SIGNAL</p>
+          <h3>Calibration tricks and model ensembles</h3>
+          <p>Temperature scaling and Platt scaling changed almost nothing; isotonic calibration was
+            worse and none improved accuracy. Blending this model with tuned Elo and TrueSkill was
+            also exactly null. Their predictions were different, but not different in a way that
+            corrected one another on later games.</p>
+        </article>
+        <article>
+          <p class="experiment-result">DOUBLING THE DATA BOUGHT 0.05 POINTS</p>
+          <h3>More matches as the answer</h3>
+          <p>Accuracy rose from 62.2% with one eighth of the training history to 65.0% with half.
+            It then stayed at 64.9–65.0% as the rest was added. In a separate refresh, recovering
+            another 5,165 games changed accuracy by 0.04 percentage points. More data still helps
+            coverage and uncertainty; it no longer solves the prediction problem by itself.</p>
+        </article>
       </div>
     </section>
 
@@ -330,6 +525,9 @@
           long it lasted and who won. It does not see voice communication, map position,
           connection problems, substitutions, who hosted, or whether somebody was experimenting
           with a silly build.</p>
+        <p>Flank and pocket clearly matter, but reliable positions are not present in the match
+          records. That was not a failed model idea; it was something I could not test without
+          guessing the input first.</p>
         <p>It also assumes everyone is trying their hardest. In Rage Forest that is, occasionally,
           a heroic assumption. There is no column for “couldn't be arsed to wall today.”</p>
         <p>Win rate is not a second rating. Strong players can have ordinary win rates because
