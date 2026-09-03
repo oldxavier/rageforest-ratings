@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rage Forest Ratings — the 2026 list</title>
+  <title>oldxavier 2026 Rage Forest Ratings</title>
   <meta name="description" content="Can 87,813 Age of Empires II games rank Rage Forest players accurately? The method, the experiments and my 2026 list.">
-  <meta property="og:title" content="Can you rank Rage Forest?">
+  <meta property="og:title" content="oldxavier 2026 Rage Forest Ratings">
   <meta property="og:description" content="Eight players, eight civilizations and one result. Here is the method and the 2026 leaderboard.">
   <meta property="og:image" content="https://oldxavier.github.io/rageforest-ratings/assets/thumbnail.jpg">
   <meta property="og:type" content="website">
@@ -18,7 +18,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header" id="top">
     <nav aria-label="Primary">
-      <a class="brand" href="#top"><span>RF</span> Rage Forest Ratings</a>
+      <a class="brand" href="#top"><span>RF</span> oldxavier 2026 Rage Forest Ratings</a>
       <div class="nav-links">
         <a href="#leaderboard">Rankings</a>
         <a href="#method">Method</a>
@@ -29,7 +29,7 @@
 
     <div class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">UNOFFICIAL 2026 RAGE FOREST RATINGS</p>
+        <p class="eyebrow">OLDXAVIER 2026 RAGE FOREST RATINGS</p>
         <h1>Can you rank a 4v4 from wins and losses?</h1>
         <p class="lede">I wanted to know who the strongest Rage Forest players were. That sounds
           like a normal rating problem until you remember that every game has eight players,
@@ -461,13 +461,13 @@
           had to help with later ones.</p>
       </div>
       <p class="experiment-footing">These tests happened throughout the project, so they are not
-        all on the final 87,813-match snapshot. The latest systematic sweep used a corrected
-        82,607-match development set; a few older negative checks were not rerun after later data
-        repairs. I treat those as project history rather than perfectly comparable scores, and I
-        did not quietly re-select old ideas after seeing the final refresh.</p>
+        all on the final 87,813-match snapshot. The latest set run under one shared test setup used
+        a corrected 82,607-match development set; a few older negative checks were not rerun after
+        later data repairs. I treat those as project history rather than perfectly comparable
+        scores, and I did not quietly re-select old ideas after seeing the final refresh.</p>
       <div class="experiment-grid">
         <article>
-          <p class="experiment-result">LOOKED REAL IN-SAMPLE, DID NOT HOLD UP</p>
+          <p class="experiment-result">LOOKED REAL IN OLD GAMES, DID NOT HOLD UP</p>
           <h3>Recent form and streaks</h3>
           <p><strong>The question:</strong> if somebody has recently won more than their normal
             rating expected, are they “in form” and likely to keep over-performing?</p>
@@ -480,7 +480,7 @@
             and evidence-age adjustment remain.</p>
         </article>
         <article>
-          <p class="experiment-result">NO SIGNAL ACROSS 2,094 PAIRS</p>
+          <p class="experiment-result">NO REPEATABLE EFFECT ACROSS 2,094 PAIRS</p>
           <h3>Specific team-mate chemistry</h3>
           <p><strong>The question:</strong> do two particular players win more together than their
             individual ratings suggest?</p>
@@ -537,8 +537,10 @@
             is stronger than C, A should usually beat C. Could play styles create a circle where C
             is unusually good against A?</p>
           <p><strong>What I tried:</strong> I added extra matchup values that could learn who tends
-            to over-perform against whom, beyond the normal rating difference.</p>
-          <p><strong>What happened:</strong> the constrained version worsened later log-loss by
+            to over-perform against whom, beyond the normal rating difference. The first version
+            was deliberately limited to a small number of broad matchup patterns so it could not
+            simply memorize every named pairing.</p>
+          <p><strong>What happened:</strong> even that limited version worsened later log-loss by
             0.00073. Versions flexible enough to learn many specific counters fitted the old games
             extremely well and failed badly on new ones. The apparent counters did not repeat.</p>
         </article>
@@ -554,29 +556,32 @@
             active players in harder was clearly worse, so the simpler shared rule stayed.</p>
         </article>
         <article>
-          <p class="experiment-result">THE ALTERNATIVES LOST OUT OF SAMPLE</p>
+          <p class="experiment-result">THE ALTERNATIVES LOST ON LATER GAMES</p>
           <h3>Different ways to find crowds</h3>
           <p><strong>The question:</strong> there is no official list of Rage Forest crowds, so
             which automatic grouping of the same player network should the model trust?</p>
           <p><strong>What I tried:</strong> the first method found the rough groups but left a
             3,964-player catch-all because a few very active people connect almost everybody. I
             refined it with a method that accounts for those unusually busy connectors, then
-            compared it with three other standard grouping recipes: Leiden, spectral clustering
-            and Infomap.</p>
+            compared it with three other network-grouping methods. Leiden also searches for groups
+            with many internal links. Spectral clustering turns connection patterns into positions
+            and groups nearby players. Infomap looks for areas where an imaginary walk through the
+            network would tend to stay for a while.</p>
           <p><strong>What happened:</strong> the refined groups improved predictions again across
             seven new test periods. The three alternatives were worse by 0.00030, 0.00107 and
             0.00556 log-loss respectively.</p>
         </article>
         <article>
-          <p class="experiment-result">NO GAIN FROM REPACKAGING THE SAME SIGNAL</p>
-          <h3>Calibration tricks and model ensembles</h3>
+          <p class="experiment-result">NO GAIN FROM REPACKAGING THE SAME INFORMATION</p>
+          <h3>Adjusting confidence and blending models</h3>
           <p><strong>The question:</strong> perhaps the model chooses the right favourite but says
             70–30 when it should say 60–40. Or perhaps Elo and TrueSkill make different mistakes
             that could cancel out when their predictions are averaged.</p>
-          <p><strong>What I tried:</strong> three calibration methods adjusted confidence without
-            changing the underlying ratings. Their technical names are temperature scaling, Platt
-            scaling and isotonic calibration. I separately blended this model's probabilities with
-            tuned Elo and TrueSkill.</p>
+          <p><strong>What I tried:</strong> three methods adjusted confidence without changing the
+            underlying ratings. Temperature scaling makes every prediction uniformly softer or
+            stronger. Platt scaling learns a simple smooth correction from old predictions.
+            Isotonic calibration allows a more flexible staircase-shaped correction. I also made
+            an “ensemble”—simply a weighted blend of this model, Elo and TrueSkill.</p>
           <p><strong>What happened:</strong> two confidence adjustments changed almost nothing and
             isotonic calibration was worse. The model blend was also exactly neutral: the systems
             disagreed, but not in a reliably useful way.</p>
@@ -613,7 +618,7 @@
           records. That was not a failed model idea; it was something I could not test without
           guessing the input first.</p>
         <p>It also assumes everyone is trying their hardest. In Rage Forest that is, occasionally,
-          a heroic assumption. There is no column for “couldn't be arsed to wall today.”</p>
+          a heroic assumption. There is no column for “couldn't be asked to wall today.”</p>
         <p>Win rate is not a second rating. Strong players can have ordinary win rates because
           hosts give them weaker teams. The team, opponent and lobby averages in the table help
           show the level of games behind each result.</p>
@@ -638,15 +643,10 @@
           Forest Discord</a> · <a href="https://discord.gg/QSHZk2kzuP">oldxavier's Discord</a></p></div>
         <div><h3>Reproducible public parts</h3><p><a href="https://github.com/oldxavier/rageforest-ratings">Code,
           made-up test data and a privacy-safe rating export on GitHub</a>.</p></div>
-        <div><h3>Video music</h3><p>“Keep It Real,” Nick Petrov,
-          Bensound.com/free-music-for-videos. License 6IRIEYVHWTBDVAQF.</p></div>
       </div>
-      <p class="fine-print">Unofficial community project. Age of Empires II is a trademark of
-        Microsoft. Refreshed Sunday, 30 August 2026 · Snapshot
-        <code>8cf276648edd</code> · Model <code>d5e91c5131f8</code>.</p>
     </section>
   </main>
 
-  <footer><span>Rage Forest Ratings · 2026</span><a href="#top">Back to top</a></footer>
+  <footer><span>oldxavier 2026 Rage Forest Ratings</span><a href="#top">Back to top</a></footer>
 </body>
 </html>

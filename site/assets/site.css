@@ -524,8 +524,6 @@ td:nth-child(7), td:nth-child(8), td:nth-child(9) { color: #4d594f; font-family:
 }
 .source-list > div { padding: 1.2rem 0; border-bottom: 1px solid var(--line); }
 .source-list p { margin: 0; color: var(--muted); }
-.fine-print { grid-column: 1 / -1; margin-top: 1rem; color: #7b8078; font-size: .74rem; }
-code { font: .9em var(--mono); }
 footer {
   display: flex;
   justify-content: space-between;
@@ -554,12 +552,13 @@ footer {
   .leader-controls label { flex-basis: 100%; }
   table { min-width: 760px; }
   th:nth-child(7), td:nth-child(7), th:nth-child(8), td:nth-child(8) { display: none; }
-  .fine-print { grid-column: auto; }
 }
 
 @media (max-width: 560px) {
   body { font-size: 16px; }
   h1 { font-size: 3.2rem; }
+  .brand { font-size: .88rem; }
+  .nav-links { display: none; }
   .stats div { padding: 1rem; }
   .stats div:nth-child(odd) { padding-left: 0; }
   .table-shell { max-height: 640px; }
