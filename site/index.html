@@ -317,16 +317,13 @@
         <p><strong>Model effect</strong> uses the same rating-point scale as the player table.
           Spanish at +161 means that receiving Spanish instead of an average civilization moved
           the team score as much as replacing one of its four players with somebody rated 161
-          points higher. The effects are estimated from all players and do not change with the
-          filter below.</p>
-        <p><strong>Top-100 games</strong> means all eight players finished in the final top 100.
-          There are only 1,235 such matches before the other quality checks, so these win rates
-          will move around more than the all-games figures. The games column shows exactly how
-          much evidence each one has.</p>
-        <p><strong>Why no uncertainty column?</strong> The final v17 release did not produce a
-          civilization uncertainty measure comparable with the player uncertainty above. Game
-          count still shows which raw win rates rest on less evidence, and the model pulls
-          thinly-observed effects towards zero rather than letting them run wild.</p>
+          points higher. It is estimated from the full dataset and does not change with the
+          filter below. The all-games view starts in model order; the top-100 view starts in raw
+          win-rate order.</p>
+        <p><strong>Top-100 games</strong> means each team had at least two players from the final
+          top 100. That gives 12,002 games after removing sub-five-minute endings: broad enough to
+          be useful, but still focused on lobbies where top players were well represented on both
+          sides.</p>
       </div>
 
       <div class="civ-controls">
@@ -345,9 +342,11 @@
         <table class="civ-table">
           <thead>
             <tr>
-              <th aria-sort="ascending"><button data-civ-sort="rank" data-type="number">Rank</button></th>
+              <th aria-sort="ascending"><button data-civ-sort="rank" data-type="number"
+                id="civ-rank-heading">Model rank</button></th>
               <th aria-sort="none"><button data-civ-sort="civilization" data-type="text">Civilization</button></th>
-              <th aria-sort="none"><button data-civ-sort="rating_effect" data-type="number">Model effect</button></th>
+              <th aria-sort="none"><button data-civ-sort="rating_effect"
+                data-type="number">Full-model effect</button></th>
               <th aria-sort="none"><button data-civ-sort="games" data-type="number">Games</button></th>
               <th aria-sort="none"><button data-civ-sort="win_rate" data-type="number">Win rate</button></th>
             </tr>

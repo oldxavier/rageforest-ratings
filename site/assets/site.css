@@ -428,7 +428,7 @@ td:nth-child(7), td:nth-child(8), td:nth-child(9) { color: #4d594f; font-family:
 }
 .civ-explainer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   margin-bottom: 2rem;
 }

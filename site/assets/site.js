@@ -22,6 +22,7 @@ const count = document.querySelector("#result-count");
 const playerSortButtons = [...document.querySelectorAll("[data-player-sort]")];
 const civBody = document.querySelector("#civ-ratings-body");
 const civCount = document.querySelector("#civ-result-count");
+const civRankHeading = document.querySelector("#civ-rank-heading");
 const civSortButtons = [...document.querySelectorAll("[data-civ-sort]")];
 const civScopeButtons = [...document.querySelectorAll("[data-civ-scope]")];
 
@@ -128,8 +129,19 @@ playerSortButtons.forEach((button) => {
 });
 
 function selectedCivilizations() {
+  const top100Order = [...civState.civilizations].sort((left, right) =>
+    right.top100_win_rate - left.top100_win_rate
+    || right.top100_games - left.top100_games
+    || left.civilization.localeCompare(right.civilization));
+  const top100Ranks = new Map(
+    top100Order.map((civilization, index) => [civilization.civilization, index + 1]),
+  );
   const rows = civState.civilizations.map((civilization) => ({
     ...civilization,
+    model_rank: civilization.rank,
+    rank: civState.scope === "all"
+      ? civilization.rank
+      : top100Ranks.get(civilization.civilization),
     games: civilization[`${civState.scope}_games`],
     win_rate: civilization[`${civState.scope}_win_rate`],
   }));
@@ -175,7 +187,10 @@ function renderCivilizations() {
 
   const scope = civState.scope === "all"
     ? "all eligible games"
-    : "games where all eight players are in the final top 100";
+    : "games with at least two final top-100 players on each team";
+  civRankHeading.textContent = civState.scope === "all"
+    ? "Model rank"
+    : "Top-100 win-rate rank";
   civCount.textContent = `${rows.length} civilizations · ${scope}.`;
   updateCivSortHeaders();
 }
@@ -183,6 +198,9 @@ function renderCivilizations() {
 civScopeButtons.forEach((button) => {
   button.addEventListener("click", () => {
     civState.scope = button.dataset.civScope;
+    civState.sortKey = "rank";
+    civState.sortType = "number";
+    civState.sortDirection = "ascending";
     civScopeButtons.forEach((candidate) => {
       const active = candidate === button;
       candidate.classList.toggle("active", active);
