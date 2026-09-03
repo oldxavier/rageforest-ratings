@@ -386,16 +386,21 @@
         </article>
         <article>
           <span>06</span>
-          <div><h3>Was duration really doing the work?</h3><p>I shuffled match lengths among games
-            with the same winner, preserving the machinery but destroying the relationship
-            between length and dominance. The gain disappeared and became slightly harmful.
-            Removing duration from the later test games did not remove the benefit either, so the
-            model was learning from past match length rather than peeking at a future answer.
-            There is one caveat: the duration setup also pulls uncertain ratings towards the
-            middle slightly less strongly. Against a control with that same change, duration's
-            extra gain was small and uncertain. The safe conclusion is that duration clearly
-            orders how one-sided games were; exactly how much prediction gain belongs to that
-            signal is less certain.</p></div>
+          <div><h3>Was match length really helping?</h3>
+            <p>First I ran a placebo test. I kept every result and every match length, but randomly
+              reassigned the lengths among games with the same winning side. The calculation was
+              unchanged, but “quick win” and “slow win” were now random labels. The improvement
+              disappeared. That shows the original ordering by match length contained real
+              information.</p>
+            <p>I also removed duration completely when predicting the later test games, and the
+              improvement remained. Duration was only helping the model learn ratings from past
+              games; it was not being allowed to peek at the length of the game it was predicting.</p>
+            <p>One caveat remains. Adding the duration calculation also slightly weakens the pull
+              that moves uncertain ratings towards the average. Compared with another model where
+              I weakened that pull by the same amount but ignored match length, duration's extra
+              benefit was small and uncertain. So match length clearly contains information about
+              how decisive a result was, but I cannot say exactly how much of the prediction gain
+              came from that information alone.</p></div>
         </article>
       </div>
     </section>
