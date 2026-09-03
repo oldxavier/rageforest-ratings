@@ -31,6 +31,15 @@ PUBLIC_PLAYER_KEYS = {
     "opponent_team_average_rating",
     "average_lobby_rating",
 }
+PUBLIC_CIV_KEYS = {
+    "rank",
+    "civilization",
+    "rating_effect",
+    "all_games",
+    "all_win_rate",
+    "top100_games",
+    "top100_win_rate",
+}
 
 
 def tracked_files() -> list[Path]:
@@ -67,6 +76,18 @@ def main() -> None:
     for index, player in enumerate(payload.get("players", []), 1):
         if set(player) != PUBLIC_PLAYER_KEYS:
             errors.append(f"unexpected player fields at public row {index}: {sorted(player)}")
+            break
+
+    civ_path = ROOT / "site/data/civilizations.json"
+    civ_payload = json.loads(civ_path.read_text())
+    if len(civ_payload.get("civilizations", [])) != 53:
+        errors.append("site/data/civilizations.json must contain exactly 53 civilizations")
+    for index, civilization in enumerate(civ_payload.get("civilizations", []), 1):
+        if set(civilization) != PUBLIC_CIV_KEYS:
+            errors.append(
+                f"unexpected civilization fields at public row {index}: "
+                f"{sorted(civilization)}"
+            )
             break
 
     if errors:

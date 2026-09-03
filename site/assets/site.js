@@ -7,19 +7,31 @@ const state = {
   sortDirection: "ascending",
 };
 
+const civState = {
+  civilizations: [],
+  scope: "all",
+  sortKey: "rank",
+  sortType: "number",
+  sortDirection: "ascending",
+};
+
 const body = document.querySelector("#ratings-body");
 const search = document.querySelector("#player-search");
 const showAll = document.querySelector("#show-all");
 const count = document.querySelector("#result-count");
-const sortButtons = [...document.querySelectorAll("[data-sort]")];
+const playerSortButtons = [...document.querySelectorAll("[data-player-sort]")];
+const civBody = document.querySelector("#civ-ratings-body");
+const civCount = document.querySelector("#civ-result-count");
+const civSortButtons = [...document.querySelectorAll("[data-civ-sort]")];
+const civScopeButtons = [...document.querySelectorAll("[data-civ-scope]")];
 
 const escapeHtml = (value) =>
   String(value).replace(/[&<>"']/g, (character) => ({
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;",
   })[character]);
 
-function sortableValue(player, key, type) {
-  const value = player[key];
+function sortableValue(row, key, type) {
+  const value = row[key];
   if (type === "text") return String(value).toLocaleLowerCase();
   if (type === "rank" || type === "rating") return typeof value === "number" ? value : null;
   return Number(value);
@@ -52,8 +64,8 @@ function selectedPlayers() {
 }
 
 function updateSortHeaders() {
-  sortButtons.forEach((button) => {
-    const active = button.dataset.sort === state.sortKey;
+  playerSortButtons.forEach((button) => {
+    const active = button.dataset.playerSort === state.sortKey;
     button.closest("th").setAttribute(
       "aria-sort",
       active ? state.sortDirection : "none",
@@ -82,7 +94,7 @@ function renderPlayers() {
     : '<tr><td colspan="9" class="loading">No matching player.</td></tr>';
 
   const sorted = state.sortKey
-    ? ` Sorted by ${sortButtons.find((button) => button.dataset.sort === state.sortKey).textContent.trim().toLocaleLowerCase()} (${state.sortDirection}).`
+    ? ` Sorted by ${playerSortButtons.find((button) => button.dataset.playerSort === state.sortKey).textContent.trim().toLocaleLowerCase()} (${state.sortDirection}).`
     : "";
   count.textContent = query
     ? `${players.length} matching player${players.length === 1 ? "" : "s"}.${sorted}`
@@ -103,15 +115,92 @@ showAll.addEventListener("click", () => {
   renderPlayers();
 });
 
-sortButtons.forEach((button) => {
+playerSortButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    const sameColumn = state.sortKey === button.dataset.sort;
+    const sameColumn = state.sortKey === button.dataset.playerSort;
     state.sortDirection = sameColumn && state.sortDirection === "ascending"
       ? "descending"
       : "ascending";
-    state.sortKey = button.dataset.sort;
+    state.sortKey = button.dataset.playerSort;
     state.sortType = button.dataset.type;
     renderPlayers();
+  });
+});
+
+function selectedCivilizations() {
+  const rows = civState.civilizations.map((civilization) => ({
+    ...civilization,
+    games: civilization[`${civState.scope}_games`],
+    win_rate: civilization[`${civState.scope}_win_rate`],
+  }));
+
+  rows.sort((left, right) => {
+    const a = sortableValue(left, civState.sortKey, civState.sortType);
+    const b = sortableValue(right, civState.sortKey, civState.sortType);
+    const comparison = typeof a === "string" ? a.localeCompare(b) : a - b;
+    if (comparison === 0) return left.civilization.localeCompare(right.civilization);
+    return civState.sortDirection === "ascending" ? comparison : -comparison;
+  });
+  return rows;
+}
+
+function updateCivSortHeaders() {
+  civSortButtons.forEach((button) => {
+    const active = button.dataset.civSort === civState.sortKey;
+    button.closest("th").setAttribute(
+      "aria-sort",
+      active ? civState.sortDirection : "none",
+    );
+    button.classList.toggle("active-sort", active);
+  });
+}
+
+function renderCivilizations() {
+  const rows = selectedCivilizations();
+  civBody.innerHTML = rows.length
+    ? rows.map((civilization) => {
+      const effect = civilization.rating_effect > 0
+        ? `+${civilization.rating_effect}`
+        : civilization.rating_effect;
+      return `
+        <tr>
+          <td>${civilization.rank}</td>
+          <td>${escapeHtml(civilization.civilization)}</td>
+          <td>${effect}</td>
+          <td>${civilization.games.toLocaleString()}</td>
+          <td>${civilization.win_rate.toFixed(1)}%</td>
+        </tr>`;
+    }).join("")
+    : '<tr><td colspan="5" class="loading">Civilization ratings could not be loaded.</td></tr>';
+
+  const scope = civState.scope === "all"
+    ? "all eligible games"
+    : "games where all eight players are in the final top 100";
+  civCount.textContent = `${rows.length} civilizations · ${scope}.`;
+  updateCivSortHeaders();
+}
+
+civScopeButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    civState.scope = button.dataset.civScope;
+    civScopeButtons.forEach((candidate) => {
+      const active = candidate === button;
+      candidate.classList.toggle("active", active);
+      candidate.setAttribute("aria-pressed", active);
+    });
+    renderCivilizations();
+  });
+});
+
+civSortButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const sameColumn = civState.sortKey === button.dataset.civSort;
+    civState.sortDirection = sameColumn && civState.sortDirection === "ascending"
+      ? "descending"
+      : "ascending";
+    civState.sortKey = button.dataset.civSort;
+    civState.sortType = button.dataset.type;
+    renderCivilizations();
   });
 });
 
@@ -127,4 +216,18 @@ fetch("data/ratings.json")
   .catch(() => {
     body.innerHTML = '<tr><td colspan="9" class="loading">Ratings could not be loaded.</td></tr>';
     count.textContent = "The downloadable CSV remains available above.";
+  });
+
+fetch("data/civilizations.json")
+  .then((response) => {
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    return response.json();
+  })
+  .then((payload) => {
+    civState.civilizations = payload.civilizations;
+    renderCivilizations();
+  })
+  .catch(() => {
+    civBody.innerHTML = '<tr><td colspan="5" class="loading">Civilization ratings could not be loaded.</td></tr>';
+    civCount.textContent = "The downloadable CSV remains available above.";
   });

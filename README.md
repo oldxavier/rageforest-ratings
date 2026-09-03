@@ -13,6 +13,8 @@ community. The public site explains the method and publishes a searchable leader
   position/rating ranges
 - One-SD uncertainty, games, win rate, own-team average, opponent-team average, and full-lobby
   average for all 765 players
+- All 53 playable Rage Forest civilizations with their fitted rating effect and raw records,
+  switchable between all eligible games and games where all eight players are in the final top 100
 - The methodology, corrections, and negative experiments in an approachable static article
 
 ## What is intentionally not public

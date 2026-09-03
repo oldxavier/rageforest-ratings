@@ -109,18 +109,18 @@
       <p class="sort-help">Select a column heading to sort. Select it again to reverse the order.</p>
 
       <div class="table-shell" role="region" aria-label="Sortable player ratings" tabindex="0">
-        <table>
+        <table class="player-table">
           <thead>
             <tr>
-              <th aria-sort="none"><button data-sort="rank" data-type="rank">Rank</button></th>
-              <th aria-sort="none"><button data-sort="handle" data-type="text">Player</button></th>
-              <th aria-sort="none"><button data-sort="rating" data-type="rating">Rating</button></th>
-              <th aria-sort="none"><button data-sort="uncertainty" data-type="number">Uncertainty</button></th>
-              <th aria-sort="none"><button data-sort="games" data-type="number">Games</button></th>
-              <th aria-sort="none"><button data-sort="win_rate" data-type="number">Win rate</button></th>
-              <th aria-sort="none"><button data-sort="team_average_rating" data-type="number">Team avg</button></th>
-              <th aria-sort="none"><button data-sort="opponent_team_average_rating" data-type="number">Opponent avg</button></th>
-              <th aria-sort="none"><button data-sort="average_lobby_rating" data-type="number">Lobby avg</button></th>
+              <th aria-sort="none"><button data-player-sort="rank" data-type="rank">Rank</button></th>
+              <th aria-sort="none"><button data-player-sort="handle" data-type="text">Player</button></th>
+              <th aria-sort="none"><button data-player-sort="rating" data-type="rating">Rating</button></th>
+              <th aria-sort="none"><button data-player-sort="uncertainty" data-type="number">Uncertainty</button></th>
+              <th aria-sort="none"><button data-player-sort="games" data-type="number">Games</button></th>
+              <th aria-sort="none"><button data-player-sort="win_rate" data-type="number">Win rate</button></th>
+              <th aria-sort="none"><button data-player-sort="team_average_rating" data-type="number">Team avg</button></th>
+              <th aria-sort="none"><button data-player-sort="opponent_team_average_rating" data-type="number">Opponent avg</button></th>
+              <th aria-sort="none"><button data-player-sort="average_lobby_rating" data-type="number">Lobby avg</button></th>
             </tr>
           </thead>
           <tbody id="ratings-body">
@@ -285,8 +285,11 @@
             50–50 in a very strong crowd, the model does not have to call them average.</p>
           <div class="parameter-note">
             <strong>9,492 rating terms</strong>
-            <span>9,407 players + 55 civilizations + 30 crowd levels</span>
+            <span>9,407 players + 55 civilization-data terms + 30 crowd levels</span>
           </div>
+          <p>The table below shows the 53 playable Rage Forest civilizations. The other two
+            civilization-data columns handle unknown or non-RF labels rather than representing
+            civilizations that can appear in a normal random-civ lobby.</p>
           <p><strong>Why 30 crowds here, but 22 in the final graphic?</strong> The fit covers all
             9,407 player names and needs 30 crowd levels. The published 2026 list is a much smaller
             subset: only 22 of those crowds contain any of the 765 ranked players. A crowd only
@@ -294,6 +297,67 @@
             the common scale.</p>
         </div>
       </div>
+    </section>
+
+    <section class="civ-ratings section" id="civilizations">
+      <div class="section-heading">
+        <div>
+          <p class="section-label">THE CIVILIZATION TABLE</p>
+          <h2>How strong was each civilization?</h2>
+        </div>
+        <div class="heading-note">
+          <p>The model effect adjusts for who was playing. The win rate is the simpler raw result:
+            how often the team holding that civilization won.</p>
+          <p>Games ending inside five minutes are left out because the civilization had little
+            chance to matter.</p>
+        </div>
+      </div>
+
+      <div class="civ-explainer">
+        <p><strong>Model effect</strong> uses the same rating-point scale as the player table.
+          Spanish at +161 means that receiving Spanish instead of an average civilization moved
+          the team score as much as replacing one of its four players with somebody rated 161
+          points higher. The effects are estimated from all players and do not change with the
+          filter below.</p>
+        <p><strong>Top-100 games</strong> means all eight players finished in the final top 100.
+          There are only 1,235 such matches before the other quality checks, so these win rates
+          will move around more than the all-games figures. The games column shows exactly how
+          much evidence each one has.</p>
+        <p><strong>Why no uncertainty column?</strong> The final v17 release did not produce a
+          civilization uncertainty measure comparable with the player uncertainty above. Game
+          count still shows which raw win rates rest on less evidence, and the model pulls
+          thinly-observed effects towards zero rather than letting them run wild.</p>
+      </div>
+
+      <div class="civ-controls">
+        <div class="scope-switch" role="group" aria-label="Civilization game scope">
+          <button class="active" type="button" data-civ-scope="all"
+            aria-pressed="true">All games</button>
+          <button type="button" data-civ-scope="top100"
+            aria-pressed="false">Top-100 games</button>
+        </div>
+        <a class="download" href="data/civilizations.csv" download>Download CSV</a>
+      </div>
+      <p class="sort-help">Select a column heading to sort. Select it again to reverse the order.</p>
+
+      <div class="table-shell civ-table-shell" role="region"
+        aria-label="Sortable civilization ratings" tabindex="0">
+        <table class="civ-table">
+          <thead>
+            <tr>
+              <th aria-sort="ascending"><button data-civ-sort="rank" data-type="number">Rank</button></th>
+              <th aria-sort="none"><button data-civ-sort="civilization" data-type="text">Civilization</button></th>
+              <th aria-sort="none"><button data-civ-sort="rating_effect" data-type="number">Model effect</button></th>
+              <th aria-sort="none"><button data-civ-sort="games" data-type="number">Games</button></th>
+              <th aria-sort="none"><button data-civ-sort="win_rate" data-type="number">Win rate</button></th>
+            </tr>
+          </thead>
+          <tbody id="civ-ratings-body">
+            <tr><td colspan="5" class="loading">Loading civilization ratings…</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p id="civ-result-count" class="result-count" aria-live="polite"></p>
     </section>
 
     <section class="testing section">

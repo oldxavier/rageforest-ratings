@@ -16,6 +16,15 @@ ALLOWED = {
     "opponent_team_average_rating",
     "average_lobby_rating",
 }
+CIV_ALLOWED = {
+    "rank",
+    "civilization",
+    "rating_effect",
+    "all_games",
+    "all_win_rate",
+    "top100_games",
+    "top100_win_rate",
+}
 
 
 def test_public_export_is_exact_and_consistent() -> None:
@@ -48,3 +57,25 @@ def test_public_export_contains_no_identity_or_match_fields() -> None:
 
     for forbidden in ("profile_id", "steam_id", "match_id", "alias", "circle", "crowd"):
         assert forbidden not in rendered
+
+
+def test_civilization_export_is_complete_and_consistent() -> None:
+    payload = json.loads((ROOT / "site/data/civilizations.json").read_text())
+    civilizations = payload["civilizations"]
+
+    assert len(civilizations) == 53
+    assert [civilization["rank"] for civilization in civilizations] == list(range(1, 54))
+    assert all(set(civilization) == CIV_ALLOWED for civilization in civilizations)
+    assert len({civilization["civilization"] for civilization in civilizations}) == 53
+    assert all(civilization["all_games"] >= civilization["top100_games"] > 0
+               for civilization in civilizations)
+    assert all(0 <= civilization["all_win_rate"] <= 100 for civilization in civilizations)
+    assert all(0 <= civilization["top100_win_rate"] <= 100 for civilization in civilizations)
+
+    with (ROOT / "site/data/civilizations.csv").open(newline="") as handle:
+        csv_rows = list(csv.DictReader(handle))
+    assert len(csv_rows) == 53
+    assert set(csv_rows[0]) == CIV_ALLOWED
+    assert [row["civilization"] for row in csv_rows] == [
+        civilization["civilization"] for civilization in civilizations
+    ]

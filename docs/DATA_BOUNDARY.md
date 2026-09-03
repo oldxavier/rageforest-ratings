@@ -10,6 +10,8 @@ record of where and with whom named people played.
   `7xx–14xx`, plus uncertainty, games, and win rate
 - For all 765: average own-team rating (including the player), average opponent-team rating, and
   average full-lobby rating
+- Civilization-level fitted effects, game counts, and raw win rates for all eligible games and
+  for games where all eight players are in the final top 100
 - Corpus date range, model/config hash, snapshot hash, row counts, and field definitions
 - Generic model code and entirely synthetic tests
 
