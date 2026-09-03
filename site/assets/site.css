@@ -418,7 +418,6 @@ td:nth-child(7), td:nth-child(8), td:nth-child(9) { color: #4d594f; font-family:
 }
 .parameter-note strong { color: var(--green); font: 500 1.15rem var(--mono); }
 .parameter-note span { color: var(--muted); font-size: .82rem; }
-.technical-aside { font-size: .88rem; }
 
 .testing { padding-top: 4rem; }
 .testing-grid {
